@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Natchaya Clinic — คลินิกความงามครบวงจร ดูแลโดยแพทย์เฉพาะทาง</title>
+  <meta name="description" content="Natchaya Clinic คลินิกความงามครบวงจร ดูดไขมัน เลเซอร์ ร้อยไหม และ Women Plus ดูแลโดยทีมแพทย์ผู้เชี่ยวชาญ ปลอดภัย เห็นผลจริง จองคิวง่ายผ่าน LINE" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/tailwind-config.js"></script>
+  <link rel="stylesheet" href="assets/base.css" />
+</head>
+
+<body class="font-sans text-ink">
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="sticky top-0 z-40 border-b border-line bg-surface/90 backdrop-blur">
+    <div class="mx-auto flex max-w-content items-center justify-between px-4 py-3">
+      <a href="home.html" class="font-display text-xl font-bold text-brand-700">Natchaya <span class="text-ink">Clinic</span></a>
+      <nav class="hidden items-center gap-6 text-sm font-medium md:flex">
+        <a href="service-detail.html" class="hover:text-brand-700">บริการ</a>
+        <a href="womenplus.html" class="hover:text-accent-600">Women Plus</a>
+        <a href="review-detail.html" class="hover:text-brand-700">รีวิว</a>
+        <a href="article-detail.html" class="hover:text-brand-700">บทความ</a>
+        <a href="about.html" class="hover:text-brand-700">เกี่ยวกับเรา</a>
+        <a href="contact.html" class="hover:text-brand-700">ติดต่อ</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <a href="contact.html" class="hidden rounded-xl bg-brand-500 px-4 py-2 text-sm font-medium text-white shadow-soft transition hover:bg-brand-600 sm:inline-block">จองคิว</a>
+        <button data-nav-toggle aria-label="เปิดเมนู" class="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-line md:hidden">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" /></svg>
+        </button>
+      </div>
+    </div>
+    <div data-nav-menu class="hidden border-t border-line bg-surface px-4 py-3 md:hidden">
+      <nav class="grid gap-1 text-sm font-medium">
+        <a href="service-detail.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">บริการ</a>
+        <a href="womenplus.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">Women Plus</a>
+        <a href="review-detail.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">รีวิว</a>
+        <a href="article-detail.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">บทความ</a>
+        <a href="about.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">เกี่ยวกับเรา</a>
+        <a href="contact.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">ติดต่อ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="bg-gradient-to-b from-brand-50 to-surface">
+      <div class="mx-auto grid max-w-content items-center gap-8 px-4 py-12 md:grid-cols-2 md:py-20">
+        <div>
+          <span class="inline-flex items-center gap-2 rounded-full bg-white px-3 py-1 text-xs font-medium text-brand-700 shadow-soft">
+            <span class="h-2 w-2 rounded-full bg-line_green"></span> เปิดทำการ จ.–อา. 10:00–20:00
+          </span>
+          <h1 class="mt-4 text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl">
+            ความงามที่ออกแบบ<br class="hidden sm:block" />เพื่อ<span class="text-brand-600">ตัวคุณ</span>
+          </h1>
+          <p class="mt-4 max-w-md text-base text-ink-muted sm:text-lg">
+            คลินิกความงามครบวงจร ดูดไขมัน เลเซอร์ ร้อยไหม และ Women Plus
+            ดูแลทุกขั้นตอนโดยทีมแพทย์เฉพาะทาง เน้นผลลัพธ์ธรรมชาติและปลอดภัย
+          </p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="contact.html" class="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-xl bg-brand-500 px-6 py-3 font-medium text-white shadow-soft transition hover:bg-brand-600">
+              <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" /></svg>
+              จองคิวออนไลน์
+            </a>
+            <a href="#" class="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-xl bg-line_green px-6 py-3 font-medium text-white shadow-soft transition hover:brightness-95">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.99 3 3 6.26 3 10.27c0 3.59 3.16 6.59 7.43 7.16.29.06.68.19.78.43.09.22.06.56.03.78l-.13.76c-.04.22-.18.88.77.48s5.12-3.02 6.99-5.17C20.2 13.08 21 11.74 21 10.27 21 6.26 17.01 3 12 3Z"/></svg>
+              ปรึกษาฟรีทาง LINE
+            </a>
+          </div>
+          <!-- Trust signals -->
+          <dl class="mt-8 grid max-w-md grid-cols-3 gap-4 border-t border-line pt-6">
+            <div><dt class="font-display text-2xl font-bold text-brand-700">15+</dt><dd class="text-xs text-ink-muted">ปีประสบการณ์</dd></div>
+            <div><dt class="font-display text-2xl font-bold text-brand-700">50,000+</dt><dd class="text-xs text-ink-muted">เคสที่ดูแล</dd></div>
+            <div><dt class="font-display text-2xl font-bold text-brand-700">อย.</dt><dd class="text-xs text-ink-muted">รับรองมาตรฐาน</dd></div>
+          </dl>
+        </div>
+        <div class="relative">
+          <img src="https://placehold.co/640x720/f2eed9/7f6f1d?text=Natchaya+Clinic" alt="บรรยากาศคลินิก Natchaya Clinic" class="w-full rounded-2xl object-cover shadow-soft-lg" width="640" height="720" />
+          <div class="absolute -bottom-4 -left-4 hidden rounded-2xl bg-surface p-4 shadow-soft-lg sm:block">
+            <div class="flex items-center gap-3">
+              <div class="flex -space-x-2">
+                <img src="https://placehold.co/40x40/cfc06a/ffffff?text=A" alt="" class="h-9 w-9 rounded-full ring-2 ring-white" />
+                <img src="https://placehold.co/40x40/5f055d/ffffff?text=B" alt="" class="h-9 w-9 rounded-full ring-2 ring-white" />
+                <img src="https://placehold.co/40x40/7f6f1d/ffffff?text=C" alt="" class="h-9 w-9 rounded-full ring-2 ring-white" />
+              </div>
+              <div>
+                <div class="flex text-brand-500">
+                  <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M11.48 3.5a.6.6 0 0 1 1.04 0l2.2 4.46 4.92.72a.6.6 0 0 1 .33 1.02l-3.56 3.47.84 4.9a.6.6 0 0 1-.87.63L12 17.9l-4.4 2.31a.6.6 0 0 1-.87-.63l.84-4.9-3.56-3.47a.6.6 0 0 1 .33-1.02l4.92-.72L11.48 3.5Z"/></svg>
+                  <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M11.48 3.5a.6.6 0 0 1 1.04 0l2.2 4.46 4.92.72a.6.6 0 0 1 .33 1.02l-3.56 3.47.84 4.9a.6.6 0 0 1-.87.63L12 17.9l-4.4 2.31a.6.6 0 0 1-.87-.63l.84-4.9-3.56-3.47a.6.6 0 0 1 .33-1.02l4.92-.72L11.48 3.5Z"/></svg>
+                  <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M11.48 3.5a.6.6 0 0 1 1.04 0l2.2 4.46 4.92.72a.6.6 0 0 1 .33 1.02l-3.56 3.47.84 4.9a.6.6 0 0 1-.87.63L12 17.9l-4.4 2.31a.6.6 0 0 1-.87-.63l.84-4.9-3.56-3.47a.6.6 0 0 1 .33-1.02l4.92-.72L11.48 3.5Z"/></svg>
+                  <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M11.48 3.5a.6.6 0 0 1 1.04 0l2.2 4.46 4.92.72a.6.6 0 0 1 .33 1.02l-3.56 3.47.84 4.9a.6.6 0 0 1-.87.63L12 17.9l-4.4 2.31a.6.6 0 0 1-.87-.63l.84-4.9-3.56-3.47a.6.6 0 0 1 .33-1.02l4.92-.72L11.48 3.5Z"/></svg>
+                  <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M11.48 3.5a.6.6 0 0 1 1.04 0l2.2 4.46 4.92.72a.6.6 0 0 1 .33 1.02l-3.56 3.47.84 4.9a.6.6 0 0 1-.87.63L12 17.9l-4.4 2.31a.6.6 0 0 1-.87-.63l.84-4.9-3.56-3.47a.6.6 0 0 1 .33-1.02l4.92-.72L11.48 3.5Z"/></svg>
+                </div>
+                <p class="text-xs text-ink-muted">รีวิวจริงกว่า 1,000 รายการ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ บริการเด่น ============ -->
+    <section class="mx-auto max-w-content px-4 py-14">
+      <div class="mb-8 text-center">
+        <h2 class="text-2xl font-bold sm:text-3xl">บริการของเรา</h2>
+        <p class="mt-2 text-ink-muted">ครบทุกความต้องการด้านความงาม ดูแลโดยแพทย์เฉพาะทาง</p>
+      </div>
+      <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- 6 categories -->
+        <a href="service-detail.html" class="group overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg">
+          <div class="aspect-[16/10] overflow-hidden"><img src="https://placehold.co/600x375/f2eed9/7f6f1d?text=Body" alt="ดูดไขมันและกระชับสัดส่วน" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" /></div>
+          <div class="p-5"><h3 class="text-lg font-semibold">ดูดไขมัน & รูปร่าง</h3><p class="mt-1 text-sm text-ink-muted">VASER, ดูดไขมัน, กระชับสัดส่วน</p></div>
+        </a>
+        <a href="service-detail.html" class="group overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg">
+          <div class="aspect-[16/10] overflow-hidden"><img src="https://placehold.co/600x375/faf8f0/7f6f1d?text=Laser" alt="เลเซอร์และทรีตเมนต์" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" /></div>
+          <div class="p-5"><h3 class="text-lg font-semibold">Treatment & Laser</h3><p class="mt-1 text-sm text-ink-muted">เลเซอร์ผิว ฝ้า กระ รอยสิว</p></div>
+        </a>
+        <a href="service-detail.html" class="group overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg">
+          <div class="aspect-[16/10] overflow-hidden"><img src="https://placehold.co/600x375/f2eed9/7f6f1d?text=Facial" alt="ออกแบบใบหน้า" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" /></div>
+          <div class="p-5"><h3 class="text-lg font-semibold">Facial Design</h3><p class="mt-1 text-sm text-ink-muted">ร้อยไหม ฟิลเลอร์ โบทอกซ์</p></div>
+        </a>
+        <a href="service-detail.html" class="group overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg">
+          <div class="aspect-[16/10] overflow-hidden"><img src="https://placehold.co/600x375/faf8f0/7f6f1d?text=Surgery" alt="ศัลยกรรมความงาม" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" /></div>
+          <div class="p-5"><h3 class="text-lg font-semibold">ศัลยกรรม</h3><p class="mt-1 text-sm text-ink-muted">ตา จมูก ปาก คาง</p></div>
+        </a>
+        <a href="service-detail.html" class="group overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg">
+          <div class="aspect-[16/10] overflow-hidden"><img src="https://placehold.co/600x375/f2eed9/7f6f1d?text=Health" alt="โปรแกรมสุขภาพ" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" /></div>
+          <div class="p-5"><h3 class="text-lg font-semibold">Health Program</h3><p class="mt-1 text-sm text-ink-muted">วิตามิน ดริป ดูแลสุขภาพ</p></div>
+        </a>
+        <a href="womenplus.html" class="group overflow-hidden rounded-2xl bg-accent-500 text-white shadow-soft transition hover:shadow-soft-lg">
+          <div class="aspect-[16/10] overflow-hidden"><img src="https://placehold.co/600x375/5f055d/ffffff?text=Women+Plus" alt="Women Plus นรีเวชความงาม" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" /></div>
+          <div class="p-5"><h3 class="text-lg font-semibold">Women Plus</h3><p class="mt-1 text-sm text-white/80">นรีเวชความงาม จุดซ่อนเร้น</p></div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ รีวิวจริง ============ -->
+    <section class="bg-surface-alt">
+      <div class="mx-auto max-w-content px-4 py-14">
+        <div class="mb-8 flex items-end justify-between">
+          <div><h2 class="text-2xl font-bold sm:text-3xl">รีวิวจากลูกค้าจริง</h2><p class="mt-2 text-ink-muted">ผลลัพธ์ที่เกิดขึ้นจริง จากคนจริง</p></div>
+          <a href="review-detail.html" class="hidden text-sm font-medium text-brand-700 hover:underline sm:inline">ดูรีวิวทั้งหมด →</a>
+        </div>
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- featured -->
+          <article class="group relative overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-brand-300 transition hover:shadow-soft-lg">
+            <span class="absolute left-3 top-3 z-10 inline-flex items-center gap-1 rounded-full bg-brand-500 px-3 py-1 text-xs font-medium text-white shadow-soft">
+              <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M11.48 3.5a.6.6 0 0 1 1.04 0l2.2 4.46 4.92.72a.6.6 0 0 1 .33 1.02l-3.56 3.47.84 4.9a.6.6 0 0 1-.87.63L12 17.9l-4.4 2.31a.6.6 0 0 1-.87-.63l.84-4.9-3.56-3.47a.6.6 0 0 1 .33-1.02l4.92-.72L11.48 3.5Z"/></svg>
+              รีวิวเซเลบ
+            </span>
+            <div class="grid grid-cols-2">
+              <div class="relative aspect-square overflow-hidden"><img src="https://placehold.co/300x300/e8eaf0/5b6173?text=Before" alt="ก่อนทำ" loading="lazy" class="h-full w-full object-cover" /><span class="absolute bottom-1 left-1 rounded bg-ink/70 px-1.5 py-0.5 text-[10px] text-white">ก่อน</span></div>
+              <div class="relative aspect-square overflow-hidden"><img src="https://placehold.co/300x300/f2eed9/7f6f1d?text=After" alt="หลังทำ" loading="lazy" class="h-full w-full object-cover" /><span class="absolute bottom-1 left-1 rounded bg-brand-600/90 px-1.5 py-0.5 text-[10px] text-white">หลัง</span></div>
+            </div>
+            <div class="p-5"><h3 class="text-base font-semibold">คุณเอ — ร้อยไหมหน้าเรียว</h3><p class="mt-1 text-sm text-ink-muted line-clamp-2">“ผลลัพธ์ดูเป็นธรรมชาติมาก หมอใจดี ดูแลดีทุกขั้นตอน”</p></div>
+          </article>
+          <article class="group overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg">
+            <div class="grid grid-cols-2">
+              <div class="relative aspect-square overflow-hidden"><img src="https://placehold.co/300x300/e8eaf0/5b6173?text=Before" alt="ก่อนทำ" loading="lazy" class="h-full w-full object-cover" /><span class="absolute bottom-1 left-1 rounded bg-ink/70 px-1.5 py-0.5 text-[10px] text-white">ก่อน</span></div>
+              <div class="relative aspect-square overflow-hidden"><img src="https://placehold.co/300x300/f2eed9/7f6f1d?text=After" alt="หลังทำ" loading="lazy" class="h-full w-full object-cover" /><span class="absolute bottom-1 left-1 rounded bg-brand-600/90 px-1.5 py-0.5 text-[10px] text-white">หลัง</span></div>
+            </div>
+            <div class="p-5"><h3 class="text-base font-semibold">คุณบี — ดูดไขมันหน้าท้อง</h3><p class="mt-1 text-sm text-ink-muted line-clamp-2">“เห็นผลตั้งแต่อาทิตย์แรก พักฟื้นไม่นานอย่างที่คิด”</p></div>
+          </article>
+          <article class="group overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg">
+            <div class="grid grid-cols-2">
+              <div class="relative aspect-square overflow-hidden"><img src="https://placehold.co/300x300/e8eaf0/5b6173?text=Before" alt="ก่อนทำ" loading="lazy" class="h-full w-full object-cover" /><span class="absolute bottom-1 left-1 rounded bg-ink/70 px-1.5 py-0.5 text-[10px] text-white">ก่อน</span></div>
+              <div class="relative aspect-square overflow-hidden"><img src="https://placehold.co/300x300/f2eed9/7f6f1d?text=After" alt="หลังทำ" loading="lazy" class="h-full w-full object-cover" /><span class="absolute bottom-1 left-1 rounded bg-brand-600/90 px-1.5 py-0.5 text-[10px] text-white">หลัง</span></div>
+            </div>
+            <div class="p-5"><h3 class="text-base font-semibold">คุณซี — เลเซอร์รักษาฝ้า</h3><p class="mt-1 text-sm text-ink-muted line-clamp-2">“ผิวกระจ่างใสขึ้นมาก ทีมงานดูแลดีตั้งแต่ปรึกษา”</p></div>
+          </article>
+        </div>
+        <div class="mt-6 text-center sm:hidden"><a href="review-detail.html" class="text-sm font-medium text-brand-700 hover:underline">ดูรีวิวทั้งหมด →</a></div>
+      </div>
+    </section>
+
+    <!-- ============ บทความ Beauty Care ============ -->
+    <section class="mx-auto max-w-content px-4 py-14">
+      <div class="mb-8 flex items-end justify-between">
+        <div><h2 class="text-2xl font-bold sm:text-3xl">Beauty Care</h2><p class="mt-2 text-ink-muted">บทความและเคล็ดลับดูแลความงามจากแพทย์</p></div>
+        <a href="article-detail.html" class="hidden text-sm font-medium text-brand-700 hover:underline sm:inline">บทความทั้งหมด →</a>
+      </div>
+      <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <article class="group overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg">
+          <div class="aspect-[4/3] overflow-hidden"><img src="https://placehold.co/600x450/f6e7f5/5f055d?text=Article+1" alt="บทความดูแลผิวหลังเลเซอร์" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" /></div>
+          <div class="p-5"><div class="flex items-center gap-2 text-xs text-ink-soft"><span class="rounded-full bg-surface-alt px-2.5 py-1 font-medium text-ink-muted">Skin Care</span><span>12 พ.ค. 2569</span></div><h3 class="mt-3 text-lg font-semibold leading-snug line-clamp-2">5 วิธีดูแลผิวหลังเลเซอร์ให้ฟื้นตัวไว</h3></div>
+        </article>
+        <article class="group overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg">
+          <div class="aspect-[4/3] overflow-hidden"><img src="https://placehold.co/600x450/f2eed9/7f6f1d?text=Article+2" alt="บทความดูดไขมัน" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" /></div>
+          <div class="p-5"><div class="flex items-center gap-2 text-xs text-ink-soft"><span class="rounded-full bg-surface-alt px-2.5 py-1 font-medium text-ink-muted">Body</span><span>8 พ.ค. 2569</span></div><h3 class="mt-3 text-lg font-semibold leading-snug line-clamp-2">ดูดไขมันกับ VASER ต่างกันอย่างไร?</h3></div>
+        </article>
+        <article class="group overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg">
+          <div class="aspect-[4/3] overflow-hidden"><img src="https://placehold.co/600x450/faf8f0/7f6f1d?text=Article+3" alt="บทความร้อยไหม" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" /></div>
+          <div class="p-5"><div class="flex items-center gap-2 text-xs text-ink-soft"><span class="rounded-full bg-surface-alt px-2.5 py-1 font-medium text-ink-muted">Facial</span><span>3 พ.ค. 2569</span></div><h3 class="mt-3 text-lg font-semibold leading-snug line-clamp-2">ร้อยไหมหน้าเรียว อยู่ได้นานแค่ไหน</h3></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ WOMEN PLUS TEASER ============ -->
+    <section class="bg-gradient-to-br from-accent-500 to-accent-600 text-white">
+      <div class="mx-auto grid max-w-content items-center gap-6 px-4 py-14 md:grid-cols-2">
+        <div>
+          <span class="inline-block rounded-full bg-white/15 px-3 py-1 text-xs font-medium">เฉพาะผู้หญิง</span>
+          <h2 class="mt-3 font-display text-3xl font-bold">Women Plus</h2>
+          <p class="mt-3 max-w-md text-white/85">ดูแลสุขภาพและความงามจุดซ่อนเร้นอย่างเข้าใจ โดยแพทย์หญิงเฉพาะทาง บริการ NC Repair, O-Shot, PRP และอื่นๆ ด้วยความเป็นส่วนตัวสูงสุด</p>
+          <a href="womenplus.html" class="mt-6 inline-flex min-h-[48px] items-center justify-center gap-2 rounded-xl bg-white px-6 py-3 font-medium text-accent-600 shadow-soft transition hover:bg-white/90">
+            ดูบริการ Women Plus
+            <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" /></svg>
+          </a>
+        </div>
+        <div><img src="https://placehold.co/560x360/4a0448/ffffff?text=Women+Plus" alt="บริการ Women Plus" loading="lazy" class="w-full rounded-2xl object-cover shadow-soft-lg" /></div>
+      </div>
+    </section>
+
+    <!-- ============ CTA BAND ============ -->
+    <section class="mx-auto max-w-content px-4 py-16">
+      <div class="rounded-2xl bg-brand-50 p-8 text-center shadow-soft sm:p-12">
+        <h2 class="text-2xl font-bold sm:text-3xl">พร้อมเริ่มดูแลตัวเองแล้วหรือยัง?</h2>
+        <p class="mx-auto mt-3 max-w-lg text-ink-muted">ปรึกษาแพทย์ฟรี ไม่มีค่าใช้จ่าย ทีมงานพร้อมดูแลและตอบทุกคำถาม</p>
+        <div class="mt-6 flex flex-wrap justify-center gap-3">
+          <a href="contact.html" class="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-xl bg-brand-500 px-6 py-3 font-medium text-white shadow-soft transition hover:bg-brand-600">จองคิวออนไลน์</a>
+          <a href="#" class="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-xl bg-line_green px-6 py-3 font-medium text-white shadow-soft transition hover:brightness-95">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.99 3 3 6.26 3 10.27c0 3.59 3.16 6.59 7.43 7.16.29.06.68.19.78.43.09.22.06.56.03.78l-.13.76c-.04.22-.18.88.77.48s5.12-3.02 6.99-5.17C20.2 13.08 21 11.74 21 10.27 21 6.26 17.01 3 12 3Z"/></svg>
+            แอดไลน์
+          </a>
+          <a href="tel:000" class="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-xl border border-line bg-white px-6 py-3 font-medium text-ink transition hover:border-brand-300 hover:text-brand-700">
+            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" /></svg>
+            โทรเลย
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-ink text-surface-alt">
+    <div class="mx-auto grid max-w-content gap-8 px-4 py-12 sm:grid-cols-2 lg:grid-cols-4">
+      <div>
+        <p class="font-display text-xl font-bold text-white">Natchaya Clinic</p>
+        <p class="mt-2 text-sm text-white/70">คลินิกความงามครบวงจร ดูแลโดยทีมแพทย์เฉพาะทาง</p>
+      </div>
+      <div>
+        <p class="mb-3 text-sm font-semibold text-white">บริการ</p>
+        <ul class="space-y-2 text-sm text-white/70">
+          <li><a href="service-detail.html" class="hover:text-white">ดูดไขมัน</a></li>
+          <li><a href="service-detail.html" class="hover:text-white">เลเซอร์</a></li>
+          <li><a href="service-detail.html" class="hover:text-white">ร้อยไหม</a></li>
+          <li><a href="womenplus.html" class="hover:text-white">Women Plus</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="mb-3 text-sm font-semibold text-white">ลิงก์</p>
+        <ul class="space-y-2 text-sm text-white/70">
+          <li><a href="about.html" class="hover:text-white">เกี่ยวกับเรา</a></li>
+          <li><a href="review-detail.html" class="hover:text-white">รีวิว</a></li>
+          <li><a href="article-detail.html" class="hover:text-white">บทความ</a></li>
+          <li><a href="contact.html" class="hover:text-white">ติดต่อ</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="mb-3 text-sm font-semibold text-white">ติดต่อ</p>
+        <ul class="space-y-2 text-sm text-white/70">
+          <li>โทร 0X-XXX-XXXX</li>
+          <li>LINE @natchaya</li>
+          <li>กรุงเทพมหานคร</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10 px-4 py-4 text-center text-xs text-white/50">© 2569 Natchaya Clinic. สงวนลิขสิทธิ์.</div>
+  </footer>
+
+  <!-- ============ STICKY MOBILE CTA (fixed, reveals on scroll) ============ -->
+  <div data-sticky-cta class="fixed inset-x-0 bottom-0 z-50 translate-y-full border-t border-line bg-surface shadow-soft-lg transition-transform duration-300 sm:hidden">
+    <div class="grid grid-cols-3 divide-x divide-line">
+      <a href="tel:000" class="flex min-h-[60px] flex-col items-center justify-center gap-0.5 py-2">
+        <svg class="h-5 w-5 text-brand-600" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" /></svg>
+        <span class="text-xs font-medium">โทร</span>
+      </a>
+      <a href="#" class="flex min-h-[60px] flex-col items-center justify-center gap-0.5 py-2">
+        <svg class="h-5 w-5 text-line_green" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.99 3 3 6.26 3 10.27c0 3.59 3.16 6.59 7.43 7.16.29.06.68.19.78.43.09.22.06.56.03.78l-.13.76c-.04.22-.18.88.77.48s5.12-3.02 6.99-5.17C20.2 13.08 21 11.74 21 10.27 21 6.26 17.01 3 12 3Z"/></svg>
+        <span class="text-xs font-medium">LINE</span>
+      </a>
+      <a href="contact.html" class="flex min-h-[60px] flex-col items-center justify-center gap-0.5 bg-brand-500 py-2 text-white">
+        <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" /></svg>
+        <span class="text-xs font-medium">จองคิว</span>
+      </a>
+    </div>
+  </div>
+
+  <script src="assets/ui.js"></script>
+</body>
+</html>
