@@ -1,0 +1,17 @@
+/* Custom CSS beyond Tailwind utilities. Plain CSS — no theme() (Play CDN can't resolve it here). */
+:root {
+  color-scheme: light;
+  --focus-ring: #d6336c; /* mirrors colors.brand.500 — update alongside the palette in Task 2 */
+}
+html { scroll-behavior: smooth; }
+body { -webkit-font-smoothing: antialiased; }
+
+/* Thai needs more line-height than Latin defaults */
+p, li { line-height: 1.85; }
+h1, h2, h3, h4 { line-height: 1.35; }
+
+/* Visible focus for accessibility */
+:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+
+/* Prevent layout shift from images */
+img { height: auto; max-width: 100%; }
