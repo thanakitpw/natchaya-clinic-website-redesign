@@ -28,6 +28,13 @@ window.tailwind.config = {
       },
       fontFamily: {
         sans: ['"IBM Plex Sans Thai"', 'system-ui', 'sans-serif'],
+        // Display serif for Latin/number accents only (echoes the serif logo). Thai always uses sans.
+        display: ['"Playfair Display"', '"IBM Plex Sans Thai"', 'serif'],
+      },
+      boxShadow: {
+        // Soft UI Evolution: soft, layered, low-contrast shadows
+        soft: '0 1px 2px rgba(31,36,51,0.04), 0 8px 24px rgba(31,36,51,0.06)',
+        'soft-lg': '0 2px 4px rgba(31,36,51,0.05), 0 16px 40px rgba(31,36,51,0.10)',
       },
       borderRadius: { xl: '1rem', '2xl': '1.25rem' },
       maxWidth: { content: '72rem' },

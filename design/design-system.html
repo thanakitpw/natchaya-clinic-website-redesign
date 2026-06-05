@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Design System — Natchaya Clinic</title>
+  <meta name="description" content="ระบบดีไซน์และคลังคอมโพเนนต์สำหรับเว็บไซต์ Natchaya Clinic" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/tailwind-config.js"></script>
+  <link rel="stylesheet" href="assets/base.css" />
+</head>
+
+<body class="font-sans text-ink bg-surface-alt">
+
+  <!-- Reference-doc header -->
+  <header class="sticky top-0 z-40 border-b border-line bg-surface/90 backdrop-blur">
+    <div class="mx-auto flex max-w-content items-center justify-between px-4 py-3">
+      <div class="flex items-center gap-2">
+        <span class="font-display text-xl font-bold text-brand-700">Natchaya</span>
+        <span class="text-sm text-ink-muted">Design System</span>
+      </div>
+      <nav class="hidden gap-4 text-sm text-ink-muted md:flex">
+        <a class="hover:text-brand-700" href="#colors">สี</a>
+        <a class="hover:text-brand-700" href="#type">ฟอนต์</a>
+        <a class="hover:text-brand-700" href="#buttons">ปุ่ม</a>
+        <a class="hover:text-brand-700" href="#cards">การ์ด</a>
+        <a class="hover:text-brand-700" href="#forms">ฟอร์ม</a>
+        <a class="hover:text-brand-700" href="#nav">เนวิเกชัน</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-content space-y-16 px-4 py-10">
+
+    <section>
+      <h1 class="font-display text-3xl font-bold text-ink sm:text-4xl">ระบบดีไซน์ Natchaya Clinic</h1>
+      <p class="mt-2 max-w-2xl text-ink-muted">หน้านี้คือแหล่งอ้างอิงเดียว (single source of truth) ของสี ฟอนต์ ระยะห่าง และคอมโพเนนต์ทั้งหมด ทุกหน้าในเว็บจะประกอบขึ้นจากชิ้นส่วนเหล่านี้</p>
+    </section>
+
+    <!-- ============ COLORS ============ -->
+    <section id="colors">
+      <h2 class="mb-1 text-2xl font-semibold">1. สี (Colors)</h2>
+      <p class="mb-5 text-ink-muted">ทองคือสีหลักของแบรนด์ (จากโลโก้) · ม่วงพลัมเป็นสีรองสำหรับ Women Plus</p>
+
+      <h3 class="mb-3 text-sm font-semibold uppercase tracking-wide text-ink-soft">Brand — Gold</h3>
+      <div class="grid grid-cols-3 gap-3 sm:grid-cols-6">
+        <div><div class="h-16 rounded-xl bg-brand-50 ring-1 ring-line"></div><p class="mt-1 text-xs">50 <span class="block text-ink-soft">#faf8f0</span></p></div>
+        <div><div class="h-16 rounded-xl bg-brand-100 ring-1 ring-line"></div><p class="mt-1 text-xs">100 <span class="block text-ink-soft">#f2eed9</span></p></div>
+        <div><div class="h-16 rounded-xl bg-brand-300"></div><p class="mt-1 text-xs">300 <span class="block text-ink-soft">#cfc06a</span></p></div>
+        <div><div class="h-16 rounded-xl bg-brand-500"></div><p class="mt-1 text-xs">500 · หลัก <span class="block text-ink-soft">#7f6f1d</span></p></div>
+        <div><div class="h-16 rounded-xl bg-brand-600"></div><p class="mt-1 text-xs">600 · hover <span class="block text-ink-soft">#6a5d18</span></p></div>
+        <div><div class="h-16 rounded-xl bg-brand-700"></div><p class="mt-1 text-xs">700 · text <span class="block text-ink-soft">#524813</span></p></div>
+      </div>
+
+      <h3 class="mb-3 mt-6 text-sm font-semibold uppercase tracking-wide text-ink-soft">Accent — Plum (Women Plus)</h3>
+      <div class="grid grid-cols-3 gap-3 sm:grid-cols-6">
+        <div><div class="h-16 rounded-xl bg-accent-100 ring-1 ring-line"></div><p class="mt-1 text-xs">100 <span class="block text-ink-soft">#f6e7f5</span></p></div>
+        <div><div class="h-16 rounded-xl bg-accent-500"></div><p class="mt-1 text-xs">500 <span class="block text-ink-soft">#5f055d</span></p></div>
+        <div><div class="h-16 rounded-xl bg-accent-600"></div><p class="mt-1 text-xs">600 <span class="block text-ink-soft">#4a0448</span></p></div>
+      </div>
+
+      <h3 class="mb-3 mt-6 text-sm font-semibold uppercase tracking-wide text-ink-soft">Neutrals & System</h3>
+      <div class="grid grid-cols-3 gap-3 sm:grid-cols-6">
+        <div><div class="h-16 rounded-xl bg-ink"></div><p class="mt-1 text-xs">ink <span class="block text-ink-soft">#1f2433</span></p></div>
+        <div><div class="h-16 rounded-xl bg-ink-muted"></div><p class="mt-1 text-xs">ink-muted</p></div>
+        <div><div class="h-16 rounded-xl bg-surface-alt ring-1 ring-line"></div><p class="mt-1 text-xs">surface-alt</p></div>
+        <div><div class="h-16 rounded-xl bg-surface ring-1 ring-line"></div><p class="mt-1 text-xs">surface</p></div>
+        <div><div class="h-16 rounded-xl ring-1 ring-line" style="background:#e8eaf0"></div><p class="mt-1 text-xs">line</p></div>
+        <div><div class="h-16 rounded-xl bg-line_green"></div><p class="mt-1 text-xs">LINE <span class="block text-ink-soft">#06c755</span></p></div>
+      </div>
+    </section>
+
+    <!-- ============ TYPOGRAPHY ============ -->
+    <section id="type">
+      <h2 class="mb-1 text-2xl font-semibold">2. ฟอนต์ (Typography)</h2>
+      <p class="mb-5 text-ink-muted">เนื้อหาไทยใช้ <strong>IBM Plex Sans Thai</strong> · ตัวเลข/อังกฤษเด่นๆ ใช้ <strong>Playfair Display</strong></p>
+      <div class="space-y-4 rounded-2xl bg-surface p-6 shadow-soft">
+        <p class="font-display text-5xl font-bold text-brand-700">Natchaya <span class="text-ink">Clinic</span></p>
+        <p class="text-4xl font-bold leading-tight">หัวข้อใหญ่ ความงามที่ออกแบบเพื่อคุณ</p>
+        <p class="text-2xl font-semibold">หัวข้อรอง บริการครบวงจรโดยแพทย์เฉพาะทาง</p>
+        <p class="text-xl font-medium">หัวข้อย่อย ดูแลผิวพรรณและรูปร่าง</p>
+        <p class="text-base">ข้อความเนื้อหา (body 16px) — คลินิกความงามครบวงจร ดูแลโดยทีมแพทย์ผู้เชี่ยวชาญ ด้วยเทคโนโลยีที่ทันสมัยและปลอดภัย เน้นผลลัพธ์ที่เป็นธรรมชาติ</p>
+        <p class="text-sm text-ink-muted">ข้อความเล็ก (small 14px) — เงื่อนไขเป็นไปตามที่คลินิกกำหนด</p>
+        <p class="font-display text-3xl font-semibold text-brand-700">15+ <span class="font-sans text-base font-normal text-ink-muted">ปีประสบการณ์</span></p>
+      </div>
+    </section>
+
+    <!-- ============ SPACING / RADIUS / SHADOW ============ -->
+    <section id="tokens">
+      <h2 class="mb-1 text-2xl font-semibold">3. ระยะห่าง · มุมโค้ง · เงา</h2>
+      <p class="mb-5 text-ink-muted">ใช้สเกล 4/8px · มุมโค้ง xl–2xl · เงานุ่ม (Soft UI)</p>
+      <div class="grid gap-4 sm:grid-cols-3">
+        <div class="rounded-2xl bg-surface p-5 shadow-soft">
+          <p class="mb-3 text-sm font-semibold">Spacing</p>
+          <div class="space-y-2">
+            <div class="h-3 bg-brand-300" style="width:8px"></div>
+            <div class="h-3 bg-brand-300" style="width:16px"></div>
+            <div class="h-3 bg-brand-300" style="width:24px"></div>
+            <div class="h-3 bg-brand-300" style="width:48px"></div>
+          </div>
+        </div>
+        <div class="rounded-2xl bg-surface p-5 shadow-soft">
+          <p class="mb-3 text-sm font-semibold">Radius</p>
+          <div class="flex items-end gap-3">
+            <div class="h-12 w-12 rounded-lg bg-brand-100 ring-1 ring-line"></div>
+            <div class="h-12 w-12 rounded-xl bg-brand-100 ring-1 ring-line"></div>
+            <div class="h-12 w-12 rounded-2xl bg-brand-100 ring-1 ring-line"></div>
+            <div class="h-12 w-12 rounded-full bg-brand-100 ring-1 ring-line"></div>
+          </div>
+        </div>
+        <div class="rounded-2xl bg-surface p-5 shadow-soft">
+          <p class="mb-3 text-sm font-semibold">Shadow</p>
+          <div class="flex items-end gap-4">
+            <div class="h-12 w-16 rounded-xl bg-surface shadow-soft"></div>
+            <div class="h-12 w-16 rounded-xl bg-surface shadow-soft-lg"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BUTTONS ============ -->
+    <section id="buttons">
+      <h2 class="mb-1 text-2xl font-semibold">4. ปุ่ม & CTA (Buttons)</h2>
+      <p class="mb-5 text-ink-muted">ปุ่มหลัก 1 ปุ่มต่อหน้าจอ · ปุ่ม LINE/โทร เด่นเสมอ · ขนาดแตะ ≥44px</p>
+
+      <div class="space-y-6 rounded-2xl bg-surface p-6 shadow-soft">
+        <!-- Primary -->
+        <div class="flex flex-wrap items-center gap-3">
+          <span class="w-24 text-sm text-ink-soft">Primary</span>
+          <button class="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-xl bg-brand-500 px-5 py-3 font-medium text-white shadow-soft transition duration-200 hover:bg-brand-600 active:bg-brand-700">
+            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" /></svg>
+            จองคิวออนไลน์
+          </button>
+          <button class="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-xl bg-brand-600 px-5 py-3 font-medium text-white shadow-soft">hover</button>
+          <button disabled class="inline-flex min-h-[44px] cursor-not-allowed items-center justify-center gap-2 rounded-xl bg-brand-500 px-5 py-3 font-medium text-white opacity-40">disabled</button>
+        </div>
+        <!-- Secondary -->
+        <div class="flex flex-wrap items-center gap-3">
+          <span class="w-24 text-sm text-ink-soft">Secondary</span>
+          <button class="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-xl border border-brand-500 bg-white px-5 py-3 font-medium text-brand-700 transition duration-200 hover:bg-brand-50">ดูบริการทั้งหมด</button>
+        </div>
+        <!-- LINE + Call -->
+        <div class="flex flex-wrap items-center gap-3">
+          <span class="w-24 text-sm text-ink-soft">LINE / โทร</span>
+          <a href="#" class="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-xl bg-line_green px-5 py-3 font-medium text-white shadow-soft transition hover:brightness-95">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.99 3 3 6.26 3 10.27c0 3.59 3.16 6.59 7.43 7.16.29.06.68.19.78.43.09.22.06.56.03.78l-.13.76c-.04.22-.18.88.77.48s5.12-3.02 6.99-5.17C20.2 13.08 21 11.74 21 10.27 21 6.26 17.01 3 12 3Z"/></svg>
+            แอดไลน์
+          </a>
+          <a href="tel:000" class="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-xl border border-line bg-white px-5 py-3 font-medium text-ink transition hover:border-brand-300 hover:text-brand-700">
+            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" /></svg>
+            โทรเลย
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STICKY MOBILE CTA (demo) ============ -->
+    <section id="sticky-cta">
+      <h2 class="mb-1 text-2xl font-semibold">5. แถบ CTA ติดล่าง (มือถือ)</h2>
+      <p class="mb-5 text-ink-muted">แสดงเฉพาะมือถือ · อยู่ติดขอบล่างตลอด · 3 ปุ่มหลัก โทร / LINE / จองคิว</p>
+      <div class="overflow-hidden rounded-2xl bg-surface p-4 shadow-soft">
+        <div class="mx-auto max-w-sm rounded-xl border border-line">
+          <div class="grid grid-cols-3 divide-x divide-line">
+            <a href="tel:000" class="flex min-h-[56px] flex-col items-center justify-center gap-0.5 py-2 text-ink">
+              <svg class="h-5 w-5 text-brand-600" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" /></svg>
+              <span class="text-xs font-medium">โทร</span>
+            </a>
+            <a href="#" class="flex min-h-[56px] flex-col items-center justify-center gap-0.5 py-2 text-ink">
+              <svg class="h-5 w-5 text-line_green" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.99 3 3 6.26 3 10.27c0 3.59 3.16 6.59 7.43 7.16.29.06.68.19.78.43.09.22.06.56.03.78l-.13.76c-.04.22-.18.88.77.48s5.12-3.02 6.99-5.17C20.2 13.08 21 11.74 21 10.27 21 6.26 17.01 3 12 3Z"/></svg>
+              <span class="text-xs font-medium">LINE</span>
+            </a>
+            <a href="#" class="flex min-h-[56px] flex-col items-center justify-center gap-0.5 bg-brand-500 py-2 text-white">
+              <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" /></svg>
+              <span class="text-xs font-medium">จองคิว</span>
+            </a>
+          </div>
+        </div>
+        <p class="mt-3 text-center text-xs text-ink-soft">↑ ในหน้าจริงแถบนี้จะ fixed ที่ขอบล่าง เลื่อนหน้าแล้วค่อยปรากฏ</p>
+      </div>
+    </section>
+
+    <!-- ============ CARDS ============ -->
+    <section id="cards">
+      <h2 class="mb-1 text-2xl font-semibold">6. การ์ด (Cards)</h2>
+      <p class="mb-5 text-ink-muted">การ์ดบริการ · บทความ · รีวิว (มีแบบ featured สำหรับรีวิวเซเลบ)</p>
+      <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+
+        <!-- Service card -->
+        <article class="group overflow-hidden rounded-2xl bg-surface shadow-soft transition duration-200 hover:shadow-soft-lg">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="https://placehold.co/600x450/f2eed9/7f6f1d?text=Service" alt="ตัวอย่างบริการ" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" />
+          </div>
+          <div class="p-5">
+            <span class="inline-block rounded-full bg-brand-50 px-3 py-1 text-xs font-medium text-brand-700">ดูดไขมัน</span>
+            <h3 class="mt-3 text-lg font-semibold">VASER Liposuction</h3>
+            <p class="mt-1 text-sm text-ink-muted line-clamp-2">สลายไขมันด้วยคลื่นอัลตราซาวด์ ฟื้นตัวไว เห็นผลชัดเจน</p>
+            <a href="#" class="mt-4 inline-flex items-center gap-1 text-sm font-medium text-brand-700 hover:gap-2">
+              ดูรายละเอียด
+              <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" /></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Article card -->
+        <article class="group overflow-hidden rounded-2xl bg-surface shadow-soft transition duration-200 hover:shadow-soft-lg">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="https://placehold.co/600x450/f6e7f5/5f055d?text=Article" alt="ตัวอย่างบทความ" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" />
+          </div>
+          <div class="p-5">
+            <div class="flex items-center gap-2 text-xs text-ink-soft">
+              <span class="rounded-full bg-surface-alt px-2.5 py-1 font-medium text-ink-muted">Beauty Care</span>
+              <span>12 พ.ค. 2569</span>
+            </div>
+            <h3 class="mt-3 text-lg font-semibold leading-snug line-clamp-2">5 วิธีดูแลผิวหลังเลเซอร์ให้ฟื้นตัวไว</h3>
+            <p class="mt-1 text-sm text-ink-muted line-clamp-2">เคล็ดลับการดูแลผิวหลังทำเลเซอร์ เพื่อผลลัพธ์ที่ดีที่สุด</p>
+          </div>
+        </article>
+
+        <!-- Review card (featured / celeb) -->
+        <article class="group relative overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-brand-300 transition duration-200 hover:shadow-soft-lg">
+          <span class="absolute left-3 top-3 z-10 inline-flex items-center gap-1 rounded-full bg-brand-500 px-3 py-1 text-xs font-medium text-white shadow-soft">
+            <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M11.48 3.5a.6.6 0 0 1 1.04 0l2.2 4.46 4.92.72a.6.6 0 0 1 .33 1.02l-3.56 3.47.84 4.9a.6.6 0 0 1-.87.63L12 17.9l-4.4 2.31a.6.6 0 0 1-.87-.63l.84-4.9-3.56-3.47a.6.6 0 0 1 .33-1.02l4.92-.72L11.48 3.5Z"/></svg>
+            รีวิวเซเลบ
+          </span>
+          <div class="grid grid-cols-2">
+            <div class="relative aspect-square overflow-hidden">
+              <img src="https://placehold.co/300x300/e8eaf0/5b6173?text=Before" alt="ก่อนทำ" loading="lazy" class="h-full w-full object-cover" />
+              <span class="absolute bottom-1 left-1 rounded bg-ink/70 px-1.5 py-0.5 text-[10px] text-white">ก่อน</span>
+            </div>
+            <div class="relative aspect-square overflow-hidden">
+              <img src="https://placehold.co/300x300/f2eed9/7f6f1d?text=After" alt="หลังทำ" loading="lazy" class="h-full w-full object-cover" />
+              <span class="absolute bottom-1 left-1 rounded bg-brand-600/90 px-1.5 py-0.5 text-[10px] text-white">หลัง</span>
+            </div>
+          </div>
+          <div class="p-5">
+            <div class="flex items-center gap-0.5 text-brand-500" aria-label="ให้คะแนน 5 ดาว">
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M11.48 3.5a.6.6 0 0 1 1.04 0l2.2 4.46 4.92.72a.6.6 0 0 1 .33 1.02l-3.56 3.47.84 4.9a.6.6 0 0 1-.87.63L12 17.9l-4.4 2.31a.6.6 0 0 1-.87-.63l.84-4.9-3.56-3.47a.6.6 0 0 1 .33-1.02l4.92-.72L11.48 3.5Z"/></svg>
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M11.48 3.5a.6.6 0 0 1 1.04 0l2.2 4.46 4.92.72a.6.6 0 0 1 .33 1.02l-3.56 3.47.84 4.9a.6.6 0 0 1-.87.63L12 17.9l-4.4 2.31a.6.6 0 0 1-.87-.63l.84-4.9-3.56-3.47a.6.6 0 0 1 .33-1.02l4.92-.72L11.48 3.5Z"/></svg>
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M11.48 3.5a.6.6 0 0 1 1.04 0l2.2 4.46 4.92.72a.6.6 0 0 1 .33 1.02l-3.56 3.47.84 4.9a.6.6 0 0 1-.87.63L12 17.9l-4.4 2.31a.6.6 0 0 1-.87-.63l.84-4.9-3.56-3.47a.6.6 0 0 1 .33-1.02l4.92-.72L11.48 3.5Z"/></svg>
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M11.48 3.5a.6.6 0 0 1 1.04 0l2.2 4.46 4.92.72a.6.6 0 0 1 .33 1.02l-3.56 3.47.84 4.9a.6.6 0 0 1-.87.63L12 17.9l-4.4 2.31a.6.6 0 0 1-.87-.63l.84-4.9-3.56-3.47a.6.6 0 0 1 .33-1.02l4.92-.72L11.48 3.5Z"/></svg>
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M11.48 3.5a.6.6 0 0 1 1.04 0l2.2 4.46 4.92.72a.6.6 0 0 1 .33 1.02l-3.56 3.47.84 4.9a.6.6 0 0 1-.87.63L12 17.9l-4.4 2.31a.6.6 0 0 1-.87-.63l.84-4.9-3.56-3.47a.6.6 0 0 1 .33-1.02l4.92-.72L11.48 3.5Z"/></svg>
+            </div>
+            <h3 class="mt-2 text-base font-semibold">คุณเอ — ร้อยไหมหน้าเรียว</h3>
+            <p class="mt-1 text-sm text-ink-muted line-clamp-2">“ผลลัพธ์ดูเป็นธรรมชาติมาก หมอใจดี ดูแลดีทุกขั้นตอน”</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ FORMS ============ -->
+    <section id="forms">
+      <h2 class="mb-1 text-2xl font-semibold">7. ฟอร์ม (Forms)</h2>
+      <p class="mb-5 text-ink-muted">ป้ายกำกับชัดเจน · error ใต้ช่อง · ปุ่มแสดงสถานะ</p>
+      <form class="grid max-w-xl gap-4 rounded-2xl bg-surface p-6 shadow-soft" onsubmit="return false">
+        <div>
+          <label for="ds-name" class="mb-1 block text-sm font-medium">ชื่อ-นามสกุล <span class="text-red-500">*</span></label>
+          <input id="ds-name" type="text" placeholder="เช่น สมหญิง ใจดี" class="min-h-[44px] w-full rounded-xl border border-line bg-white px-4 py-3 text-base outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-300" />
+        </div>
+        <div>
+          <label for="ds-phone" class="mb-1 block text-sm font-medium">เบอร์โทร <span class="text-red-500">*</span></label>
+          <input id="ds-phone" type="tel" inputmode="tel" value="08" class="min-h-[44px] w-full rounded-xl border border-red-400 bg-white px-4 py-3 text-base outline-none ring-2 ring-red-100" aria-describedby="ds-phone-err" />
+          <p id="ds-phone-err" class="mt-1 text-sm text-red-600">กรุณากรอกเบอร์โทรให้ครบ 10 หลัก</p>
+        </div>
+        <div>
+          <label for="ds-service" class="mb-1 block text-sm font-medium">บริการที่สนใจ</label>
+          <select id="ds-service" class="min-h-[44px] w-full rounded-xl border border-line bg-white px-4 py-3 text-base outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-300">
+            <option>ดูดไขมัน</option><option>เลเซอร์</option><option>ร้อยไหม</option><option>Women Plus</option>
+          </select>
+        </div>
+        <div>
+          <label for="ds-msg" class="mb-1 block text-sm font-medium">ข้อความ</label>
+          <textarea id="ds-msg" rows="3" placeholder="รายละเอียดเพิ่มเติม..." class="w-full rounded-xl border border-line bg-white px-4 py-3 text-base outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-300"></textarea>
+        </div>
+        <button type="submit" class="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-xl bg-brand-500 px-5 py-3 font-medium text-white shadow-soft transition hover:bg-brand-600">ส่งข้อมูลจองคิว</button>
+      </form>
+    </section>
+
+    <!-- ============ NAVBAR ============ -->
+    <section id="nav">
+      <h2 class="mb-1 text-2xl font-semibold">8. เนวิเกชัน (Navbar)</h2>
+      <p class="mb-5 text-ink-muted">โลโก้ซ้าย · เมนูลิงก์จริง (ไม่มี <code>javascript:</code>) · แฮมเบอร์เกอร์บนมือถือ</p>
+      <div class="overflow-hidden rounded-2xl shadow-soft">
+        <div class="border-b border-line bg-surface">
+          <div class="flex items-center justify-between px-4 py-3">
+            <a href="home.html" class="font-display text-xl font-bold text-brand-700">Natchaya <span class="text-ink">Clinic</span></a>
+            <nav class="hidden items-center gap-6 text-sm font-medium md:flex">
+              <a href="service-detail.html" class="hover:text-brand-700">บริการ</a>
+              <a href="womenplus.html" class="hover:text-accent-600">Women Plus</a>
+              <a href="review-detail.html" class="hover:text-brand-700">รีวิว</a>
+              <a href="article-detail.html" class="hover:text-brand-700">บทความ</a>
+              <a href="contact.html" class="hover:text-brand-700">ติดต่อ</a>
+            </nav>
+            <div class="flex items-center gap-2">
+              <a href="#" class="hidden rounded-xl bg-brand-500 px-4 py-2 text-sm font-medium text-white sm:inline-block">จองคิว</a>
+              <button data-nav-toggle aria-label="เปิดเมนู" class="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-line md:hidden">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" /></svg>
+              </button>
+            </div>
+          </div>
+          <div data-nav-menu class="hidden border-t border-line px-4 py-3 md:hidden">
+            <nav class="grid gap-1 text-sm font-medium">
+              <a href="service-detail.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">บริการ</a>
+              <a href="womenplus.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">Women Plus</a>
+              <a href="review-detail.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">รีวิว</a>
+              <a href="article-detail.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">บทความ</a>
+              <a href="contact.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">ติดต่อ</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-xs text-ink-soft">↑ กดปุ่มแฮมเบอร์เกอร์เพื่อทดสอบเมนูมือถือ (ย่อจอให้แคบกว่า 768px)</p>
+    </section>
+
+    <!-- ============ BREADCRUMB / ACCORDION / PAGINATION / GALLERY ============ -->
+    <section id="misc">
+      <h2 class="mb-1 text-2xl font-semibold">9. ส่วนประกอบอื่น</h2>
+
+      <h3 class="mb-2 mt-5 text-sm font-semibold uppercase tracking-wide text-ink-soft">Breadcrumb</h3>
+      <nav class="flex items-center gap-2 text-sm text-ink-muted" aria-label="เส้นทาง">
+        <a href="home.html" class="hover:text-brand-700">หน้าแรก</a>
+        <span class="text-ink-soft">/</span>
+        <a href="#" class="hover:text-brand-700">บริการ</a>
+        <span class="text-ink-soft">/</span>
+        <span class="text-ink">ดูดไขมัน VASER</span>
+      </nav>
+
+      <h3 class="mb-2 mt-6 text-sm font-semibold uppercase tracking-wide text-ink-soft">Accordion (FAQ)</h3>
+      <div class="max-w-2xl divide-y divide-line overflow-hidden rounded-2xl bg-surface shadow-soft">
+        <div>
+          <button data-accordion-trigger aria-expanded="true" class="flex min-h-[44px] w-full items-center justify-between gap-4 px-5 py-4 text-left font-medium">
+            ดูดไขมันเจ็บไหม ใช้เวลาพักฟื้นกี่วัน?
+            <svg class="h-5 w-5 shrink-0 text-brand-600" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
+          </button>
+          <div class="px-5 pb-4 text-sm text-ink-muted">ใช้ยาชาเฉพาะที่ ระหว่างทำแทบไม่เจ็บ พักฟื้นประมาณ 3–7 วันก็กลับไปใช้ชีวิตปกติได้</div>
+        </div>
+        <div>
+          <button data-accordion-trigger aria-expanded="false" class="flex min-h-[44px] w-full items-center justify-between gap-4 px-5 py-4 text-left font-medium">
+            มีบริการผ่อนชำระไหม?
+            <svg class="h-5 w-5 shrink-0 text-brand-600" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
+          </button>
+          <div class="hidden px-5 pb-4 text-sm text-ink-muted">มีบริการผ่อน 0% ผ่านบัตรเครดิตที่ร่วมรายการ สอบถามเพิ่มเติมทาง LINE</div>
+        </div>
+      </div>
+
+      <h3 class="mb-2 mt-6 text-sm font-semibold uppercase tracking-wide text-ink-soft">Pagination</h3>
+      <nav class="flex items-center gap-1" aria-label="หน้า">
+        <a href="#" class="inline-flex h-10 min-w-10 items-center justify-center rounded-lg border border-line px-3 text-sm hover:bg-surface-alt">ก่อนหน้า</a>
+        <a href="#" aria-current="page" class="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-brand-500 text-sm font-medium text-white">1</a>
+        <a href="#" class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-line text-sm hover:bg-surface-alt">2</a>
+        <a href="#" class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-line text-sm hover:bg-surface-alt">3</a>
+        <span class="px-2 text-ink-soft">…</span>
+        <a href="#" class="inline-flex h-10 min-w-10 items-center justify-center rounded-lg border border-line px-3 text-sm hover:bg-surface-alt">ถัดไป</a>
+      </nav>
+
+      <h3 class="mb-2 mt-6 text-sm font-semibold uppercase tracking-wide text-ink-soft">Gallery grid</h3>
+      <div class="grid grid-cols-3 gap-2 sm:grid-cols-4">
+        <img src="https://placehold.co/300x300/f2eed9/7f6f1d?text=1" alt="แกลเลอรี 1" loading="lazy" class="aspect-square w-full rounded-xl object-cover" />
+        <img src="https://placehold.co/300x300/f6e7f5/5f055d?text=2" alt="แกลเลอรี 2" loading="lazy" class="aspect-square w-full rounded-xl object-cover" />
+        <img src="https://placehold.co/300x300/e8eaf0/5b6173?text=3" alt="แกลเลอรี 3" loading="lazy" class="aspect-square w-full rounded-xl object-cover" />
+        <img src="https://placehold.co/300x300/faf8f0/7f6f1d?text=4" alt="แกลเลอรี 4" loading="lazy" class="aspect-square w-full rounded-xl object-cover" />
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <section id="footer">
+      <h2 class="mb-1 text-2xl font-semibold">10. Footer</h2>
+      <footer class="mt-3 overflow-hidden rounded-2xl bg-ink text-surface-alt shadow-soft">
+        <div class="grid gap-8 p-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div>
+            <p class="font-display text-xl font-bold text-white">Natchaya Clinic</p>
+            <p class="mt-2 text-sm text-white/70">คลินิกความงามครบวงจร ดูแลโดยทีมแพทย์เฉพาะทาง</p>
+          </div>
+          <div>
+            <p class="mb-3 text-sm font-semibold text-white">บริการ</p>
+            <ul class="space-y-2 text-sm text-white/70">
+              <li><a href="#" class="hover:text-white">ดูดไขมัน</a></li>
+              <li><a href="#" class="hover:text-white">เลเซอร์</a></li>
+              <li><a href="#" class="hover:text-white">ร้อยไหม</a></li>
+              <li><a href="#" class="hover:text-white">Women Plus</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="mb-3 text-sm font-semibold text-white">ลิงก์</p>
+            <ul class="space-y-2 text-sm text-white/70">
+              <li><a href="#" class="hover:text-white">เกี่ยวกับเรา</a></li>
+              <li><a href="#" class="hover:text-white">รีวิว</a></li>
+              <li><a href="#" class="hover:text-white">บทความ</a></li>
+              <li><a href="#" class="hover:text-white">ติดต่อ</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="mb-3 text-sm font-semibold text-white">ติดต่อ</p>
+            <ul class="space-y-2 text-sm text-white/70">
+              <li>โทร 0X-XXX-XXXX</li>
+              <li>LINE @natchaya</li>
+              <li>กรุงเทพมหานคร</li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-white/10 px-8 py-4 text-center text-xs text-white/50">© 2569 Natchaya Clinic. สงวนลิขสิทธิ์.</div>
+      </footer>
+    </section>
+
+  </main>
+
+  <script src="assets/ui.js"></script>
+</body>
+</html>
