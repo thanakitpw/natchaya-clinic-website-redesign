@@ -1,7 +1,7 @@
 /* Custom CSS beyond Tailwind utilities. Plain CSS — no theme() (Play CDN can't resolve it here). */
 :root {
   color-scheme: light;
-  --focus-ring: #d6336c; /* mirrors colors.brand.500 — update alongside the palette in Task 2 */
+  --focus-ring: #6a5d18; /* mirrors colors.brand.600 (gold) */
 }
 html { scroll-behavior: smooth; }
 body { -webkit-font-smoothing: antialiased; }
