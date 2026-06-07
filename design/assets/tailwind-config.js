@@ -6,14 +6,18 @@ window.tailwind.config = {
   theme: {
     extend: {
       colors: {
-        // Brand GOLD — extracted from the real logo (initials) + 21 accent uses in custom.css (#7f6f1d).
+        // Brand GOLD — champagne gold from the real logo. Client-confirmed primary = #d6c152 (brand.400).
+        // Bright gold is LIGHT, so use it as a fill with DARK (ink) text; use 700 for gold text on white.
         brand: {
-          50:  '#faf8f0',
-          100: '#f2eed9',
-          300: '#cfc06a',
-          500: '#7f6f1d', // primary — the logo gold
-          600: '#6a5d18', // hover
-          700: '#524813', // active / text-on-light (high contrast)
+          50:  '#fdfbf0',
+          100: '#f7f0d4',
+          200: '#eadda0',
+          300: '#e0cd6f',
+          400: '#d6c152', // PRIMARY — the logo champagne gold (fill + dark text)
+          500: '#c2ab3e', // hover for gold fills
+          600: '#9c8830', // deep gold (focus ring, emphasis)
+          700: '#7f6f1d', // gold text/links on white (AA) — the deep tone from the old site
+          800: '#5e5215',
         },
         // Brand PLUM — secondary accent from the live site (#5f055d); used for the Women Plus sub-brand.
         accent: {
