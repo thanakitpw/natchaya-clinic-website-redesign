@@ -18,7 +18,7 @@
 <body class="font-sans text-ink">
 
   <!-- ============ TOP UTILITY BAR ============ -->
-  <div class="hidden bg-accent-600 text-white/90 md:block">
+  <div class="hidden bg-ink text-white/80 md:block">
     <div class="mx-auto flex max-w-content items-center justify-between px-4 py-1.5 text-xs">
       <p class="flex items-center gap-2">
         <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
@@ -31,48 +31,48 @@
     </div>
   </div>
 
-  <!-- ============ NAVBAR (dark, ref-style) ============ -->
-  <header class="sticky top-0 z-40 bg-gradient-to-r from-accent-600 to-accent-500 shadow-soft">
+  <!-- ============ NAVBAR (white, ref-style) ============ -->
+  <header class="sticky top-0 z-40 border-b border-line bg-surface/95 shadow-soft backdrop-blur">
     <div class="mx-auto flex max-w-content items-center justify-between px-4 py-3">
-      <a href="home.html" class="inline-flex items-center rounded-xl bg-white px-3 py-1.5 shadow-soft" aria-label="Natchaya Clinic หน้าแรก">
-        <img src="assets/logo.png" alt="Natchaya Clinic" width="129" height="53" class="h-9 w-auto" />
+      <a href="home.html" class="inline-flex items-center" aria-label="Natchaya Clinic หน้าแรก">
+        <img src="assets/logo.png" alt="Natchaya Clinic" width="129" height="53" class="h-10 w-auto" />
       </a>
-      <nav class="hidden items-center gap-6 text-sm font-medium text-white md:flex">
-        <a href="service-detail.html" class="transition hover:text-brand-300">บริการ</a>
-        <a href="review-detail.html" class="transition hover:text-brand-300">รีวิว</a>
-        <a href="womenplus.html" class="transition hover:text-brand-300">Women Plus</a>
-        <a href="article-detail.html" class="transition hover:text-brand-300">บทความ</a>
-        <a href="about.html" class="transition hover:text-brand-300">เกี่ยวกับเรา</a>
-        <a href="contact.html" class="transition hover:text-brand-300">ติดต่อ</a>
+      <nav class="hidden items-center gap-6 text-sm font-medium text-ink md:flex">
+        <a href="service-detail.html" class="transition hover:text-brand-700">บริการ</a>
+        <a href="review-detail.html" class="transition hover:text-brand-700">รีวิว</a>
+        <a href="womenplus.html" class="transition hover:text-brand-700">Women Plus</a>
+        <a href="article-detail.html" class="transition hover:text-brand-700">บทความ</a>
+        <a href="about.html" class="transition hover:text-brand-700">เกี่ยวกับเรา</a>
+        <a href="contact.html" class="transition hover:text-brand-700">ติดต่อ</a>
       </nav>
       <div class="flex items-center gap-2">
         <a href="#" class="hidden items-center gap-1.5 rounded-xl bg-line_green px-4 py-2 text-sm font-medium text-white shadow-soft transition hover:brightness-95 sm:inline-flex">
           <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.99 3 3 6.26 3 10.27c0 3.59 3.16 6.59 7.43 7.16.29.06.68.19.78.43.09.22.06.56.03.78l-.13.76c-.04.22-.18.88.77.48s5.12-3.02 6.99-5.17C20.2 13.08 21 11.74 21 10.27 21 6.26 17.01 3 12 3Z"/></svg>
           แอดไลน์
         </a>
-        <button data-nav-toggle aria-label="เปิดเมนู" class="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-white/15 text-white md:hidden">
+        <button data-nav-toggle aria-label="เปิดเมนู" class="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-line text-ink md:hidden">
           <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" /></svg>
         </button>
       </div>
     </div>
-    <div data-nav-menu class="hidden border-t border-white/10 bg-accent-600 px-4 py-3 md:hidden">
-      <nav class="grid gap-1 text-sm font-medium text-white">
-        <a href="service-detail.html" class="rounded-lg px-3 py-2 hover:bg-white/10">บริการ</a>
-        <a href="review-detail.html" class="rounded-lg px-3 py-2 hover:bg-white/10">รีวิว</a>
-        <a href="womenplus.html" class="rounded-lg px-3 py-2 hover:bg-white/10">Women Plus</a>
-        <a href="article-detail.html" class="rounded-lg px-3 py-2 hover:bg-white/10">บทความ</a>
-        <a href="about.html" class="rounded-lg px-3 py-2 hover:bg-white/10">เกี่ยวกับเรา</a>
-        <a href="contact.html" class="rounded-lg px-3 py-2 hover:bg-white/10">ติดต่อ</a>
+    <div data-nav-menu class="hidden border-t border-line bg-surface px-4 py-3 md:hidden">
+      <nav class="grid gap-1 text-sm font-medium text-ink">
+        <a href="service-detail.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">บริการ</a>
+        <a href="review-detail.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">รีวิว</a>
+        <a href="womenplus.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">Women Plus</a>
+        <a href="article-detail.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">บทความ</a>
+        <a href="about.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">เกี่ยวกับเรา</a>
+        <a href="contact.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">ติดต่อ</a>
       </nav>
     </div>
   </header>
 
   <main>
     <!-- ============ HERO (image-forward award/trust banner, ref-style) ============ -->
-    <section class="bg-gradient-to-b from-accent-600 to-accent-700">
-      <div class="mx-auto max-w-content px-4 py-8 md:py-12">
+    <section class="bg-surface">
+      <div class="mx-auto max-w-content px-4 py-6 md:py-8">
         <div class="relative overflow-hidden rounded-2xl shadow-soft-lg">
-          <img src="https://placehold.co/1280x520/4a0448/d6c152?text=Natchaya+Clinic" alt="Natchaya Clinic" class="h-[320px] w-full object-cover sm:h-[420px] md:h-[480px]" width="1280" height="520" />
+          <img src="https://placehold.co/1280x520/1f2433/d6c152?text=Natchaya+Clinic" alt="Natchaya Clinic" class="h-[320px] w-full object-cover sm:h-[420px] md:h-[480px]" width="1280" height="520" />
           <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
           <div class="absolute inset-0 flex items-center">
             <div class="max-w-xl px-6 sm:px-10">
@@ -105,11 +105,11 @@
       </div>
       <!-- trust strip -->
       <div class="mx-auto max-w-content px-4 pb-10">
-        <dl class="grid grid-cols-2 gap-3 rounded-2xl bg-white/10 p-4 text-center backdrop-blur sm:grid-cols-4">
-          <div class="rounded-xl bg-white/95 py-4"><dt class="text-2xl font-bold text-brand-700">15+</dt><dd class="mt-0.5 text-xs text-ink-muted">ปีประสบการณ์</dd></div>
-          <div class="rounded-xl bg-white/95 py-4"><dt class="text-2xl font-bold text-brand-700">50,000+</dt><dd class="mt-0.5 text-xs text-ink-muted">เคสที่ดูแล</dd></div>
-          <div class="rounded-xl bg-white/95 py-4"><dt class="text-2xl font-bold text-brand-700">1,000+</dt><dd class="mt-0.5 text-xs text-ink-muted">รีวิวจริง</dd></div>
-          <div class="rounded-xl bg-white/95 py-4"><dt class="text-2xl font-bold text-brand-700">อย.</dt><dd class="mt-0.5 text-xs text-ink-muted">รับรองมาตรฐาน</dd></div>
+        <dl class="grid grid-cols-2 gap-3 text-center sm:grid-cols-4">
+          <div class="rounded-xl bg-surface-alt py-4 ring-1 ring-line"><dt class="text-2xl font-bold text-brand-700">15+</dt><dd class="mt-0.5 text-xs text-ink-muted">ปีประสบการณ์</dd></div>
+          <div class="rounded-xl bg-surface-alt py-4 ring-1 ring-line"><dt class="text-2xl font-bold text-brand-700">50,000+</dt><dd class="mt-0.5 text-xs text-ink-muted">เคสที่ดูแล</dd></div>
+          <div class="rounded-xl bg-surface-alt py-4 ring-1 ring-line"><dt class="text-2xl font-bold text-brand-700">1,000+</dt><dd class="mt-0.5 text-xs text-ink-muted">รีวิวจริง</dd></div>
+          <div class="rounded-xl bg-surface-alt py-4 ring-1 ring-line"><dt class="text-2xl font-bold text-brand-700">อย.</dt><dd class="mt-0.5 text-xs text-ink-muted">รับรองมาตรฐาน</dd></div>
         </dl>
       </div>
     </section>
@@ -162,10 +162,10 @@
       <!-- panel: photo -->
       <div data-panel="photo" class="hidden grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 grid">
         <div class="overflow-hidden rounded-2xl shadow-soft ring-1 ring-line"><img src="https://placehold.co/400x400/f2eed9/7f6f1d?text=Review+1" alt="รีวิวลูกค้า" loading="lazy" class="aspect-square w-full object-cover" /></div>
-        <div class="overflow-hidden rounded-2xl shadow-soft ring-1 ring-line"><img src="https://placehold.co/400x400/f6e7f5/5f055d?text=Review+2" alt="รีวิวลูกค้า" loading="lazy" class="aspect-square w-full object-cover" /></div>
+        <div class="overflow-hidden rounded-2xl shadow-soft ring-1 ring-line"><img src="https://placehold.co/400x400/f7f0d4/7f6f1d?text=Review+2" alt="รีวิวลูกค้า" loading="lazy" class="aspect-square w-full object-cover" /></div>
         <div class="overflow-hidden rounded-2xl shadow-soft ring-1 ring-line"><img src="https://placehold.co/400x400/faf8f0/7f6f1d?text=Review+3" alt="รีวิวลูกค้า" loading="lazy" class="aspect-square w-full object-cover" /></div>
         <div class="overflow-hidden rounded-2xl shadow-soft ring-1 ring-line"><img src="https://placehold.co/400x400/eadda0/5e5215?text=Review+4" alt="รีวิวลูกค้า" loading="lazy" class="aspect-square w-full object-cover" /></div>
-        <div class="overflow-hidden rounded-2xl shadow-soft ring-1 ring-line"><img src="https://placehold.co/400x400/f6e7f5/5f055d?text=Review+5" alt="รีวิวลูกค้า" loading="lazy" class="aspect-square w-full object-cover" /></div>
+        <div class="overflow-hidden rounded-2xl shadow-soft ring-1 ring-line"><img src="https://placehold.co/400x400/f7f0d4/7f6f1d?text=Review+5" alt="รีวิวลูกค้า" loading="lazy" class="aspect-square w-full object-cover" /></div>
         <div class="overflow-hidden rounded-2xl shadow-soft ring-1 ring-line"><img src="https://placehold.co/400x400/f2eed9/7f6f1d?text=Review+6" alt="รีวิวลูกค้า" loading="lazy" class="aspect-square w-full object-cover" /></div>
         <div class="overflow-hidden rounded-2xl shadow-soft ring-1 ring-line"><img src="https://placehold.co/400x400/faf8f0/7f6f1d?text=Review+7" alt="รีวิวลูกค้า" loading="lazy" class="aspect-square w-full object-cover" /></div>
         <div class="overflow-hidden rounded-2xl shadow-soft ring-1 ring-line"><img src="https://placehold.co/400x400/eadda0/5e5215?text=Review+8" alt="รีวิวลูกค้า" loading="lazy" class="aspect-square w-full object-cover" /></div>
@@ -186,7 +186,7 @@
             <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M11.48 3.5a.6.6 0 0 1 1.04 0l2.2 4.46 4.92.72a.6.6 0 0 1 .33 1.02l-3.56 3.47.84 4.9a.6.6 0 0 1-.87.63L12 17.9l-4.4 2.31a.6.6 0 0 1-.87-.63l.84-4.9-3.56-3.47a.6.6 0 0 1 .33-1.02l4.92-.72L11.48 3.5Z"/></svg>
             รีวิวเซเลบ
           </span>
-          <div class="aspect-[4/3] overflow-hidden"><img src="https://placehold.co/600x450/f6e7f5/5f055d?text=Celeb+2" alt="รีวิวเซเลบ" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" /></div>
+          <div class="aspect-[4/3] overflow-hidden"><img src="https://placehold.co/600x450/f7f0d4/7f6f1d?text=Celeb+2" alt="รีวิวเซเลบ" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" /></div>
           <div class="p-5"><h3 class="text-base font-semibold">คุณบี — Women Plus</h3><p class="mt-1 text-sm text-ink-muted line-clamp-2">“ดูแลเป็นส่วนตัว ประทับใจตั้งแต่ปรึกษา”</p></div>
         </article>
         <article class="group relative overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-brand-300 transition hover:shadow-soft-lg">
@@ -246,16 +246,16 @@
             <p class="mt-1 text-xs text-ink-muted">ดูแลสุขภาพผิว</p>
           </a>
           <a href="womenplus.html" class="group text-center">
-            <div class="mx-auto aspect-square w-full max-w-[160px] overflow-hidden rounded-full shadow-soft ring-2 ring-accent-500 transition group-hover:shadow-soft-lg"><img src="https://placehold.co/320x320/5f055d/ffffff?text=Women+Plus" alt="Women Plus" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" /></div>
-            <h3 class="mt-3 text-sm font-semibold text-accent-600 sm:text-base">Women Plus</h3>
-            <p class="mt-1 text-xs text-ink-muted">นรีเวชความงาม</p>
+            <div class="mx-auto aspect-square w-full max-w-[160px] overflow-hidden rounded-full shadow-soft ring-2 ring-brand-400 transition group-hover:shadow-soft-lg"><img src="https://placehold.co/320x320/7f6f1d/ffffff?text=Women+Plus" alt="Women Plus" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" /></div>
+            <h3 class="mt-3 text-sm font-semibold text-brand-700 sm:text-base">Women Plus</h3>
+            <p class="mt-1 text-xs text-ink-muted">สุขภาพสตรี</p>
           </a>
         </div>
       </div>
     </section>
 
     <!-- ============ รวมคลิปวิดีโอรีวิว (ref-style) ============ -->
-    <section class="bg-gradient-to-b from-accent-700 to-accent-600" data-tabs>
+    <section class="bg-ink" data-tabs>
       <div class="mx-auto max-w-content px-4 py-14">
         <div class="mb-8 text-center">
           <h2 class="text-2xl font-bold text-white sm:text-3xl">รวมคลิปวิดีโอรีวิว</h2>
@@ -264,7 +264,7 @@
         <!-- featured video -->
         <div class="mx-auto max-w-3xl">
           <div class="relative aspect-video overflow-hidden rounded-2xl shadow-soft-lg ring-1 ring-white/10">
-            <img src="https://placehold.co/1280x720/4a0448/d6c152?text=Video+Review" alt="วิดีโอรีวิวลูกค้า" class="h-full w-full object-cover" loading="lazy" />
+            <img src="https://placehold.co/1280x720/2a2f40/d6c152?text=Video+Review" alt="วิดีโอรีวิวลูกค้า" class="h-full w-full object-cover" loading="lazy" />
             <div class="absolute inset-0 flex items-center justify-center bg-black/30">
               <button class="flex h-16 w-16 items-center justify-center rounded-full bg-brand-400 text-ink shadow-soft-lg transition hover:bg-brand-500" aria-label="เล่นวิดีโอ">
                 <svg class="h-7 w-7 translate-x-0.5" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
@@ -280,7 +280,7 @@
             <span class="absolute inset-0 flex items-center justify-center bg-black/20"><svg class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
           </button>
           <button data-tab="v2" class="group relative aspect-video overflow-hidden rounded-xl ring-1 ring-white/20 transition hover:ring-brand-400">
-            <img src="https://placehold.co/320x180/f6e7f5/5f055d?text=Clip+2" alt="คลิป 2" loading="lazy" class="h-full w-full object-cover" />
+            <img src="https://placehold.co/320x180/f7f0d4/7f6f1d?text=Clip+2" alt="คลิป 2" loading="lazy" class="h-full w-full object-cover" />
             <span class="absolute inset-0 flex items-center justify-center bg-black/20"><svg class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
           </button>
           <button data-tab="v3" class="group relative aspect-video overflow-hidden rounded-xl ring-1 ring-white/20 transition hover:ring-brand-400">
@@ -303,7 +303,7 @@
       </div>
       <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         <article class="group overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg">
-          <div class="aspect-[4/3] overflow-hidden"><img src="https://placehold.co/600x450/f6e7f5/5f055d?text=Article+1" alt="บทความดูแลผิวหลังเลเซอร์" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" /></div>
+          <div class="aspect-[4/3] overflow-hidden"><img src="https://placehold.co/600x450/f7f0d4/7f6f1d?text=Article+1" alt="บทความดูแลผิวหลังเลเซอร์" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" /></div>
           <div class="p-5"><div class="flex items-center gap-2 text-xs text-ink-soft"><span class="rounded-full bg-surface-alt px-2.5 py-1 font-medium text-ink-muted">Skin Care</span><span>12 พ.ค. 2569</span></div><h3 class="mt-3 text-lg font-semibold leading-snug line-clamp-2">5 วิธีดูแลผิวหลังเลเซอร์ให้ฟื้นตัวไว</h3></div>
         </article>
         <article class="group overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg">
@@ -364,7 +364,7 @@
   </main>
 
   <!-- ============ FOOTER ============ -->
-  <footer class="bg-accent-700 text-white">
+  <footer class="bg-ink text-white">
     <div class="mx-auto grid max-w-content gap-8 px-4 py-12 sm:grid-cols-2 lg:grid-cols-4">
       <div>
         <span class="inline-flex items-center rounded-xl bg-white px-3 py-1.5 shadow-soft"><img src="assets/logo.png" alt="Natchaya Clinic" width="129" height="53" class="h-9 w-auto" /></span>
