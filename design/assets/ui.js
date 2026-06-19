@@ -1,5 +1,37 @@
 // Lightweight interactions for the static design prototype (no framework).
+
+// Hero slider. Markup: [data-slider] > [data-slider-track] > N×[data-slide];
+// controls [data-slide-prev]/[data-slide-next]/[data-slide-dot];
+// optional auto-advance via data-slider-autoplay="<ms>".
+function goToSlide(slider, i) {
+  const track = slider.querySelector('[data-slider-track]');
+  const slides = slider.querySelectorAll('[data-slide]');
+  const dots = slider.querySelectorAll('[data-slide-dot]');
+  if (!track || !slides.length) return;
+  const n = slides.length;
+  const idx = ((i % n) + n) % n;
+  slider._idx = idx;
+  track.style.transform = `translateX(-${idx * 100}%)`;
+  dots.forEach((d, j) => d.classList.toggle('is-active', j === idx));
+}
+
 document.addEventListener('click', (e) => {
+  // Hero slider controls
+  const sprev = e.target.closest('[data-slide-prev]');
+  const snext = e.target.closest('[data-slide-next]');
+  const sdot = e.target.closest('[data-slide-dot]');
+  if (sprev || snext || sdot) {
+    const slider = (sprev || snext || sdot).closest('[data-slider]');
+    if (slider) {
+      if (sdot) {
+        const dots = [...slider.querySelectorAll('[data-slide-dot]')];
+        goToSlide(slider, dots.indexOf(sdot));
+      } else {
+        goToSlide(slider, (slider._idx || 0) + (snext ? 1 : -1));
+      }
+    }
+  }
+
   // Mobile nav toggle
   const navBtn = e.target.closest('[data-nav-toggle]');
   if (navBtn) document.querySelector('[data-nav-menu]')?.classList.toggle('hidden');
@@ -38,6 +70,20 @@ document.addEventListener('click', (e) => {
         p.classList.toggle('hidden', p.getAttribute('data-panel') !== key);
       });
     }
+  }
+});
+
+// Init sliders (set first slide + optional autoplay, pause on hover)
+document.querySelectorAll('[data-slider]').forEach((slider) => {
+  goToSlide(slider, 0);
+  const delay = parseInt(slider.getAttribute('data-slider-autoplay') || '0', 10);
+  if (delay > 0) {
+    let timer = setInterval(() => goToSlide(slider, (slider._idx || 0) + 1), delay);
+    slider.addEventListener('mouseenter', () => { clearInterval(timer); });
+    slider.addEventListener('mouseleave', () => {
+      clearInterval(timer);
+      timer = setInterval(() => goToSlide(slider, (slider._idx || 0) + 1), delay);
+    });
   }
 });
 

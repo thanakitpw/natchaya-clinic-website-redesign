@@ -16,6 +16,11 @@ h1, h2, h3, h4 { line-height: 1.35; }
 /* Prevent layout shift from images */
 img { height: auto; max-width: 100%; }
 
+/* Hero slider dots */
+[data-slide-dot] { height:8px; width:8px; border-radius:9999px; background:rgba(255,255,255,.45); transition:width .3s, background .3s; }
+[data-slide-dot]:hover { background:rgba(255,255,255,.7); }
+[data-slide-dot].is-active { width:24px; background:#d6c152; }
+
 /* Tab pills (review/video filters) — inactive vs active (brand gold) */
 [data-tab] { background:#ffffff; color:#5b6173; border:1px solid #e8eaf0; }
 [data-tab]:hover { color:#7f6f1d; border-color:#e0cd6f; }
