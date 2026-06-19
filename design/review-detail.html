@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>เปลี่ยนตาเศร้าให้เป็นตาสองชั้นด้วยเลเซอร์ | รีวิว | ณัฐชญา คลินิก Natchaya Clinic</title>
+  <meta name="description" content="รีวิวทำตา 2 ชั้น ด้วย Plexr Plasma Laser ที่ณัฐชญาคลินิก — แก้ปัญหาหนังตาเกิน หนังตาตก กระชับหนังตาให้ตึงขึ้นโดยไม่ต้องผ่าตัด พร้อมภาพหลังทำ 1 วัน และ 7 วัน" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/tailwind-config.js"></script>
+  <link rel="stylesheet" href="assets/base.css" />
+</head>
+
+<body class="overflow-x-hidden bg-surface font-sans text-ink">
+  <!-- ============ HEADER (shared) ============ -->
+  <header class="sticky top-0 z-40 border-b border-line bg-surface/95 shadow-soft backdrop-blur">
+    <div class="mx-auto flex max-w-content items-center justify-between px-4 py-2.5">
+      <a href="home.html" class="inline-flex items-center" aria-label="ณัฐชญา คลินิก หน้าแรก">
+        <img src="assets/logo.png" alt="ณัฐชญา คลินิก Natchaya Clinic" width="129" height="53" class="h-11 w-auto" />
+      </a>
+      <nav class="hidden items-center gap-5 text-sm font-medium text-ink lg:flex" aria-label="เมนูหลัก">
+        <a href="home.html" class="transition hover:text-brand-700">หน้าแรก</a>
+        <a href="beautycare.html" class="transition hover:text-brand-700">บริการ</a>
+        <a href="review.html" class="text-brand-700" aria-current="page">รีวิว</a>
+        <a href="womenplus.html" class="transition hover:text-brand-700">Women Plus</a>
+        <a href="home.html#articles" class="transition hover:text-brand-700">บทความ</a>
+        <a href="about.html" class="transition hover:text-brand-700">ทีมแพทย์</a>
+        <a href="home.html#contact" class="transition hover:text-brand-700">ติดต่อเรา</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <a href="tel:021025964" class="hidden rounded-full border border-brand-300 px-4 py-2 text-sm font-medium text-brand-700 transition hover:bg-brand-50 sm:inline-flex">โทร 02-102-5964</a>
+        <a href="https://line.me/ti/p/~natchayaclinic" class="inline-flex min-h-10 items-center gap-1.5 rounded-full bg-line_green px-4 py-2 text-sm font-medium text-white shadow-soft transition hover:brightness-95">
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.99 3 3 6.26 3 10.27c0 3.59 3.16 6.59 7.43 7.16.29.06.68.19.78.43.09.22.06.56.03.78l-.13.76c-.04.22-.18.88.77.48s5.12-3.02 6.99-5.17C20.2 13.08 21 11.74 21 10.27 21 6.26 17.01 3 12 3Z"/></svg>
+          ปรึกษาฟรี
+        </a>
+        <button data-nav-toggle aria-label="เปิดเมนู" class="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-line text-ink lg:hidden">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" /></svg>
+        </button>
+      </div>
+    </div>
+    <div data-nav-menu class="hidden border-t border-line bg-surface px-4 py-3 lg:hidden">
+      <nav class="grid gap-1 text-sm font-medium text-ink">
+        <a href="home.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">หน้าแรก</a>
+        <a href="beautycare.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">บริการ</a>
+        <a href="review.html" class="rounded-lg px-3 py-2 bg-surface-alt text-brand-700">รีวิว</a>
+        <a href="womenplus.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">Women Plus</a>
+        <a href="home.html#articles" class="rounded-lg px-3 py-2 hover:bg-surface-alt">บทความ</a>
+        <a href="about.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">ทีมแพทย์</a>
+        <a href="home.html#contact" class="rounded-lg px-3 py-2 hover:bg-surface-alt">ติดต่อเรา</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ PAGE HERO / BREADCRUMB ============ -->
+    <section class="border-b border-line bg-surface-alt">
+      <div class="mx-auto max-w-content px-4 py-10 md:py-14">
+        <nav class="text-xs text-ink-soft" aria-label="breadcrumb">
+          <a href="home.html" class="hover:text-brand-700">หน้าแรก</a> <span class="px-1">/</span>
+          <a href="review.html" class="hover:text-brand-700">รีวิว</a> <span class="px-1">/</span>
+          <span class="text-ink">ทำตาสองชั้นด้วยเลเซอร์</span>
+        </nav>
+        <p class="mt-4 text-sm font-semibold uppercase tracking-[0.22em] text-brand-700">Customer Review</p>
+        <h1 class="mt-2 max-w-3xl text-2xl font-bold sm:text-3xl md:text-4xl">เปลี่ยนตาเศร้าให้เป็นตาสองชั้นสวยคมโตด้วยเลเซอร์ ที่ณัฐชญาคลินิก</h1>
+        <div class="mt-4 flex flex-wrap items-center gap-2 text-xs">
+          <span class="inline-flex items-center rounded-full bg-brand-50 px-3 py-1 font-medium text-brand-700">หมวด: ตาสองชั้น</span>
+          <span class="inline-flex items-center rounded-full bg-surface px-3 py-1 font-medium text-ink-muted ring-1 ring-line">Plexr Plasma Laser</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ REVIEW CONTENT ============ -->
+    <section class="mx-auto max-w-content px-4 py-14 md:py-16">
+      <div class="grid gap-10 lg:grid-cols-[1.05fr_0.95fr]">
+        <!-- LEFT: images -->
+        <div>
+          <figure class="overflow-hidden rounded-2xl shadow-soft ring-1 ring-line">
+            <img src="https://placehold.co/720x540/f2eed9/7f6f1d?text=Plexr+Plasma+Laser" alt="รีวิวทำตาสองชั้นด้วย Plexr Plasma Laser ที่ณัฐชญาคลินิก" width="720" height="540" class="aspect-[4/3] w-full object-cover" />
+          </figure>
+
+          <p class="mt-8 text-sm font-semibold uppercase tracking-[0.22em] text-brand-700">Before &amp; After</p>
+          <h2 class="mt-1 text-xl font-bold sm:text-2xl">ภาพเปรียบเทียบก่อน &mdash; หลังทำ</h2>
+
+          <div class="mt-5 grid gap-4 sm:grid-cols-3">
+            <figure class="overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line">
+              <img src="https://placehold.co/480x480/e8eaf0/5b6173?text=Before" alt="ก่อนทำ — หนังตาเกิน หนังตาตก" loading="lazy" width="480" height="480" class="aspect-square w-full object-cover" />
+              <figcaption class="px-4 py-3 text-center text-sm font-medium text-ink">ก่อนทำ</figcaption>
+            </figure>
+            <figure class="overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line">
+              <img src="https://placehold.co/480x480/f2eed9/7f6f1d?text=After" alt="หลังทำ 1 วัน" loading="lazy" width="480" height="480" class="aspect-square w-full object-cover" />
+              <figcaption class="px-4 py-3 text-center text-sm font-medium text-ink">หลังทำ 1 วัน</figcaption>
+            </figure>
+            <figure class="overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line">
+              <img src="https://placehold.co/480x480/f2eed9/7f6f1d?text=After" alt="หลังทำ 7 วัน" loading="lazy" width="480" height="480" class="aspect-square w-full object-cover" />
+              <figcaption class="px-4 py-3 text-center text-sm font-medium text-ink">หลังทำ 7 วัน</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- RIGHT: testimonial -->
+        <div>
+          <div class="rounded-2xl bg-surface p-6 shadow-soft ring-1 ring-line sm:p-8">
+            <p class="text-sm font-semibold uppercase tracking-[0.22em] text-brand-700">รีวิวจากลูกค้า</p>
+            <h2 class="mt-1 text-xl font-bold sm:text-2xl">รีวิวทำตา 2 ชั้น ด้วย Plexr Plasma Laser</h2>
+            <div class="mt-5 space-y-4 text-ink-muted">
+              <p>รีวิวทำตา 2 ชั้น ด้วย Plexr Plasma Laser ช่วยแก้ปัญหาหนังตาเกิน หนังตาตก กระชับหนังตาให้ตึงขึ้น โดยไม่ต้องผ่าตัด</p>
+              <p><span class="font-semibold text-ink">ภาพหลังทำ 1 วัน</span> ตาดูโตและมีสะเก็ดแผลเริ่มเด่นชัดขึ้นกว่าเดิมค่ะ แต่สะเก็ดจะค่อยๆ หลุดออกไปเองภายใน 7 วันค่ะ</p>
+              <p><span class="font-semibold text-ink">ภาพหลังทำ 7 วัน</span> สะเก็ดแผลได้หลุดออกหมด ชั้นตาตกลงมาเล็กน้อยกว่าตอนหลังทำ 1 วัน หลังจากทำแล้ว ตาดูโตขึ้น เห็นแววตาสดใสชัดเจนขึ้น</p>
+            </div>
+          </div>
+
+          <!-- DISCLAIMER -->
+          <div class="mt-5 flex items-start gap-3 rounded-2xl bg-brand-50 p-5 ring-1 ring-brand-300">
+            <svg class="mt-0.5 h-6 w-6 flex-shrink-0 text-brand-700" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"/></svg>
+            <div>
+              <p class="font-semibold text-brand-700">ผลการรักษาขึ้นอยู่กับเฉพาะบุคคล</p>
+              <p class="mt-1 text-sm text-ink-muted">ผลลัพธ์ที่ได้อาจแตกต่างกันไปในแต่ละบุคคล ขึ้นอยู่กับสภาพผิวและการดูแลหลังทำ ควรปรึกษาแพทย์เพื่อประเมินก่อนเข้ารับบริการ</p>
+            </div>
+          </div>
+
+          <div class="mt-5 flex flex-col gap-3 sm:flex-row">
+            <a href="https://line.me/ti/p/~natchayaclinic" class="inline-flex min-h-[48px] flex-1 items-center justify-center gap-2 rounded-full bg-line_green px-6 py-3 font-semibold text-white shadow-soft transition hover:brightness-95">ปรึกษาทำตาสองชั้นทาง LINE</a>
+            <a href="review.html" class="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full border border-brand-300 px-6 py-3 font-semibold text-brand-700 transition hover:bg-brand-50">ดูรีวิวทั้งหมด</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RELATED REVIEWS ============ -->
+    <section class="bg-surface-alt">
+      <div class="mx-auto max-w-content px-4 py-16">
+        <div class="mb-9 text-center">
+          <p class="text-sm font-semibold uppercase tracking-[0.22em] text-brand-700">More Reviews</p>
+          <h2 class="mt-2 text-2xl font-bold sm:text-3xl">รีวิวอื่นๆ</h2>
+        </div>
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <a href="review.html" class="group overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg">
+            <img src="https://placehold.co/480x360/f2eed9/7f6f1d?text=Tummy+Lipo" alt="รีวิวดูดไขมันท้อง" loading="lazy" class="aspect-[4/3] w-full object-cover" />
+            <div class="p-5">
+              <h3 class="font-semibold transition group-hover:text-brand-700">ดูดไขมันท้อง</h3>
+              <p class="mt-1 text-sm text-ink-muted">ภาพก่อน/หลังทำ ลดไขมันหน้าท้องให้กระชับ</p>
+            </div>
+          </a>
+          <a href="review.html" class="group overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg">
+            <img src="https://placehold.co/480x360/faf8f0/7f6f1d?text=Arm+Lipo" alt="รีวิวดูดไขมันแขน" loading="lazy" class="aspect-[4/3] w-full object-cover" />
+            <div class="p-5">
+              <h3 class="font-semibold transition group-hover:text-brand-700">ดูดไขมันแขน</h3>
+              <p class="mt-1 text-sm text-ink-muted">ดูดไขมันแขน หลังทำ 2 เดือน แขนเรียวกระชับ</p>
+            </div>
+          </a>
+          <a href="review.html" class="group overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg">
+            <img src="https://placehold.co/480x360/f2eed9/7f6f1d?text=Calf+Reduction" alt="รีวิวลดน่อง" loading="lazy" class="aspect-[4/3] w-full object-cover" />
+            <div class="p-5">
+              <h3 class="font-semibold transition group-hover:text-brand-700">ลดน่อง</h3>
+              <p class="mt-1 text-sm text-ink-muted">ลดน่อง ปรับรูปขาให้เรียวสวยได้สัดส่วน</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA BAND ============ -->
+    <section class="bg-ink">
+      <div class="mx-auto flex max-w-content flex-col items-center gap-5 px-4 py-14 text-center">
+        <h2 class="text-2xl font-bold text-white sm:text-3xl">สนใจทำตาสองชั้นด้วยเลเซอร์?</h2>
+        <p class="max-w-xl text-white/80">ปรึกษาทีมแพทย์เฉพาะทางของณัฐชญาคลินิก ประเมินปัญหาหนังตาแบบเฉพาะบุคคล นัดหมายหรือสอบถามได้เลย</p>
+        <div class="flex flex-col gap-3 sm:flex-row">
+          <a href="https://line.me/ti/p/~natchayaclinic" class="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full bg-line_green px-7 py-3 font-semibold text-white shadow-soft transition hover:brightness-95">ปรึกษาฟรีทาง LINE</a>
+          <a href="tel:021025964" class="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full bg-brand-400 px-7 py-3 font-semibold text-ink shadow-soft transition hover:bg-brand-500">โทร 02-102-5964</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER (shared) ============ -->
+  <footer id="contact" class="border-t border-line bg-surface">
+    <div class="mx-auto grid max-w-content gap-10 px-4 py-14 sm:grid-cols-2 lg:grid-cols-3">
+      <div>
+        <img src="assets/logo.png" alt="ณัฐชญา คลินิก Natchaya Clinic" width="129" height="53" class="h-12 w-auto" />
+        <p class="mt-4 text-sm text-ink-muted">คลินิกเสริมความงามครบวงจร ศูนย์ดูแลผิวหน้าและรูปร่าง กระชับสัดส่วน ดูแลโดยทีมแพทย์เฉพาะทาง</p>
+        <p class="mt-3 text-sm font-semibold text-brand-700">Beauty&rsquo;s in Good Hands</p>
+      </div>
+      <div>
+        <p class="mb-4 text-sm font-semibold text-ink">เมนูเว็บไซต์</p>
+        <ul class="grid grid-cols-2 gap-2 text-sm text-ink-muted">
+          <li><a href="beautycare.html" class="hover:text-brand-700">บริการ</a></li>
+          <li><a href="review.html" class="hover:text-brand-700">รีวิว</a></li>
+          <li><a href="womenplus.html" class="hover:text-brand-700">Women Plus</a></li>
+          <li><a href="product.html" class="hover:text-brand-700">ผลิตภัณฑ์</a></li>
+          <li><a href="about.html" class="hover:text-brand-700">ทีมแพทย์</a></li>
+          <li><a href="home.html#contact" class="hover:text-brand-700">ติดต่อ</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="mb-4 text-sm font-semibold text-ink">ติดต่อเรา</p>
+        <ul class="space-y-3 text-sm text-ink-muted">
+          <li>9 9-11 ถนนเสรีไทย แขวงรามอินทรา เขตคันนายาว กรุงเทพมหานคร 10230</li>
+          <li><a href="tel:021025964" class="hover:text-brand-700">02-102-5964, 02-102-5965</a></li>
+          <li>Hotline 084-422-2962, 086-400-0466</li>
+          <li><a href="https://line.me/ti/p/~natchayaclinic" class="font-semibold text-line_green">LINE @natchayaclinic</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-line py-4 text-center text-xs text-ink-soft">© ณัฐชญา คลินิก (Natchaya Clinic). สงวนลิขสิทธิ์.</div>
+  </footer>
+
+  <!-- ============ STICKY MOBILE CTA (shared) ============ -->
+  <div data-sticky-cta class="fixed inset-x-0 bottom-0 z-50 translate-y-full border-t border-line bg-surface shadow-soft-lg transition-transform duration-300 lg:hidden">
+    <div class="grid grid-cols-3 divide-x divide-line">
+      <a href="tel:021025964" class="flex min-h-[60px] flex-col items-center justify-center gap-0.5 py-2"><span class="text-sm font-semibold">โทร</span><span class="text-xs text-ink-muted">02-102-5964</span></a>
+      <a href="https://line.me/ti/p/~natchayaclinic" class="flex min-h-[60px] flex-col items-center justify-center gap-0.5 py-2"><span class="text-sm font-semibold text-line_green">LINE</span><span class="text-xs text-ink-muted">ปรึกษาฟรี</span></a>
+      <a href="home.html#contact" class="flex min-h-[60px] flex-col items-center justify-center gap-0.5 bg-brand-400 py-2 text-ink"><span class="text-sm font-semibold">จองคิว</span><span class="text-xs">ติดต่อเรา</span></a>
+    </div>
+  </div>
+
+  <script src="assets/ui.js"></script>
+</body>
+</html>

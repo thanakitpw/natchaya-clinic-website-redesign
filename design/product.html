@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ผลิตภัณฑ์ของณัฐชญา | ณัฐชญา คลินิก Natchaya Clinic</title>
+  <meta name="description" content="ผลิตภัณฑ์ของณัฐชญา คลินิก — เซรั่มบำรุงผิวหน้า ผลิตภัณฑ์รักษาสิว และอาหารเสริม คัดสรรคุณภาพ ดูแลผิวสวยสุขภาพดีจากภายในสู่ภายนอก" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/tailwind-config.js"></script>
+  <link rel="stylesheet" href="assets/base.css" />
+</head>
+
+<body class="overflow-x-hidden bg-surface font-sans text-ink">
+  <!-- ============ HEADER (shared) ============ -->
+  <header class="sticky top-0 z-40 border-b border-line bg-surface/95 shadow-soft backdrop-blur">
+    <div class="mx-auto flex max-w-content items-center justify-between px-4 py-2.5">
+      <a href="home.html" class="inline-flex items-center" aria-label="ณัฐชญา คลินิก หน้าแรก">
+        <img src="assets/logo.png" alt="ณัฐชญา คลินิก Natchaya Clinic" width="129" height="53" class="h-11 w-auto" />
+      </a>
+      <nav class="hidden items-center gap-5 text-sm font-medium text-ink lg:flex" aria-label="เมนูหลัก">
+        <a href="home.html" class="transition hover:text-brand-700">หน้าแรก</a>
+        <a href="beautycare.html" class="text-brand-700">บริการ</a>
+        <a href="review.html" class="transition hover:text-brand-700">รีวิว</a>
+        <a href="womenplus.html" class="transition hover:text-brand-700">Women Plus</a>
+        <a href="home.html#articles" class="transition hover:text-brand-700">บทความ</a>
+        <a href="about.html" class="transition hover:text-brand-700">ทีมแพทย์</a>
+        <a href="home.html#contact" class="transition hover:text-brand-700">ติดต่อเรา</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <a href="tel:021025964" class="hidden rounded-full border border-brand-300 px-4 py-2 text-sm font-medium text-brand-700 transition hover:bg-brand-50 sm:inline-flex">โทร 02-102-5964</a>
+        <a href="https://line.me/ti/p/~natchayaclinic" class="inline-flex min-h-10 items-center gap-1.5 rounded-full bg-line_green px-4 py-2 text-sm font-medium text-white shadow-soft transition hover:brightness-95">
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.99 3 3 6.26 3 10.27c0 3.59 3.16 6.59 7.43 7.16.29.06.68.19.78.43.09.22.06.56.03.78l-.13.76c-.04.22-.18.88.77.48s5.12-3.02 6.99-5.17C20.2 13.08 21 11.74 21 10.27 21 6.26 17.01 3 12 3Z"/></svg>
+          ปรึกษาฟรี
+        </a>
+        <button data-nav-toggle aria-label="เปิดเมนู" class="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-line text-ink lg:hidden">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" /></svg>
+        </button>
+      </div>
+    </div>
+    <div data-nav-menu class="hidden border-t border-line bg-surface px-4 py-3 lg:hidden">
+      <nav class="grid gap-1 text-sm font-medium text-ink">
+        <a href="home.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">หน้าแรก</a>
+        <a href="beautycare.html" class="rounded-lg px-3 py-2 bg-surface-alt text-brand-700">บริการ</a>
+        <a href="review.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">รีวิว</a>
+        <a href="womenplus.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">Women Plus</a>
+        <a href="home.html#articles" class="rounded-lg px-3 py-2 hover:bg-surface-alt">บทความ</a>
+        <a href="about.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">ทีมแพทย์</a>
+        <a href="home.html#contact" class="rounded-lg px-3 py-2 hover:bg-surface-alt">ติดต่อเรา</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ PAGE HERO / BREADCRUMB ============ -->
+    <section class="border-b border-line bg-surface-alt">
+      <div class="mx-auto max-w-content px-4 py-10 md:py-14">
+        <nav class="text-xs text-ink-soft" aria-label="breadcrumb">
+          <a href="home.html" class="hover:text-brand-700">หน้าแรก</a> <span class="px-1">/</span> <span class="text-ink">ผลิตภัณฑ์</span>
+        </nav>
+        <p class="mt-4 text-sm font-semibold uppercase tracking-[0.22em] text-brand-700">Our Products</p>
+        <h1 class="mt-2 text-3xl font-bold sm:text-4xl">ผลิตภัณฑ์ของณัฐชญา</h1>
+        <p class="mt-3 max-w-2xl text-ink-muted">
+          ผลิตภัณฑ์ดูแลผิวและอาหารเสริมที่คัดสรรคุณภาพจากณัฐชญา คลินิก ทั้งเซรั่มบำรุงผิวหน้า
+          ผลิตภัณฑ์ดูแลปัญหาสิว และอาหารเสริม เพื่อความสวยสุขภาพดีจากภายในสู่ภายนอก
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ FACE CARE ============ -->
+    <section class="mx-auto max-w-content px-4 py-16">
+      <div class="mb-9">
+        <p class="text-sm font-semibold uppercase tracking-[0.22em] text-brand-700">Face Care</p>
+        <h2 class="mt-2 text-2xl font-bold sm:text-3xl">ผลิตภัณฑ์บำรุงผิวหน้า</h2>
+      </div>
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Hi-E serum 30 g. -->
+        <article class="overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line">
+          <img src="https://placehold.co/480x360/f2eed9/7f6f1d?text=Hi-E+Serum+30g" alt="Hi-E serum 30 g." loading="lazy" width="480" height="360" class="aspect-[4/3] w-full object-cover" />
+          <div class="p-5">
+            <h3 class="font-semibold">Hi-E serum 30 g.</h3>
+            <p class="mt-2 text-sm text-ink-muted">ครีมบำรุงผิวที่อุดมไปด้วยคุณสมบัติเด่นของวิตามินอี Tocotrienol ซึ่งมีประสิทธิภาพสูงกว่า</p>
+            <p class="mt-4 text-brand-700 font-semibold">900.-</p>
+          </div>
+        </article>
+        <!-- Hi-E Serum 15g. -->
+        <article class="overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line">
+          <img src="https://placehold.co/480x360/faf8f0/7f6f1d?text=Hi-E+Serum+15g" alt="Hi - E Serum 15g." loading="lazy" width="480" height="360" class="aspect-[4/3] w-full object-cover" />
+          <div class="p-5">
+            <h3 class="font-semibold">Hi - E Serum 15g.</h3>
+            <p class="mt-2 text-sm text-ink-muted">ครีมบำรุงผิวที่อุดมไปด้วยคุณสมบัติเด่นของวิตามินอี</p>
+            <p class="mt-4 text-brand-700 font-semibold">480.-</p>
+          </div>
+        </article>
+        <!-- Antioxidant Serum -->
+        <article class="overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line">
+          <img src="https://placehold.co/480x360/f2eed9/7f6f1d?text=Antioxidant+Serum" alt="Antioxidant Serum 10 cc" loading="lazy" width="480" height="360" class="aspect-[4/3] w-full object-cover" />
+          <div class="p-5">
+            <h3 class="font-semibold">Antioxidant Serum 10 cc</h3>
+            <p class="mt-2 text-sm text-ink-muted">เซรั่มบำรุงผิว นวัตกรรมสารต่อต้านอนุมูลอิสระ ช่วยกำจัดอนุมูลอิสระได้มากกว่าวิตามินซี 125 เท่า</p>
+            <p class="mt-4 text-brand-700 font-semibold">1,290.-</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ ACNE CARE ============ -->
+    <section class="bg-surface-alt">
+      <div class="mx-auto max-w-content px-4 py-16">
+        <div class="mb-9">
+          <p class="text-sm font-semibold uppercase tracking-[0.22em] text-brand-700">Acne Care</p>
+          <h2 class="mt-2 text-2xl font-bold sm:text-3xl">ผลิตภัณฑรักษาสิว</h2>
+        </div>
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <!-- Acne cleaning Gel 130 g. -->
+          <article class="overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line">
+            <img src="https://placehold.co/480x360/f2eed9/7f6f1d?text=Acne+Gel+130g" alt="Acne cleaning Gel ขนาด 130 g." loading="lazy" width="480" height="360" class="aspect-[4/3] w-full object-cover" />
+            <div class="p-5">
+              <h3 class="font-semibold">Acne cleaning Gel ขนาด 130 g.</h3>
+              <p class="mt-2 text-sm text-ink-muted">เจลใสล้างหน้า สำหรับผู้มีปัญหาเรื่องสิวและผิวหน้ามัน</p>
+              <p class="mt-4 text-brand-700 font-semibold">320.-</p>
+            </div>
+          </article>
+          <!-- Acne cleaning Gel 60 g. -->
+          <article class="overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line">
+            <img src="https://placehold.co/480x360/faf8f0/7f6f1d?text=Acne+Gel+60g" alt="Acne cleaning Gel ขนาด 60 g." loading="lazy" width="480" height="360" class="aspect-[4/3] w-full object-cover" />
+            <div class="p-5">
+              <h3 class="font-semibold">Acne cleaning Gel ขนาด 60 g.</h3>
+              <p class="mt-2 text-sm text-ink-muted">เจลใสล้างหน้า สำหรับผู้มีปัญหาเรื่องสิวและผิวหน้ามัน</p>
+              <p class="mt-4 text-brand-700 font-semibold">169.-</p>
+            </div>
+          </article>
+          <!-- Acne Solution Cleansing Mousse -->
+          <article class="overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line">
+            <img src="https://placehold.co/480x360/f2eed9/7f6f1d?text=Cleansing+Mousse" alt="Acne Solution Cleansing Mousse 50 ml." loading="lazy" width="480" height="360" class="aspect-[4/3] w-full object-cover" />
+            <div class="p-5">
+              <h3 class="font-semibold">Acne Solution Cleansing Mousse 50 ml.</h3>
+              <p class="mt-2 text-sm text-ink-muted">โฟมล้างหน้าสูตร Non-inonic. pH Balance เนื้อเนียนนุ่ม</p>
+              <p class="mt-4 text-brand-700 font-semibold">240.-</p>
+            </div>
+          </article>
+          <!-- Sensitive Cleansing Gel -->
+          <article class="overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line">
+            <img src="https://placehold.co/480x360/faf8f0/7f6f1d?text=Sensitive+Gel" alt="Sensitive Cleansing Gel 50 g." loading="lazy" width="480" height="360" class="aspect-[4/3] w-full object-cover" />
+            <div class="p-5">
+              <h3 class="font-semibold">Sensitive Cleansing Gel 50 g.</h3>
+              <p class="mt-2 text-sm text-ink-muted">ผลิตภัณฑ์เจลล้างหน้าสูตรอ่อนโยน ช่วยปรับสภาพผิว</p>
+              <p class="mt-4 text-brand-700 font-semibold">169.-</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SUPPLEMENTS ============ -->
+    <section class="mx-auto max-w-content px-4 py-16">
+      <div class="mb-9">
+        <p class="text-sm font-semibold uppercase tracking-[0.22em] text-brand-700">Supplements</p>
+        <h2 class="mt-2 text-2xl font-bold sm:text-3xl">อาหารเสริม</h2>
+      </div>
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Olizen -->
+        <article class="overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line">
+          <img src="https://placehold.co/480x360/f2eed9/7f6f1d?text=Olizen" alt="Olizen" loading="lazy" width="480" height="360" class="aspect-[4/3] w-full object-cover" />
+          <div class="p-5">
+            <h3 class="font-semibold">Olizen</h3>
+            <p class="mt-2 text-sm text-ink-muted">อาหารเสริม ลดฝ้า ช่วยปรับสภาพผิวให้ขาวกระจ่างใส ช่วยให้พื้นที่ ที่เป็นฝ้าลดลง</p>
+            <p class="mt-4 text-brand-700 font-semibold">3,500.-</p>
+          </div>
+        </article>
+        <!-- Notty -->
+        <article class="overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line">
+          <img src="https://placehold.co/480x360/faf8f0/7f6f1d?text=Notty" alt="Notty" loading="lazy" width="480" height="360" class="aspect-[4/3] w-full object-cover" />
+          <div class="p-5">
+            <h3 class="font-semibold">Notty</h3>
+            <p class="mt-2 text-sm text-ink-muted">ผลิตภัณฑ์อาหารเสริมสารสกัดจากชาเชียว, สารสกัดจากพริก, แอล-คาร์นิทีนและสารสกัดจากธรรมชาติ</p>
+            <p class="mt-4 text-brand-700 font-semibold">1,890.-</p>
+          </div>
+        </article>
+        <!-- Organic life plus -->
+        <article class="overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line">
+          <img src="https://placehold.co/480x360/f2eed9/7f6f1d?text=Organic+Life+Plus" alt="Organic life plus" loading="lazy" width="480" height="360" class="aspect-[4/3] w-full object-cover" />
+          <div class="p-5">
+            <h3 class="font-semibold">Organic life plus</h3>
+            <p class="mt-2 text-sm text-ink-muted">อาหารเสริมลดนํ้าหนัก Organic Life Plus slim</p>
+            <p class="mt-4 text-brand-700 font-semibold">1,890.-</p>
+          </div>
+        </article>
+        <!-- Gutty (BEST PRODUCT) -->
+        <article class="relative overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line">
+          <span class="absolute left-3 top-3 z-10 rounded-full bg-brand-400 px-2.5 py-1 text-xs font-medium text-ink">BEST PRODUCT</span>
+          <img src="https://placehold.co/480x360/faf8f0/7f6f1d?text=Gutty" alt="Gutty" loading="lazy" width="480" height="360" class="aspect-[4/3] w-full object-cover" />
+          <div class="p-5">
+            <h3 class="font-semibold">Gutty</h3>
+            <p class="mt-2 text-sm text-ink-muted">นวัตกรรมใหม่ ที่ใช้ในการปกป้องผิวจากการทำลายของแสงแดดและมลภาวะ</p>
+            <p class="mt-4 text-brand-700 font-semibold">2,890.-</p>
+          </div>
+        </article>
+        <!-- Yarpun -->
+        <article class="overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line">
+          <img src="https://placehold.co/480x360/f2eed9/7f6f1d?text=Yarpun" alt="ญาปัญ (Yarpun)" loading="lazy" width="480" height="360" class="aspect-[4/3] w-full object-cover" />
+          <div class="p-5">
+            <h3 class="font-semibold">ญาปัญ (Yarpun)</h3>
+            <p class="mt-2 text-sm text-ink-muted">ญาปัญ, Yarpun</p>
+            <p class="mt-4 text-brand-700 font-semibold">สอบถามราคา</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ CTA BAND ============ -->
+    <section class="bg-ink">
+      <div class="mx-auto flex max-w-content flex-col items-center gap-5 px-4 py-14 text-center">
+        <h2 class="text-2xl font-bold text-white sm:text-3xl">สนใจสั่งซื้อหรือสอบถามผลิตภัณฑ์</h2>
+        <p class="max-w-xl text-white/80">ทักแชทสอบถามรายละเอียด ราคา และวิธีใช้ผลิตภัณฑ์ ทีมงานพร้อมดูแลและให้คำปรึกษาทาง LINE</p>
+        <div class="flex flex-col gap-3 sm:flex-row">
+          <a href="https://line.me/ti/p/~natchayaclinic" class="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full bg-line_green px-7 py-3 font-semibold text-white shadow-soft transition hover:brightness-95">สั่งซื้อ/สอบถามทาง LINE</a>
+          <a href="tel:021025964" class="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full bg-brand-400 px-7 py-3 font-semibold text-ink shadow-soft transition hover:bg-brand-500">โทร 02-102-5964</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER (shared) ============ -->
+  <footer id="contact" class="border-t border-line bg-surface">
+    <div class="mx-auto grid max-w-content gap-10 px-4 py-14 sm:grid-cols-2 lg:grid-cols-3">
+      <div>
+        <img src="assets/logo.png" alt="ณัฐชญา คลินิก Natchaya Clinic" width="129" height="53" class="h-12 w-auto" />
+        <p class="mt-4 text-sm text-ink-muted">คลินิกเสริมความงามครบวงจร ศูนย์ดูแลผิวหน้าและรูปร่าง กระชับสัดส่วน ดูแลโดยทีมแพทย์เฉพาะทาง</p>
+        <p class="mt-3 text-sm font-semibold text-brand-700">Beauty&rsquo;s in Good Hands</p>
+      </div>
+      <div>
+        <p class="mb-4 text-sm font-semibold text-ink">เมนูเว็บไซต์</p>
+        <ul class="grid grid-cols-2 gap-2 text-sm text-ink-muted">
+          <li><a href="beautycare.html" class="hover:text-brand-700">บริการ</a></li>
+          <li><a href="review.html" class="hover:text-brand-700">รีวิว</a></li>
+          <li><a href="womenplus.html" class="hover:text-brand-700">Women Plus</a></li>
+          <li><a href="product.html" class="hover:text-brand-700">ผลิตภัณฑ์</a></li>
+          <li><a href="about.html" class="hover:text-brand-700">ทีมแพทย์</a></li>
+          <li><a href="home.html#contact" class="hover:text-brand-700">ติดต่อ</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="mb-4 text-sm font-semibold text-ink">ติดต่อเรา</p>
+        <ul class="space-y-3 text-sm text-ink-muted">
+          <li>9 9-11 ถนนเสรีไทย แขวงรามอินทรา เขตคันนายาว กรุงเทพมหานคร 10230</li>
+          <li><a href="tel:021025964" class="hover:text-brand-700">02-102-5964, 02-102-5965</a></li>
+          <li>Hotline 084-422-2962, 086-400-0466</li>
+          <li><a href="https://line.me/ti/p/~natchayaclinic" class="font-semibold text-line_green">LINE @natchayaclinic</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-line py-4 text-center text-xs text-ink-soft">© ณัฐชญา คลินิก (Natchaya Clinic). สงวนลิขสิทธิ์.</div>
+  </footer>
+
+  <!-- ============ STICKY MOBILE CTA (shared) ============ -->
+  <div data-sticky-cta class="fixed inset-x-0 bottom-0 z-50 translate-y-full border-t border-line bg-surface shadow-soft-lg transition-transform duration-300 lg:hidden">
+    <div class="grid grid-cols-3 divide-x divide-line">
+      <a href="tel:021025964" class="flex min-h-[60px] flex-col items-center justify-center gap-0.5 py-2"><span class="text-sm font-semibold">โทร</span><span class="text-xs text-ink-muted">02-102-5964</span></a>
+      <a href="https://line.me/ti/p/~natchayaclinic" class="flex min-h-[60px] flex-col items-center justify-center gap-0.5 py-2"><span class="text-sm font-semibold text-line_green">LINE</span><span class="text-xs text-ink-muted">ปรึกษาฟรี</span></a>
+      <a href="home.html#contact" class="flex min-h-[60px] flex-col items-center justify-center gap-0.5 bg-brand-400 py-2 text-ink"><span class="text-sm font-semibold">จองคิว</span><span class="text-xs">ติดต่อเรา</span></a>
+    </div>
+  </div>
+
+  <script src="assets/ui.js"></script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>บริการ Beauty Care | ณัฐชญา คลินิก Natchaya Clinic</title>
+  <meta name="description" content="บริการ Beauty Care การดูแลความงามครบวงจรของ ณัฐชญา คลินิก — กระชับสัดส่วน สลายไขมัน ศัลยกรรม ทรีตเมนต์ & เลเซอร์ ออกแบบใบหน้า ร้อยไหม และโปรแกรมดูแลสุขภาพ ดูแลโดยทีมแพทย์เฉพาะทาง" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/tailwind-config.js"></script>
+  <link rel="stylesheet" href="assets/base.css" />
+</head>
+
+<body class="overflow-x-hidden bg-surface font-sans text-ink">
+  <!-- ============ HEADER (shared) ============ -->
+  <header class="sticky top-0 z-40 border-b border-line bg-surface/95 shadow-soft backdrop-blur">
+    <div class="mx-auto flex max-w-content items-center justify-between px-4 py-2.5">
+      <a href="home.html" class="inline-flex items-center" aria-label="ณัฐชญา คลินิก หน้าแรก">
+        <img src="assets/logo.png" alt="ณัฐชญา คลินิก Natchaya Clinic" width="129" height="53" class="h-11 w-auto" />
+      </a>
+      <nav class="hidden items-center gap-5 text-sm font-medium text-ink lg:flex" aria-label="เมนูหลัก">
+        <a href="home.html" class="transition hover:text-brand-700">หน้าแรก</a>
+        <a href="beautycare.html" class="text-brand-700" aria-current="page">บริการ</a>
+        <a href="review.html" class="transition hover:text-brand-700">รีวิว</a>
+        <a href="womenplus.html" class="transition hover:text-brand-700">Women Plus</a>
+        <a href="home.html#articles" class="transition hover:text-brand-700">บทความ</a>
+        <a href="about.html" class="transition hover:text-brand-700">ทีมแพทย์</a>
+        <a href="home.html#contact" class="transition hover:text-brand-700">ติดต่อเรา</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <a href="tel:021025964" class="hidden rounded-full border border-brand-300 px-4 py-2 text-sm font-medium text-brand-700 transition hover:bg-brand-50 sm:inline-flex">โทร 02-102-5964</a>
+        <a href="https://line.me/ti/p/~natchayaclinic" class="inline-flex min-h-10 items-center gap-1.5 rounded-full bg-line_green px-4 py-2 text-sm font-medium text-white shadow-soft transition hover:brightness-95">
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.99 3 3 6.26 3 10.27c0 3.59 3.16 6.59 7.43 7.16.29.06.68.19.78.43.09.22.06.56.03.78l-.13.76c-.04.22-.18.88.77.48s5.12-3.02 6.99-5.17C20.2 13.08 21 11.74 21 10.27 21 6.26 17.01 3 12 3Z"/></svg>
+          ปรึกษาฟรี
+        </a>
+        <button data-nav-toggle aria-label="เปิดเมนู" class="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-line text-ink lg:hidden">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" /></svg>
+        </button>
+      </div>
+    </div>
+    <div data-nav-menu class="hidden border-t border-line bg-surface px-4 py-3 lg:hidden">
+      <nav class="grid gap-1 text-sm font-medium text-ink">
+        <a href="home.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">หน้าแรก</a>
+        <a href="beautycare.html" class="rounded-lg px-3 py-2 bg-surface-alt text-brand-700">บริการ</a>
+        <a href="review.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">รีวิว</a>
+        <a href="womenplus.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">Women Plus</a>
+        <a href="home.html#articles" class="rounded-lg px-3 py-2 hover:bg-surface-alt">บทความ</a>
+        <a href="about.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">ทีมแพทย์</a>
+        <a href="home.html#contact" class="rounded-lg px-3 py-2 hover:bg-surface-alt">ติดต่อเรา</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ PAGE HERO / BREADCRUMB ============ -->
+    <section class="border-b border-line bg-surface-alt">
+      <div class="mx-auto max-w-content px-4 py-10 md:py-14">
+        <nav class="text-xs text-ink-soft" aria-label="breadcrumb">
+          <a href="home.html" class="hover:text-brand-700">หน้าแรก</a> <span class="px-1">/</span> <span class="text-ink">บริการ (Beauty Care)</span>
+        </nav>
+        <p class="mt-4 text-sm font-semibold uppercase tracking-[0.22em] text-brand-700">Beauty Care</p>
+        <h1 class="mt-2 text-3xl font-bold sm:text-4xl">บริการดูแลความงามครบวงจร</h1>
+        <p class="mt-3 max-w-2xl text-ink-muted">การดูแลความงามที่ครอบคลุมและตรงจุด ตั้งแต่กระชับสัดส่วน ศัลยกรรม ทรีตเมนต์ &amp; เลเซอร์ ออกแบบใบหน้า ไปจนถึงโปรแกรมดูแลสุขภาพ ดูแลโดยทีมแพทย์เฉพาะทาง</p>
+      </div>
+    </section>
+
+    <!-- ============ INTRO ============ -->
+    <section class="mx-auto max-w-content px-4 py-12">
+      <div class="mx-auto max-w-3xl text-center">
+        <p class="text-ink-muted">
+          ณัฐชญาคลีนิคไม่ใช่แค่เพียง Body Center ที่ดูแลรูปร่าง ผิวพรรณ และความงามเฉพาะภายนอกเท่านั้น
+          แต่ยังดูแลคุณให้สวยสุขภาพดี พร้อมส่งประกายความงามจากภายใน ด้วยศาสตร์ เทคโนโลยี
+          และนวัตกรรมทางด้าน Anti Aging ที่คัดสรรมาจากทุกมุมโลก เลือกหมวดบริการที่คุณสนใจด้านล่าง
+          แล้วปรึกษาทีมแพทย์ของเราได้ฟรี
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ BODY ============ -->
+    <section class="mx-auto max-w-content px-4 pb-14">
+      <div class="mb-7 text-center">
+        <p class="text-sm font-semibold uppercase tracking-[0.22em] text-brand-700">Body</p>
+        <h2 class="mt-2 text-2xl font-bold sm:text-3xl">กระชับสัดส่วน / สลายไขมัน</h2>
+        <p class="mt-2 text-ink-muted">ดูแลรูปร่างและกระชับสัดส่วนด้วยนวัตกรรมสลายไขมันและยกกระชับ</p>
+      </div>
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">Body Tite</h3><p class="mt-1 text-sm text-ink-muted">นวัตกรรมสลายไขมันด้วยเทคโนโลยี RFAL จากอิสราเอล</p></a>
+        <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">BodyTite Plus</h3><p class="mt-1 text-sm text-ink-muted">ยกระดับการสลายไขมันพร้อมกระชับผิว</p></a>
+        <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">EndoLaser</h3><p class="mt-1 text-sm text-ink-muted">สลายไขมันและกระชับผิวด้วยเลเซอร์</p></a>
+        <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">Bodytite plus EndoLaser</h3><p class="mt-1 text-sm text-ink-muted">โปรแกรมผสมผสานเพื่อผลลัพธ์ที่ชัดเจน</p></a>
+        <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">Evolve</h3><p class="mt-1 text-sm text-ink-muted">กระชับสัดส่วนแบบไม่ต้องผ่าตัด</p></a>
+        <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">RF ตัว (แขน, หน้าท้อง, ขา)</h3><p class="mt-1 text-sm text-ink-muted">คลื่นวิทยุกระชับสัดส่วนเฉพาะจุด</p></a>
+        <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">Barbie&rsquo;s leg</h3><p class="mt-1 text-sm text-ink-muted">ดูแลขาเรียวสวยกระชับได้รูป</p></a>
+        <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">OME 1-2-3 ฉีดสลายไขมัน</h3><p class="mt-1 text-sm text-ink-muted">ฉีดสลายไขมันเฉพาะจุด</p></a>
+        <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">Fractora Plus</h3><p class="mt-1 text-sm text-ink-muted">ยกกระชับผิวด้วยพลังงาน RF</p></a>
+        <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">ดูดไขมันเหนียง แขน ขา หน้าท้อง</h3><p class="mt-1 text-sm text-ink-muted">ดูดไขมันเฉพาะจุดเพื่อรูปร่างที่ได้สัดส่วน</p></a>
+        <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">เครื่องนวดสลายไขมัน G 5</h3><p class="mt-1 text-sm text-ink-muted">นวดกระชับและสลายไขมัน</p></a>
+        <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">Carboxy</h3><p class="mt-1 text-sm text-ink-muted">ดูแลผิวและกระชับสัดส่วนด้วยคาร์บอกซี</p></a>
+      </div>
+    </section>
+
+    <!-- ============ SURGERY ============ -->
+    <section class="bg-surface-alt">
+      <div class="mx-auto max-w-content px-4 py-14">
+        <div class="mb-7 text-center">
+          <p class="text-sm font-semibold uppercase tracking-[0.22em] text-brand-700">Surgery</p>
+          <h2 class="mt-2 text-2xl font-bold sm:text-3xl">ศัลยกรรมความงาม</h2>
+          <p class="mt-2 text-ink-muted">ศัลยกรรมโดยศัลยแพทย์เฉพาะทาง เพื่อผลลัพธ์ที่ปลอดภัยและเป็นธรรมชาติ</p>
+        </div>
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">Nose surgery / Rhinoplasty</h3><p class="mt-1 text-sm text-ink-muted">เสริมจมูกให้รับกับใบหน้าโดยศัลยแพทย์</p></a>
+          <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">Eyelid surgery / Blepharoplasty</h3><p class="mt-1 text-sm text-ink-muted">ทำตาสองชั้น แก้หนังตาตก</p></a>
+          <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">Chin implantation</h3><p class="mt-1 text-sm text-ink-muted">เสริมคางให้ได้รูปหน้าที่สมส่วน</p></a>
+          <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">Face lift</h3><p class="mt-1 text-sm text-ink-muted">ศัลยกรรมดึงหน้าลดความหย่อนคล้อย</p></a>
+          <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">Abdominoplasty</h3><p class="mt-1 text-sm text-ink-muted">ตกแต่งหน้าท้องให้เรียบกระชับ</p></a>
+          <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">Fat transfer</h3><p class="mt-1 text-sm text-ink-muted">ฉีดไขมันตัวเองเติมเต็มบริเวณที่ต้องการ</p></a>
+          <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">Alar reduction surgery</h3><p class="mt-1 text-sm text-ink-muted">ลดปีกจมูกให้รับกับใบหน้า</p></a>
+          <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">Lip reduction surgery</h3><p class="mt-1 text-sm text-ink-muted">ปรับรูปริมฝีปากให้ได้สัดส่วน</p></a>
+          <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">เสริมหน้าอก (Breast augmentation)</h3><p class="mt-1 text-sm text-ink-muted">เสริมหน้าอกสวยอย่างเป็นธรรมชาติ พร้อมคำแนะนำเรื่องทรง/ซีซี</p></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TREATMENT & LASER ============ -->
+    <section class="mx-auto max-w-content px-4 py-14">
+      <div class="mb-7 text-center">
+        <p class="text-sm font-semibold uppercase tracking-[0.22em] text-brand-700">Treatment &amp; Laser</p>
+        <h2 class="mt-2 text-2xl font-bold sm:text-3xl">ทรีตเมนต์ &amp; เลเซอร์</h2>
+        <p class="mt-2 text-ink-muted">โปรแกรมหน้าใส รักษาสิว ยกกระชับ และกำจัดขนด้วยเทคโนโลยีเลเซอร์</p>
+      </div>
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">PICO Enlighten</h3><p class="mt-1 text-sm text-ink-muted">Picosecond laser หน้ากระจ่างใส ลดฝ้ากระ รักษาหลุมสิว ลบรอยสัก</p></a>
+        <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">Dual Yellow</h3><p class="mt-1 text-sm text-ink-muted">เลเซอร์ดูแลผิวหน้า ลดรอยแดงและฝ้ากระ</p></a>
+        <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">Diode LASER</h3><p class="mt-1 text-sm text-ink-muted">กำจัดขนถาวรด้วยเลเซอร์คลื่น 808nm</p></a>
+        <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">Ultraformer III</h3><p class="mt-1 text-sm text-ink-muted">ยกกระชับใบหน้าด้วยคลื่น HIFU</p></a>
+        <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">Ulthera SPT</h3><p class="mt-1 text-sm text-ink-muted">ยกกระชับผิวลึกถึงชั้น SMAS</p></a>
+        <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">Fractora</h3><p class="mt-1 text-sm text-ink-muted">ฟื้นฟูผิวและลดหลุมสิวด้วย RF Microneedle</p></a>
+        <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">Crystal Diamond</h3><p class="mt-1 text-sm text-ink-muted">ขัดผิวกระจ่างใสด้วยหัวกรอเพชร</p></a>
+        <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">Meso vit C</h3><p class="mt-1 text-sm text-ink-muted">เมโสวิตามินซีบำรุงผิวให้กระจ่างใส</p></a>
+        <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">Meso botox</h3><p class="mt-1 text-sm text-ink-muted">เมโสโบทอกซ์ลดความมัน กระชับรูขุมขน</p></a>
+        <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">Carbon Laser Rejuvenation</h3><p class="mt-1 text-sm text-ink-muted">เลเซอร์คาร์บอนผิวหน้าใสกระชับรูขุมขน</p></a>
+        <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">NC Lift</h3><p class="mt-1 text-sm text-ink-muted">โปรแกรมยกกระชับใบหน้า</p></a>
+        <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">ดูดสิวเสี้ยน + Cryo massage</h3><p class="mt-1 text-sm text-ink-muted">ทำความสะอาดผิวลึกและเพิ่มความชุ่มชื้น</p></a>
+      </div>
+    </section>
+
+    <!-- ============ FACIAL DESIGN ============ -->
+    <section class="bg-surface-alt">
+      <div class="mx-auto max-w-content px-4 py-14">
+        <div class="mb-7 text-center">
+          <p class="text-sm font-semibold uppercase tracking-[0.22em] text-brand-700">Facial Design</p>
+          <h2 class="mt-2 text-2xl font-bold sm:text-3xl">ออกแบบใบหน้า / เติมเต็ม / ร้อยไหม</h2>
+          <p class="mt-2 text-ink-muted">เติมเต็มและปรับรูปหน้าให้ได้สัดส่วนโดยไม่ต้องผ่าตัด</p>
+        </div>
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">HA Filler</h3><p class="mt-1 text-sm text-ink-muted">ฉีดสารเติมเต็มไฮยาลูโรนิค แก้ร่องลึก เห็นผลทันที</p></a>
+          <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">ร้อยไหมละลาย PDO Thread</h3><p class="mt-1 text-sm text-ink-muted">ยกกระชับใบหน้าด้วยไหมละลาย</p></a>
+          <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">ร้อยไหมกุหลาบ</h3><p class="mt-1 text-sm text-ink-muted">ยกกระชับและปรับรูปหน้าด้วยไหมกุหลาบ</p></a>
+          <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">Facetite &amp; Necktite</h3><p class="mt-1 text-sm text-ink-muted">กระชับใบหน้าและลำคอด้วยพลังงาน RF</p></a>
+          <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">Fat transfer ฉีดไขมันเติมเต็มใบหน้า</h3><p class="mt-1 text-sm text-ink-muted">เติมเต็มใบหน้าด้วยไขมันตัวเอง</p></a>
+          <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">OME 1-2-3 ฉีดสลายไขมัน</h3><p class="mt-1 text-sm text-ink-muted">ฉีดสลายไขมันบนใบหน้าให้เรียวเล็ก</p></a>
+          <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">Meso Fat – Liporase (Korea)</h3><p class="mt-1 text-sm text-ink-muted">เมโสแฟตสลายไขมันเฉพาะจุด</p></a>
+          <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">Fractora firm</h3><p class="mt-1 text-sm text-ink-muted">ยกกระชับผิวหน้าด้วย RF</p></a>
+          <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">ไหมเงี่ยง</h3><p class="mt-1 text-sm text-ink-muted">ยกกระชับใบหน้าด้วยไหมเงี่ยง</p></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HEALTH PROGRAM ============ -->
+    <section class="mx-auto max-w-content px-4 py-14">
+      <div class="mb-7 text-center">
+        <p class="text-sm font-semibold uppercase tracking-[0.22em] text-brand-700">Health Program</p>
+        <h2 class="mt-2 text-2xl font-bold sm:text-3xl">เวชศาสตร์ชะลอวัย / ดูแลสุขภาพ</h2>
+        <p class="mt-2 text-ink-muted">ดูแลสุขภาพและความงามจากภายในด้วยศาสตร์ Anti Aging</p>
+      </div>
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">Detoxification (ล้างพิษลำไส้)</h3><p class="mt-1 text-sm text-ink-muted">กำจัดท็อกซินและล้างลำไส้ใหญ่</p></a>
+        <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">Chelation Therapy</h3><p class="mt-1 text-sm text-ink-muted">ล้างสารพิษและโลหะหนักออกจากหลอดเลือด</p></a>
+        <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">Ondamed</h3><p class="mt-1 text-sm text-ink-muted">คลื่นพลังงานบำบัดปรับสมดุลร่างกาย</p></a>
+        <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">Electro Interstitial Scan (EIS)</h3><p class="mt-1 text-sm text-ink-muted">ตรวจวิเคราะห์สุขภาพระดับเซลล์</p></a>
+        <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">Toxic Mental in Urine Test</h3><p class="mt-1 text-sm text-ink-muted">ตรวจหาโลหะหนักตกค้างในร่างกาย</p></a>
+      </div>
+    </section>
+
+    <!-- ============ MASK ============ -->
+    <section class="bg-surface-alt">
+      <div class="mx-auto max-w-content px-4 py-14">
+        <div class="mb-7 text-center">
+          <p class="text-sm font-semibold uppercase tracking-[0.22em] text-brand-700">Mask</p>
+          <h2 class="mt-2 text-2xl font-bold sm:text-3xl">มาส์กบำรุงผิว</h2>
+          <p class="mt-2 text-ink-muted">มาส์กฟื้นบำรุงผิวหลังทรีตเมนต์เพื่อผิวเนียนใส</p>
+        </div>
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">Mask Collagen</h3><p class="mt-1 text-sm text-ink-muted">มาส์กคอลลาเจนฟื้นบำรุงผิว</p></a>
+          <a href="service-detail.html" class="rounded-2xl bg-surface p-5 shadow-soft ring-1 ring-line transition hover:ring-brand-300"><h3 class="font-semibold">Acne Golden Acerola</h3><p class="mt-1 text-sm text-ink-muted">มาส์กดูแลผิวเป็นสิวให้กระจ่างใส</p></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA BAND ============ -->
+    <section class="bg-ink">
+      <div class="mx-auto flex max-w-content flex-col items-center gap-5 px-4 py-14 text-center">
+        <h2 class="text-2xl font-bold text-white sm:text-3xl">ไม่แน่ใจว่าควรเริ่มจากบริการไหน?</h2>
+        <p class="max-w-xl text-white/80">ปรึกษาทีมแพทย์ของเราได้ฟรี เราจะช่วยวิเคราะห์ปัญหาและแนะนำโปรแกรมที่เหมาะกับคุณ</p>
+        <div class="flex flex-col gap-3 sm:flex-row">
+          <a href="https://line.me/ti/p/~natchayaclinic" class="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full bg-line_green px-7 py-3 font-semibold text-white shadow-soft transition hover:brightness-95">ปรึกษาฟรีทาง LINE</a>
+          <a href="tel:021025964" class="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full bg-brand-400 px-7 py-3 font-semibold text-ink shadow-soft transition hover:bg-brand-500">โทร 02-102-5964</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER (shared) ============ -->
+  <footer id="contact" class="border-t border-line bg-surface">
+    <div class="mx-auto grid max-w-content gap-10 px-4 py-14 sm:grid-cols-2 lg:grid-cols-3">
+      <div>
+        <img src="assets/logo.png" alt="ณัฐชญา คลินิก Natchaya Clinic" width="129" height="53" class="h-12 w-auto" />
+        <p class="mt-4 text-sm text-ink-muted">คลินิกเสริมความงามครบวงจร ศูนย์ดูแลผิวหน้าและรูปร่าง กระชับสัดส่วน ดูแลโดยทีมแพทย์เฉพาะทาง</p>
+        <p class="mt-3 text-sm font-semibold text-brand-700">Beauty&rsquo;s in Good Hands</p>
+      </div>
+      <div>
+        <p class="mb-4 text-sm font-semibold text-ink">เมนูเว็บไซต์</p>
+        <ul class="grid grid-cols-2 gap-2 text-sm text-ink-muted">
+          <li><a href="beautycare.html" class="hover:text-brand-700">บริการ</a></li>
+          <li><a href="review.html" class="hover:text-brand-700">รีวิว</a></li>
+          <li><a href="womenplus.html" class="hover:text-brand-700">Women Plus</a></li>
+          <li><a href="product.html" class="hover:text-brand-700">ผลิตภัณฑ์</a></li>
+          <li><a href="about.html" class="hover:text-brand-700">ทีมแพทย์</a></li>
+          <li><a href="home.html#contact" class="hover:text-brand-700">ติดต่อ</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="mb-4 text-sm font-semibold text-ink">ติดต่อเรา</p>
+        <ul class="space-y-3 text-sm text-ink-muted">
+          <li>9 9-11 ถนนเสรีไทย แขวงรามอินทรา เขตคันนายาว กรุงเทพมหานคร 10230</li>
+          <li><a href="tel:021025964" class="hover:text-brand-700">02-102-5964, 02-102-5965</a></li>
+          <li>Hotline 084-422-2962, 086-400-0466</li>
+          <li><a href="https://line.me/ti/p/~natchayaclinic" class="font-semibold text-line_green">LINE @natchayaclinic</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-line py-4 text-center text-xs text-ink-soft">© ณัฐชญา คลินิก (Natchaya Clinic). สงวนลิขสิทธิ์.</div>
+  </footer>
+
+  <!-- ============ STICKY MOBILE CTA (shared) ============ -->
+  <div data-sticky-cta class="fixed inset-x-0 bottom-0 z-50 translate-y-full border-t border-line bg-surface shadow-soft-lg transition-transform duration-300 lg:hidden">
+    <div class="grid grid-cols-3 divide-x divide-line">
+      <a href="tel:021025964" class="flex min-h-[60px] flex-col items-center justify-center gap-0.5 py-2"><span class="text-sm font-semibold">โทร</span><span class="text-xs text-ink-muted">02-102-5964</span></a>
+      <a href="https://line.me/ti/p/~natchayaclinic" class="flex min-h-[60px] flex-col items-center justify-center gap-0.5 py-2"><span class="text-sm font-semibold text-line_green">LINE</span><span class="text-xs text-ink-muted">ปรึกษาฟรี</span></a>
+      <a href="home.html#contact" class="flex min-h-[60px] flex-col items-center justify-center gap-0.5 bg-brand-400 py-2 text-ink"><span class="text-sm font-semibold">จองคิว</span><span class="text-xs">ติดต่อเรา</span></a>
+    </div>
+  </div>
+
+  <script src="assets/ui.js"></script>
+</body>
+</html>

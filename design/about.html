@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>เกี่ยวกับเรา | ณัฐชญา คลินิก Natchaya Clinic</title>
+  <meta name="description" content="เกี่ยวกับ ณัฐชญา คลินิก — Beauty's in Good Hands คลินิกเสริมความงามครบวงจร ดูแลโดยทีมแพทย์เฉพาะทาง ด้วยมาตรฐานวิชาการและความปลอดภัยสูงสุด" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/tailwind-config.js"></script>
+  <link rel="stylesheet" href="assets/base.css" />
+</head>
+
+<body class="overflow-x-hidden bg-surface font-sans text-ink">
+  <!-- ============ HEADER (shared) ============ -->
+  <header class="sticky top-0 z-40 border-b border-line bg-surface/95 shadow-soft backdrop-blur">
+    <div class="mx-auto flex max-w-content items-center justify-between px-4 py-2.5">
+      <a href="home.html" class="inline-flex items-center" aria-label="ณัฐชญา คลินิก หน้าแรก">
+        <img src="assets/logo.png" alt="ณัฐชญา คลินิก Natchaya Clinic" width="129" height="53" class="h-11 w-auto" />
+      </a>
+      <nav class="hidden items-center gap-5 text-sm font-medium text-ink lg:flex" aria-label="เมนูหลัก">
+        <a href="home.html" class="transition hover:text-brand-700">หน้าแรก</a>
+        <a href="beautycare.html" class="transition hover:text-brand-700">บริการ</a>
+        <a href="review.html" class="transition hover:text-brand-700">รีวิว</a>
+        <a href="womenplus.html" class="transition hover:text-brand-700">Women Plus</a>
+        <a href="home.html#articles" class="transition hover:text-brand-700">บทความ</a>
+        <a href="about.html" class="text-brand-700" aria-current="page">ทีมแพทย์</a>
+        <a href="home.html#contact" class="transition hover:text-brand-700">ติดต่อเรา</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <a href="tel:021025964" class="hidden rounded-full border border-brand-300 px-4 py-2 text-sm font-medium text-brand-700 transition hover:bg-brand-50 sm:inline-flex">โทร 02-102-5964</a>
+        <a href="https://line.me/ti/p/~natchayaclinic" class="inline-flex min-h-10 items-center gap-1.5 rounded-full bg-line_green px-4 py-2 text-sm font-medium text-white shadow-soft transition hover:brightness-95">
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.99 3 3 6.26 3 10.27c0 3.59 3.16 6.59 7.43 7.16.29.06.68.19.78.43.09.22.06.56.03.78l-.13.76c-.04.22-.18.88.77.48s5.12-3.02 6.99-5.17C20.2 13.08 21 11.74 21 10.27 21 6.26 17.01 3 12 3Z"/></svg>
+          ปรึกษาฟรี
+        </a>
+        <button data-nav-toggle aria-label="เปิดเมนู" class="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-line text-ink lg:hidden">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" /></svg>
+        </button>
+      </div>
+    </div>
+    <div data-nav-menu class="hidden border-t border-line bg-surface px-4 py-3 lg:hidden">
+      <nav class="grid gap-1 text-sm font-medium text-ink">
+        <a href="home.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">หน้าแรก</a>
+        <a href="beautycare.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">บริการ</a>
+        <a href="review.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">รีวิว</a>
+        <a href="womenplus.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">Women Plus</a>
+        <a href="home.html#articles" class="rounded-lg px-3 py-2 hover:bg-surface-alt">บทความ</a>
+        <a href="about.html" class="rounded-lg px-3 py-2 bg-surface-alt text-brand-700">ทีมแพทย์</a>
+        <a href="home.html#contact" class="rounded-lg px-3 py-2 hover:bg-surface-alt">ติดต่อเรา</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ PAGE HERO / BREADCRUMB ============ -->
+    <section class="border-b border-line bg-surface-alt">
+      <div class="mx-auto max-w-content px-4 py-10 md:py-14">
+        <nav class="text-xs text-ink-soft" aria-label="breadcrumb">
+          <a href="home.html" class="hover:text-brand-700">หน้าแรก</a> <span class="px-1">/</span> <span class="text-ink">เกี่ยวกับเรา</span>
+        </nav>
+        <p class="mt-4 text-sm font-semibold uppercase tracking-[0.22em] text-brand-700">About Us</p>
+        <h1 class="mt-2 text-3xl font-bold sm:text-4xl">เกี่ยวกับ ณัฐชญา คลินิก</h1>
+        <p class="mt-3 max-w-2xl text-ink-muted">Beauty&rsquo;s in Good Hands — ความงามที่อยู่ในมือที่คุณมั่นใจ</p>
+      </div>
+    </section>
+
+    <!-- ============ PHILOSOPHY ============ -->
+    <section class="mx-auto max-w-content px-4 py-16">
+      <div class="grid items-center gap-10 md:grid-cols-2">
+        <div><img src="https://placehold.co/720x540/f2eed9/7f6f1d?text=Natchaya+Clinic" alt="บรรยากาศ ณัฐชญา คลินิก" loading="lazy" width="720" height="540" class="w-full rounded-2xl object-cover shadow-soft-lg" /></div>
+        <div>
+          <p class="text-lg font-semibold text-brand-700">&ldquo;Beauty&rsquo;s in Good Hands&rdquo;</p>
+          <p class="mt-3 text-ink-muted">
+            คือปรัชญาในการทำงานของณัฐชญาคลีนิค ความเชี่ยวชาญที่จริงใจและใส่ใจในทุกรายละเอียดของความงาม
+            พร้อมมาตรฐานการทำงานที่ถูกต้องตามหลักวิชาการ เพื่อความพึงพอใจและปลอดภัยอย่างสูงสุดของลูกค้า
+            เป็นสิ่งที่ณัฐชญาคลีนิคและทีมงานให้ความสำคัญเป็นอันดับหนึ่ง
+          </p>
+          <p class="mt-3 text-ink-muted">
+            เรามีทีมแพทย์เฉพาะทางและบุคลากรผู้มีประสบการณ์ ดูแลตั้งแต่การตรวจวิเคราะห์ปัญหาและความต้องการ
+            แบบเฉพาะตัวบุคคล ผสมผสานองค์ความรู้ด้านวิทยาการและเครื่องมือที่ทันสมัย ไม่ใช่แค่ Body Center
+            ที่ดูแลรูปร่างและผิวพรรณภายนอก แต่ยังดูแลให้คุณสวยสุขภาพดีจากภายใน ด้วยศาสตร์ เทคโนโลยี
+            และนวัตกรรมด้าน Anti Aging ที่คัดสรรมาจากทุกมุมโลก
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VALUES ============ -->
+    <section class="bg-surface-alt">
+      <div class="mx-auto max-w-content px-4 py-16">
+        <div class="grid gap-5 sm:grid-cols-3">
+          <div class="rounded-2xl bg-surface p-6 text-center shadow-soft ring-1 ring-line">
+            <div class="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-brand-50 text-brand-700"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/></svg></div>
+            <h3 class="mt-4 font-semibold">มาตรฐานวิชาการ</h3>
+            <p class="mt-2 text-sm text-ink-muted">ทำงานถูกต้องตามหลักการแพทย์ ปลอดภัยและใส่ใจทุกขั้นตอน</p>
+          </div>
+          <div class="rounded-2xl bg-surface p-6 text-center shadow-soft ring-1 ring-line">
+            <div class="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-brand-50 text-brand-700"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.5 20.25a8.25 8.25 0 0 1 15 0"/></svg></div>
+            <h3 class="mt-4 font-semibold">ทีมแพทย์เฉพาะทาง</h3>
+            <p class="mt-2 text-sm text-ink-muted">ดูแลแบบเฉพาะบุคคล ตั้งแต่วิเคราะห์ปัญหาจนถึงติดตามผล</p>
+          </div>
+          <div class="rounded-2xl bg-surface p-6 text-center shadow-soft ring-1 ring-line">
+            <div class="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-brand-50 text-brand-700"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"/></svg></div>
+            <h3 class="mt-4 font-semibold">ดูแลครบวงจร</h3>
+            <p class="mt-2 text-sm text-ink-muted">Beauty Care และ Women Plus ดูแลความงามและสุขภาพจากภายใน</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DOCTORS ============ -->
+    <section class="mx-auto max-w-content px-4 py-16">
+      <div class="mb-9 text-center">
+        <p class="text-sm font-semibold uppercase tracking-[0.22em] text-brand-700">Our Doctors</p>
+        <h2 class="mt-2 text-2xl font-bold sm:text-3xl">ทีมแพทย์เฉพาะทาง</h2>
+      </div>
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <article class="overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line">
+          <img src="https://placehold.co/480x520/f2eed9/7f6f1d?text=Dr.+Natchaya" alt="พ.ญ. ณัฐชญา ไมตรีเวช" loading="lazy" class="aspect-[4/5] w-full object-cover" />
+          <div class="p-5"><h3 class="font-semibold">พ.ญ. ณัฐชญา ไมตรีเวช (หมอกุ๊กไก่)</h3><p class="mt-1 text-sm text-ink-muted">แพทยศาสตรบัณฑิต (เกียรตินิยมอันดับ 1) คณะแพทยศาสตร์ มหาวิทยาลัยขอนแก่น</p></div>
+        </article>
+        <article class="overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line">
+          <img src="https://placehold.co/480x520/faf8f0/7f6f1d?text=Dr.+Supasid" alt="นพ. ศุภศิษฐ์ จิรวัฒโนทัย" loading="lazy" class="aspect-[4/5] w-full object-cover" />
+          <div class="p-5"><h3 class="font-semibold">นพ. ศุภศิษฐ์ จิรวัฒโนทัย (หมอแอ็ด)</h3><p class="mt-1 text-sm text-ink-muted">Supasid Jirawatnotai, M.D. — Plastic Surgeon ศัลยแพทย์ตกแต่ง</p></div>
+        </article>
+        <article class="overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line">
+          <img src="https://placehold.co/480x520/f2eed9/7f6f1d?text=Dr.+Thongpoj" alt="นพ. ทรงพจน์ ชัยมณี" loading="lazy" class="aspect-[4/5] w-full object-cover" />
+          <div class="p-5"><h3 class="font-semibold">นพ. ทรงพจน์ ชัยมณี (หมอบอส)</h3><p class="mt-1 text-sm text-ink-muted">Dr.Thongpoj Chaimanee, MD. — ศัลยแพทย์ผู้เชี่ยวชาญด้านศัลยกรรม</p></div>
+        </article>
+        <article class="overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line">
+          <img src="https://placehold.co/480x520/faf8f0/7f6f1d?text=Dr.+Aree" alt="พ.ญ. อารีย์ นิมิตรวงศ์สกุล" loading="lazy" class="aspect-[4/5] w-full object-cover" />
+          <div class="p-5"><h3 class="font-semibold">พ.ญ. อารีย์ นิมิตรวงศ์สกุล</h3><p class="mt-1 text-sm text-ink-muted">จักษุแพทย์เฉพาะทางด้านศัลยกรรมจักษุตกแต่ง / หัวหน้าศูนย์ตาปลอม รพ.เมตตาประชารักษ์</p></div>
+        </article>
+        <article class="overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line">
+          <img src="https://placehold.co/480x520/f2eed9/7f6f1d?text=Dr.+Chakrawan" alt="Dr.Chakrawan Sangkaprom" loading="lazy" class="aspect-[4/5] w-full object-cover" />
+          <div class="p-5"><h3 class="font-semibold">Dr.Chakrawan Sangkaprom</h3><p class="mt-1 text-sm text-ink-muted">ศัลยแพทย์ผู้เชี่ยวชาญด้านศัลยกรรม</p></div>
+        </article>
+        <article class="overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line">
+          <img src="https://placehold.co/480x520/faf8f0/7f6f1d?text=Dr.+Petcharat" alt="พ.ญ. เพชรรัตน์ วิสุทธิเมธีกร" loading="lazy" class="aspect-[4/5] w-full object-cover" />
+          <div class="p-5"><h3 class="font-semibold">พ.ญ. เพชรรัตน์ วิสุทธิเมธีกร</h3><p class="mt-1 text-sm text-ink-muted">วิสัญญีแพทย์ ดูแลความปลอดภัยระหว่างหัตถการ</p></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ CTA BAND ============ -->
+    <section class="bg-ink">
+      <div class="mx-auto flex max-w-content flex-col items-center gap-5 px-4 py-14 text-center">
+        <h2 class="text-2xl font-bold text-white sm:text-3xl">ปรึกษาทีมแพทย์ของเรา</h2>
+        <p class="max-w-xl text-white/80">นัดหมายหรือสอบถามข้อมูลบริการ ทีมงานพร้อมดูแลและให้คำปรึกษา</p>
+        <div class="flex flex-col gap-3 sm:flex-row">
+          <a href="https://line.me/ti/p/~natchayaclinic" class="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full bg-line_green px-7 py-3 font-semibold text-white shadow-soft transition hover:brightness-95">ปรึกษาฟรีทาง LINE</a>
+          <a href="tel:021025964" class="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full bg-brand-400 px-7 py-3 font-semibold text-ink shadow-soft transition hover:bg-brand-500">โทร 02-102-5964</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER (shared) ============ -->
+  <footer id="contact" class="border-t border-line bg-surface">
+    <div class="mx-auto grid max-w-content gap-10 px-4 py-14 sm:grid-cols-2 lg:grid-cols-3">
+      <div>
+        <img src="assets/logo.png" alt="ณัฐชญา คลินิก Natchaya Clinic" width="129" height="53" class="h-12 w-auto" />
+        <p class="mt-4 text-sm text-ink-muted">คลินิกเสริมความงามครบวงจร ศูนย์ดูแลผิวหน้าและรูปร่าง กระชับสัดส่วน ดูแลโดยทีมแพทย์เฉพาะทาง</p>
+        <p class="mt-3 text-sm font-semibold text-brand-700">Beauty&rsquo;s in Good Hands</p>
+      </div>
+      <div>
+        <p class="mb-4 text-sm font-semibold text-ink">เมนูเว็บไซต์</p>
+        <ul class="grid grid-cols-2 gap-2 text-sm text-ink-muted">
+          <li><a href="beautycare.html" class="hover:text-brand-700">บริการ</a></li>
+          <li><a href="review.html" class="hover:text-brand-700">รีวิว</a></li>
+          <li><a href="womenplus.html" class="hover:text-brand-700">Women Plus</a></li>
+          <li><a href="product.html" class="hover:text-brand-700">ผลิตภัณฑ์</a></li>
+          <li><a href="about.html" class="hover:text-brand-700">ทีมแพทย์</a></li>
+          <li><a href="home.html#contact" class="hover:text-brand-700">ติดต่อ</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="mb-4 text-sm font-semibold text-ink">ติดต่อเรา</p>
+        <ul class="space-y-3 text-sm text-ink-muted">
+          <li>9 9-11 ถนนเสรีไทย แขวงรามอินทรา เขตคันนายาว กรุงเทพมหานคร 10230</li>
+          <li><a href="tel:021025964" class="hover:text-brand-700">02-102-5964, 02-102-5965</a></li>
+          <li>Hotline 084-422-2962, 086-400-0466</li>
+          <li><a href="https://line.me/ti/p/~natchayaclinic" class="font-semibold text-line_green">LINE @natchayaclinic</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-line py-4 text-center text-xs text-ink-soft">© ณัฐชญา คลินิก (Natchaya Clinic). สงวนลิขสิทธิ์.</div>
+  </footer>
+
+  <!-- ============ STICKY MOBILE CTA (shared) ============ -->
+  <div data-sticky-cta class="fixed inset-x-0 bottom-0 z-50 translate-y-full border-t border-line bg-surface shadow-soft-lg transition-transform duration-300 lg:hidden">
+    <div class="grid grid-cols-3 divide-x divide-line">
+      <a href="tel:021025964" class="flex min-h-[60px] flex-col items-center justify-center gap-0.5 py-2"><span class="text-sm font-semibold">โทร</span><span class="text-xs text-ink-muted">02-102-5964</span></a>
+      <a href="https://line.me/ti/p/~natchayaclinic" class="flex min-h-[60px] flex-col items-center justify-center gap-0.5 py-2"><span class="text-sm font-semibold text-line_green">LINE</span><span class="text-xs text-ink-muted">ปรึกษาฟรี</span></a>
+      <a href="home.html#contact" class="flex min-h-[60px] flex-col items-center justify-center gap-0.5 bg-brand-400 py-2 text-ink"><span class="text-sm font-semibold">จองคิว</span><span class="text-xs">ติดต่อเรา</span></a>
+    </div>
+  </div>
+
+  <script src="assets/ui.js"></script>
+</body>
+</html>
