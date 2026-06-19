@@ -11,6 +11,24 @@ document.addEventListener('click', (e) => {
     panel?.classList.toggle('hidden');
     acc.setAttribute('aria-expanded', String(panel && !panel.classList.contains('hidden')));
   }
+
+  // Tabs (review / video filters). Markup: a wrapper [data-tabs] containing
+  // buttons [data-tab="key"] and panels [data-panel="key"].
+  const tab = e.target.closest('[data-tab]');
+  if (tab) {
+    const group = tab.closest('[data-tabs]');
+    if (group) {
+      const key = tab.getAttribute('data-tab');
+      group.querySelectorAll('[data-tab]').forEach((b) => {
+        const on = b === tab;
+        b.classList.toggle('is-active', on);
+        b.setAttribute('aria-selected', String(on));
+      });
+      group.querySelectorAll('[data-panel]').forEach((p) => {
+        p.classList.toggle('hidden', p.getAttribute('data-panel') !== key);
+      });
+    }
+  }
 });
 
 // Sticky mobile CTA: reveal after scrolling past the hero
