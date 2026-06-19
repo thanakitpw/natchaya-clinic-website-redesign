@@ -31,9 +31,10 @@ window.tailwind.config = {
         line_green: '#06c755', // LINE brand green (fixed, do not change)
       },
       fontFamily: {
+        // Single typeface across the whole site — IBM Plex Sans Thai (Thai + Latin + numbers).
         sans: ['"IBM Plex Sans Thai"', 'system-ui', 'sans-serif'],
-        // Display serif for Latin/number accents only (echoes the serif logo). Thai always uses sans.
-        display: ['"Playfair Display"', '"IBM Plex Sans Thai"', 'serif'],
+        // Kept as an alias of sans so any leftover `font-display` still renders IBM Plex Sans Thai.
+        display: ['"IBM Plex Sans Thai"', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
         // Soft UI Evolution: soft, layered, low-contrast shadows
