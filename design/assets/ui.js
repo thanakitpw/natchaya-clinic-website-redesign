@@ -12,6 +12,16 @@ document.addEventListener('click', (e) => {
     acc.setAttribute('aria-expanded', String(panel && !panel.classList.contains('hidden')));
   }
 
+  // Carousel arrows. Markup: [data-carousel] wrapping a [data-carousel-track]
+  // (overflow-x-auto flex) plus buttons [data-carousel-prev]/[data-carousel-next].
+  const cprev = e.target.closest('[data-carousel-prev]');
+  const cnext = e.target.closest('[data-carousel-next]');
+  if (cprev || cnext) {
+    const wrap = (cprev || cnext).closest('[data-carousel]');
+    const track = wrap?.querySelector('[data-carousel-track]');
+    if (track) track.scrollBy({ left: (cnext ? 1 : -1) * Math.round(track.clientWidth * 0.85), behavior: 'smooth' });
+  }
+
   // Tabs (review / video filters). Markup: a wrapper [data-tabs] containing
   // buttons [data-tab="key"] and panels [data-panel="key"].
   const tab = e.target.closest('[data-tab]');

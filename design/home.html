@@ -15,399 +15,341 @@
   <link rel="stylesheet" href="assets/base.css" />
 </head>
 
-<body class="font-sans text-ink">
-
-  <!-- ============ TOP UTILITY BAR ============ -->
-  <div class="hidden bg-ink text-white/80 md:block">
-    <div class="mx-auto flex max-w-content items-center justify-between px-4 py-1.5 text-xs">
-      <p class="flex items-center gap-2">
-        <svg class="h-3.5 w-3.5 text-brand-300" viewBox="0 0 24 24" fill="currentColor"><path d="M11.48 3.5a.6.6 0 0 1 1.04 0l2.2 4.46 4.92.72a.6.6 0 0 1 .33 1.02l-3.56 3.47.84 4.9a.6.6 0 0 1-.87.63L12 17.9l-4.4 2.31a.6.6 0 0 1-.87-.63l.84-4.9-3.56-3.47a.6.6 0 0 1 .33-1.02l4.92-.72L11.48 3.5Z"/></svg>
-        Beauty&rsquo;s in Good Hands — ความงามในมือที่คุณวางใจ
-      </p>
-      <p class="flex items-center gap-4">
-        <span class="flex items-center gap-1.5"><svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/></svg> โทร 02-102-5964</span>
-        <span class="flex items-center gap-1.5">LINE @natchayaclinic</span>
-      </p>
-    </div>
-  </div>
+<body class="overflow-x-hidden font-sans text-ink">
 
   <!-- ============ NAVBAR (white, ref-style) ============ -->
-  <header class="sticky top-0 z-40 border-b border-line bg-surface/95 shadow-soft backdrop-blur">
-    <div class="mx-auto flex max-w-content items-center justify-between px-4 py-3">
-      <a href="home.html" class="inline-flex items-center" aria-label="Natchaya Clinic หน้าแรก">
-        <img src="assets/logo.png" alt="ณัฐชญา คลินิก Natchaya Clinic" width="129" height="53" class="h-10 w-auto" />
+  <header class="sticky top-0 z-40 border-b border-line bg-surface shadow-soft">
+    <div class="mx-auto flex max-w-content items-center justify-between px-4 py-2.5">
+      <a href="home.html" class="inline-flex items-center" aria-label="ณัฐชญา คลินิก หน้าแรก">
+        <img src="assets/logo.png" alt="ณัฐชญา คลินิก Natchaya Clinic" width="129" height="53" class="h-11 w-auto" />
       </a>
-      <nav class="hidden items-center gap-6 text-sm font-medium text-ink md:flex">
+      <nav class="hidden items-center gap-5 text-sm font-medium text-ink lg:flex">
+        <a href="home.html" class="transition hover:text-brand-700">หน้าแรก</a>
         <a href="service-detail.html" class="transition hover:text-brand-700">บริการ</a>
         <a href="review-detail.html" class="transition hover:text-brand-700">รีวิว</a>
+        <a href="article-detail.html" class="transition hover:text-brand-700">บทความ</a>
         <a href="womenplus.html" class="transition hover:text-brand-700">Women Plus</a>
-        <a href="article-detail.html" class="transition hover:text-brand-700">ข่าวสาร &amp; กิจกรรม</a>
         <a href="about.html" class="transition hover:text-brand-700">เกี่ยวกับเรา</a>
-        <a href="contact.html" class="transition hover:text-brand-700">ติดต่อ</a>
+        <a href="contact.html" class="transition hover:text-brand-700">สาขาและที่ตั้ง</a>
       </nav>
       <div class="flex items-center gap-2">
-        <a href="https://line.me/ti/p/~natchayaclinic" class="hidden items-center gap-1.5 rounded-xl bg-line_green px-4 py-2 text-sm font-medium text-white shadow-soft transition hover:brightness-95 sm:inline-flex">
+        <a href="https://line.me/ti/p/~natchayaclinic" class="inline-flex items-center gap-1.5 rounded-full bg-line_green px-4 py-2 text-sm font-medium text-white shadow-soft transition hover:brightness-95">
           <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.99 3 3 6.26 3 10.27c0 3.59 3.16 6.59 7.43 7.16.29.06.68.19.78.43.09.22.06.56.03.78l-.13.76c-.04.22-.18.88.77.48s5.12-3.02 6.99-5.17C20.2 13.08 21 11.74 21 10.27 21 6.26 17.01 3 12 3Z"/></svg>
-          แอดไลน์
+          ปรึกษาฟรี
         </a>
-        <button data-nav-toggle aria-label="เปิดเมนู" class="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-line text-ink md:hidden">
+        <button data-nav-toggle aria-label="เปิดเมนู" class="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-line text-ink lg:hidden">
           <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" /></svg>
         </button>
       </div>
     </div>
-    <div data-nav-menu class="hidden border-t border-line bg-surface px-4 py-3 md:hidden">
+    <div data-nav-menu class="hidden border-t border-line bg-surface px-4 py-3 lg:hidden">
       <nav class="grid gap-1 text-sm font-medium text-ink">
         <a href="service-detail.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">บริการ</a>
         <a href="review-detail.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">รีวิว</a>
+        <a href="article-detail.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">บทความ</a>
         <a href="womenplus.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">Women Plus</a>
-        <a href="article-detail.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">ข่าวสาร &amp; กิจกรรม</a>
         <a href="about.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">เกี่ยวกับเรา</a>
-        <a href="contact.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">ติดต่อ</a>
+        <a href="contact.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">สาขาและที่ตั้ง</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <!-- ============ HERO (image banner, ref-style) ============ -->
-    <section class="bg-surface">
-      <div class="mx-auto max-w-content px-4 py-6 md:py-8">
-        <div class="relative overflow-hidden rounded-2xl shadow-soft-lg">
-          <img src="https://placehold.co/1280x520/1f2433/d6c152?text=Natchaya+Clinic" alt="ณัฐชญา คลินิก Natchaya Clinic" class="h-[340px] w-full object-cover sm:h-[420px] md:h-[480px]" width="1280" height="520" />
-          <div class="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-transparent"></div>
-          <div class="absolute inset-0 flex items-center">
-            <div class="max-w-xl px-6 sm:px-10">
-              <span class="inline-flex items-center gap-2 rounded-full bg-brand-400 px-3 py-1 text-xs font-semibold text-ink shadow-soft">
-                <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M11.48 3.5a.6.6 0 0 1 1.04 0l2.2 4.46 4.92.72a.6.6 0 0 1 .33 1.02l-3.56 3.47.84 4.9a.6.6 0 0 1-.87.63L12 17.9l-4.4 2.31a.6.6 0 0 1-.87-.63l.84-4.9-3.56-3.47a.6.6 0 0 1 .33-1.02l4.92-.72L11.48 3.5Z"/></svg>
-                Beauty&rsquo;s in Good Hands
-              </span>
-              <h1 class="mt-4 text-3xl font-bold leading-tight text-white drop-shadow sm:text-4xl md:text-5xl">
-                คลินิกเสริมความงาม<br class="hidden sm:block" /><span class="text-brand-300">ครบวงจร</span>
-              </h1>
-              <p class="mt-4 max-w-md text-sm text-white/85 sm:text-base">
-                ศูนย์ดูแลผิวหน้าและรูปร่าง กระชับสัดส่วน คลินิกดูดไขมันระดับแนวหน้า
-                ดูแลโดยทีมแพทย์เฉพาะทาง พร้อมรีวิวจากลูกค้ามากมาย
-              </p>
-              <div class="mt-6 flex flex-wrap gap-3">
-                <a href="contact.html" class="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-xl bg-brand-400 px-6 py-3 font-medium text-ink shadow-soft transition hover:bg-brand-500">จองคิว / ปรึกษาแพทย์</a>
-                <a href="https://line.me/ti/p/~natchayaclinic" class="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-xl bg-line_green px-6 py-3 font-medium text-white shadow-soft transition hover:brightness-95">
-                  <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.99 3 3 6.26 3 10.27c0 3.59 3.16 6.59 7.43 7.16.29.06.68.19.78.43.09.22.06.56.03.78l-.13.76c-.04.22-.18.88.77.48s5.12-3.02 6.99-5.17C20.2 13.08 21 11.74 21 10.27 21 6.26 17.01 3 12 3Z"/></svg>
-                  ปรึกษาฟรีทาง LINE
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- slider dots (visual only) -->
-          <div class="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2">
-            <span class="h-2 w-6 rounded-full bg-brand-400"></span>
-            <span class="h-2 w-2 rounded-full bg-white/50"></span>
-            <span class="h-2 w-2 rounded-full bg-white/50"></span>
-          </div>
+    <!-- ============ HERO (full-bleed dark photo banner, ref-style) ============ -->
+    <section class="relative bg-ink">
+      <img src="https://placehold.co/1920x680/1a1d29/3a3f52?text=+" alt="" aria-hidden="true" class="absolute inset-0 h-full w-full object-cover opacity-60" />
+      <div class="absolute inset-0 bg-gradient-to-r from-ink via-ink/70 to-ink/30"></div>
+      <!-- carousel arrows (visual) -->
+      <button class="absolute left-2 top-1/2 z-10 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/15 text-white backdrop-blur transition hover:bg-white/25 md:flex" aria-label="ก่อนหน้า"><svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"/></svg></button>
+      <button class="absolute right-2 top-1/2 z-10 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/15 text-white backdrop-blur transition hover:bg-white/25 md:flex" aria-label="ถัดไป"><svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/></svg></button>
+
+      <div class="relative mx-auto grid min-h-[440px] max-w-content items-center gap-6 px-6 py-12 md:min-h-[520px] md:grid-cols-2 md:py-16">
+        <!-- left: doctor / hero portrait -->
+        <div class="relative hidden justify-center md:flex">
+          <img src="https://placehold.co/440x520/2a2f40/d6c152?text=Natchaya" alt="ทีมแพทย์ ณัฐชญา คลินิก" class="max-h-[420px] w-auto rounded-2xl object-cover shadow-soft-lg" width="440" height="520" />
         </div>
-      </div>
-      <!-- trust strip (real value props — no fabricated numbers) -->
-      <div class="mx-auto max-w-content px-4 pb-10">
-        <dl class="grid grid-cols-2 gap-3 sm:grid-cols-4">
-          <div class="flex items-center gap-3 rounded-xl bg-surface-alt p-4 ring-1 ring-line">
-            <svg class="h-7 w-7 shrink-0 text-brand-600" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.5 20.25a8.25 8.25 0 0 1 15 0"/></svg>
-            <div><dt class="text-sm font-semibold leading-tight">ทีมแพทย์เฉพาะทาง</dt><dd class="text-xs text-ink-muted">ดูแลทุกขั้นตอน</dd></div>
-          </div>
-          <div class="flex items-center gap-3 rounded-xl bg-surface-alt p-4 ring-1 ring-line">
-            <svg class="h-7 w-7 shrink-0 text-brand-600" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
-            <div><dt class="text-sm font-semibold leading-tight">ความงามครบวงจร</dt><dd class="text-xs text-ink-muted">Beauty Care &amp; Women Plus</dd></div>
-          </div>
-          <div class="flex items-center gap-3 rounded-xl bg-surface-alt p-4 ring-1 ring-line">
-            <svg class="h-7 w-7 shrink-0 text-brand-600" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/></svg>
-            <div><dt class="text-sm font-semibold leading-tight">มาตรฐานวิชาการ</dt><dd class="text-xs text-ink-muted">ปลอดภัย ถูกต้อง</dd></div>
-          </div>
-          <div class="flex items-center gap-3 rounded-xl bg-surface-alt p-4 ring-1 ring-line">
-            <svg class="h-7 w-7 shrink-0 text-brand-600" viewBox="0 0 24 24" fill="currentColor"><path d="M11.48 3.5a.6.6 0 0 1 1.04 0l2.2 4.46 4.92.72a.6.6 0 0 1 .33 1.02l-3.56 3.47.84 4.9a.6.6 0 0 1-.87.63L12 17.9l-4.4 2.31a.6.6 0 0 1-.87-.63l.84-4.9-3.56-3.47a.6.6 0 0 1 .33-1.02l4.92-.72L11.48 3.5Z"/></svg>
-            <div><dt class="text-sm font-semibold leading-tight">รีวิวจริงมากมาย</dt><dd class="text-xs text-ink-muted">จากลูกค้าจริง</dd></div>
-          </div>
-        </dl>
-      </div>
-    </section>
-
-    <!-- ============ รีวิวหัตถการยอดนิยม (tabbed, ref-style) ============ -->
-    <section class="mx-auto max-w-content px-4 py-14" data-tabs>
-      <div class="mb-6 text-center">
-        <h2 class="text-2xl font-bold sm:text-3xl">รีวิวหัตถการยอดนิยม</h2>
-        <p class="mt-2 text-ink-muted">ผลลัพธ์จากลูกค้าจริงที่ ณัฐชญา คลินิก</p>
-      </div>
-      <!-- tab pills -->
-      <div class="mb-8 flex flex-wrap justify-center gap-2">
-        <button data-tab="ba" class="is-active rounded-full px-5 py-2 text-sm font-medium transition" aria-selected="true">รีวิวก่อน–หลัง</button>
-        <button data-tab="photo" class="rounded-full px-5 py-2 text-sm font-medium transition" aria-selected="false">รีวิวรูปภาพ</button>
-        <button data-tab="media" class="rounded-full px-5 py-2 text-sm font-medium transition" aria-selected="false">ออกสื่อ / นิตยสาร</button>
-      </div>
-
-      <!-- panel: before-after (real review titles 171,172,176,218) -->
-      <div data-panel="ba" class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-        <article class="group overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg">
-          <div class="grid grid-cols-2">
-            <div class="relative aspect-square overflow-hidden"><img src="https://placehold.co/300x300/e8eaf0/5b6173?text=Before" alt="ก่อนทำ" loading="lazy" class="h-full w-full object-cover" /><span class="absolute bottom-1 left-1 rounded bg-ink/70 px-1.5 py-0.5 text-[10px] text-white">ก่อน</span></div>
-            <div class="relative aspect-square overflow-hidden"><img src="https://placehold.co/300x300/f2eed9/7f6f1d?text=After" alt="หลังทำ" loading="lazy" class="h-full w-full object-cover" /><span class="absolute bottom-1 left-1 rounded bg-brand-400/90 px-1.5 py-0.5 text-[10px] text-ink">หลัง</span></div>
-          </div>
-          <div class="p-4"><h3 class="text-sm font-semibold">ดูดไขมันท้อง</h3><p class="mt-1 text-xs text-ink-muted">รีวิวก่อน–หลังทำ</p></div>
-        </article>
-        <article class="group overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg">
-          <div class="grid grid-cols-2">
-            <div class="relative aspect-square overflow-hidden"><img src="https://placehold.co/300x300/e8eaf0/5b6173?text=Before" alt="ก่อนทำ" loading="lazy" class="h-full w-full object-cover" /><span class="absolute bottom-1 left-1 rounded bg-ink/70 px-1.5 py-0.5 text-[10px] text-white">ก่อน</span></div>
-            <div class="relative aspect-square overflow-hidden"><img src="https://placehold.co/300x300/f2eed9/7f6f1d?text=After" alt="หลังทำ" loading="lazy" class="h-full w-full object-cover" /><span class="absolute bottom-1 left-1 rounded bg-brand-400/90 px-1.5 py-0.5 text-[10px] text-ink">หลัง</span></div>
-          </div>
-          <div class="p-4"><h3 class="text-sm font-semibold">ดูดไขมันเอวหลัง</h3><p class="mt-1 text-xs text-ink-muted">รีวิวก่อนทำ–หลังทำ</p></div>
-        </article>
-        <article class="group overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg">
-          <div class="grid grid-cols-2">
-            <div class="relative aspect-square overflow-hidden"><img src="https://placehold.co/300x300/e8eaf0/5b6173?text=Before" alt="ก่อนทำ" loading="lazy" class="h-full w-full object-cover" /><span class="absolute bottom-1 left-1 rounded bg-ink/70 px-1.5 py-0.5 text-[10px] text-white">ก่อน</span></div>
-            <div class="relative aspect-square overflow-hidden"><img src="https://placehold.co/300x300/f2eed9/7f6f1d?text=After" alt="หลังทำ" loading="lazy" class="h-full w-full object-cover" /><span class="absolute bottom-1 left-1 rounded bg-brand-400/90 px-1.5 py-0.5 text-[10px] text-ink">หลัง</span></div>
-          </div>
-          <div class="p-4"><h3 class="text-sm font-semibold">ดูดไขมันแขน</h3><p class="mt-1 text-xs text-ink-muted">หลังทำ 2 เดือน</p></div>
-        </article>
-        <article class="group overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg">
-          <div class="grid grid-cols-2">
-            <div class="relative aspect-square overflow-hidden"><img src="https://placehold.co/300x300/e8eaf0/5b6173?text=Before" alt="ก่อนทำ" loading="lazy" class="h-full w-full object-cover" /><span class="absolute bottom-1 left-1 rounded bg-ink/70 px-1.5 py-0.5 text-[10px] text-white">ก่อน</span></div>
-            <div class="relative aspect-square overflow-hidden"><img src="https://placehold.co/300x300/f2eed9/7f6f1d?text=After" alt="หลังทำ" loading="lazy" class="h-full w-full object-cover" /><span class="absolute bottom-1 left-1 rounded bg-brand-400/90 px-1.5 py-0.5 text-[10px] text-ink">หลัง</span></div>
-          </div>
-          <div class="p-4"><h3 class="text-sm font-semibold">ลดน่อง</h3><p class="mt-1 text-xs text-ink-muted">รีวิวก่อน–หลังทำ</p></div>
-        </article>
-      </div>
-
-      <!-- panel: photo -->
-      <div data-panel="photo" class="hidden grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 grid">
-        <div class="overflow-hidden rounded-2xl shadow-soft ring-1 ring-line"><img src="https://placehold.co/400x400/f2eed9/7f6f1d?text=Review" alt="รีวิวลูกค้า — ดูดไขมันท้อง" loading="lazy" class="aspect-square w-full object-cover" /></div>
-        <div class="overflow-hidden rounded-2xl shadow-soft ring-1 ring-line"><img src="https://placehold.co/400x400/faf8f0/7f6f1d?text=Review" alt="รีวิวลูกค้า — เสริมหน้าอก" loading="lazy" class="aspect-square w-full object-cover" /></div>
-        <div class="overflow-hidden rounded-2xl shadow-soft ring-1 ring-line"><img src="https://placehold.co/400x400/eadda0/5e5215?text=Review" alt="รีวิวลูกค้า — ทำตาสองชั้น" loading="lazy" class="aspect-square w-full object-cover" /></div>
-        <div class="overflow-hidden rounded-2xl shadow-soft ring-1 ring-line"><img src="https://placehold.co/400x400/f7f0d4/7f6f1d?text=Review" alt="รีวิวลูกค้า — ฟิลเลอร์" loading="lazy" class="aspect-square w-full object-cover" /></div>
-        <div class="overflow-hidden rounded-2xl shadow-soft ring-1 ring-line"><img src="https://placehold.co/400x400/faf8f0/7f6f1d?text=Review" alt="รีวิวลูกค้า — ดูดไขมันแขน" loading="lazy" class="aspect-square w-full object-cover" /></div>
-        <div class="overflow-hidden rounded-2xl shadow-soft ring-1 ring-line"><img src="https://placehold.co/400x400/f2eed9/7f6f1d?text=Review" alt="รีวิวลูกค้า — NC Repair" loading="lazy" class="aspect-square w-full object-cover" /></div>
-        <div class="overflow-hidden rounded-2xl shadow-soft ring-1 ring-line"><img src="https://placehold.co/400x400/eadda0/5e5215?text=Review" alt="รีวิวลูกค้า — ลดน่อง" loading="lazy" class="aspect-square w-full object-cover" /></div>
-        <div class="overflow-hidden rounded-2xl shadow-soft ring-1 ring-line"><img src="https://placehold.co/400x400/f7f0d4/7f6f1d?text=Review" alt="รีวิวลูกค้า — ดูดไขมันเหนียง" loading="lazy" class="aspect-square w-full object-cover" /></div>
-      </div>
-
-      <!-- panel: media (real magazine features 173,216,217) -->
-      <div data-panel="media" class="hidden gap-5 sm:grid-cols-2 lg:grid-cols-3 grid">
-        <article class="group overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg">
-          <div class="aspect-[4/3] overflow-hidden"><img src="https://placehold.co/600x450/f2eed9/7f6f1d?text=COSMOPOLITAN" alt="ฟีเจอร์ในนิตยสาร COSMOPOLITAN" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" /></div>
-          <div class="p-5"><span class="text-xs font-medium text-brand-700">นิตยสาร</span><h3 class="mt-1 text-base font-semibold">นิตยสาร COSMOPOLITAN</h3></div>
-        </article>
-        <article class="group overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg">
-          <div class="aspect-[4/3] overflow-hidden"><img src="https://placehold.co/600x450/faf8f0/7f6f1d?text=Hello!" alt="ฟีเจอร์ในนิตยสาร Hello!" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" /></div>
-          <div class="p-5"><span class="text-xs font-medium text-brand-700">นิตยสาร</span><h3 class="mt-1 text-base font-semibold">นิตยสาร Hello!</h3></div>
-        </article>
-        <article class="group overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg">
-          <div class="aspect-[4/3] overflow-hidden"><img src="https://placehold.co/600x450/eadda0/5e5215?text=BAZAAR" alt="สัมภาษณ์คุณหมอบอสในนิตยสาร BAZAAR" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" /></div>
-          <div class="p-5"><span class="text-xs font-medium text-brand-700">บทสัมภาษณ์</span><h3 class="mt-1 text-base font-semibold">สัมภาษณ์คุณหมอบอส นิตยสาร BAZAAR</h3></div>
-        </article>
-      </div>
-
-      <p class="mt-6 text-center text-xs text-ink-soft">* ผลการรักษาขึ้นอยู่กับเฉพาะบุคคล</p>
-      <div class="mt-4 text-center"><a href="review-detail.html" class="inline-flex items-center gap-1.5 rounded-xl border border-brand-300 px-6 py-3 text-sm font-medium text-brand-700 transition hover:bg-brand-50">ดูรีวิวทั้งหมด →</a></div>
-    </section>
-
-    <!-- ============ บริการของเรา (round cards — real categories) ============ -->
-    <section class="bg-surface-alt">
-      <div class="mx-auto max-w-content px-4 py-14">
-        <div class="mb-8 text-center">
-          <h2 class="text-2xl font-bold sm:text-3xl">บริการของเรา</h2>
-          <p class="mt-2 text-ink-muted">ครบทุกความต้องการด้านความงามและสุขภาพ ดูแลโดยแพทย์เฉพาะทาง</p>
-        </div>
-        <div class="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 lg:grid-cols-4">
-          <a href="service-detail.html" class="group text-center">
-            <div class="mx-auto aspect-square w-full max-w-[160px] overflow-hidden rounded-full shadow-soft ring-1 ring-line transition group-hover:shadow-soft-lg"><img src="https://placehold.co/320x320/f2eed9/7f6f1d?text=BODY" alt="BODY กระชับสัดส่วน สลายไขมัน" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" /></div>
-            <h3 class="mt-3 text-sm font-semibold sm:text-base">BODY</h3>
-            <p class="mt-1 text-xs text-ink-muted">ดูดไขมัน BodyTite, Evolve, RF</p>
-          </a>
-          <a href="service-detail.html" class="group text-center">
-            <div class="mx-auto aspect-square w-full max-w-[160px] overflow-hidden rounded-full shadow-soft ring-1 ring-line transition group-hover:shadow-soft-lg"><img src="https://placehold.co/320x320/faf8f0/7f6f1d?text=SURGERY" alt="SURGERY ศัลยกรรม" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" /></div>
-            <h3 class="mt-3 text-sm font-semibold sm:text-base">SURGERY</h3>
-            <p class="mt-1 text-xs text-ink-muted">จมูก ตา คาง เสริมหน้าอก</p>
-          </a>
-          <a href="service-detail.html" class="group text-center">
-            <div class="mx-auto aspect-square w-full max-w-[160px] overflow-hidden rounded-full shadow-soft ring-1 ring-line transition group-hover:shadow-soft-lg"><img src="https://placehold.co/320x320/f2eed9/7f6f1d?text=LASER" alt="TREATMENT และ LASER" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" /></div>
-            <h3 class="mt-3 text-sm font-semibold sm:text-base">TREATMENT &amp; LASER</h3>
-            <p class="mt-1 text-xs text-ink-muted">Pico, Dual Yellow, Ulthera</p>
-          </a>
-          <a href="service-detail.html" class="group text-center">
-            <div class="mx-auto aspect-square w-full max-w-[160px] overflow-hidden rounded-full shadow-soft ring-1 ring-line transition group-hover:shadow-soft-lg"><img src="https://placehold.co/320x320/faf8f0/7f6f1d?text=FACIAL" alt="FACIAL DESIGN ออกแบบใบหน้า" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" /></div>
-            <h3 class="mt-3 text-sm font-semibold sm:text-base">FACIAL DESIGN</h3>
-            <p class="mt-1 text-xs text-ink-muted">HA Filler, ร้อยไหม, Fat transfer</p>
-          </a>
-          <a href="service-detail.html" class="group text-center">
-            <div class="mx-auto aspect-square w-full max-w-[160px] overflow-hidden rounded-full shadow-soft ring-1 ring-line transition group-hover:shadow-soft-lg"><img src="https://placehold.co/320x320/f2eed9/7f6f1d?text=HEALTH" alt="HEALTH PROGRAM เวชศาสตร์ชะลอวัย" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" /></div>
-            <h3 class="mt-3 text-sm font-semibold sm:text-base">HEALTH PROGRAM</h3>
-            <p class="mt-1 text-xs text-ink-muted">Detox, Chelation, Ondamed</p>
-          </a>
-          <a href="service-detail.html" class="group text-center">
-            <div class="mx-auto aspect-square w-full max-w-[160px] overflow-hidden rounded-full shadow-soft ring-1 ring-line transition group-hover:shadow-soft-lg"><img src="https://placehold.co/320x320/faf8f0/7f6f1d?text=MASK" alt="MASK มาส์ก" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" /></div>
-            <h3 class="mt-3 text-sm font-semibold sm:text-base">MASK</h3>
-            <p class="mt-1 text-xs text-ink-muted">Mask Collagen, Golden Acerola</p>
-          </a>
-          <a href="womenplus.html" class="group text-center">
-            <div class="mx-auto aspect-square w-full max-w-[160px] overflow-hidden rounded-full shadow-soft ring-2 ring-brand-400 transition group-hover:shadow-soft-lg"><img src="https://placehold.co/320x320/7f6f1d/ffffff?text=WOMEN+PLUS" alt="WOMEN PLUS สุขภาพสตรี" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" /></div>
-            <h3 class="mt-3 text-sm font-semibold text-brand-700 sm:text-base">WOMEN PLUS</h3>
-            <p class="mt-1 text-xs text-ink-muted">NC Repair รีแพร์ จุดซ่อนเร้น</p>
-          </a>
-          <a href="service-detail.html" class="group text-center">
-            <div class="mx-auto aspect-square w-full max-w-[160px] overflow-hidden rounded-full shadow-soft ring-1 ring-line transition group-hover:shadow-soft-lg"><img src="https://placehold.co/320x320/f2eed9/7f6f1d?text=PRODUCT" alt="PRODUCT ผลิตภัณฑ์" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" /></div>
-            <h3 class="mt-3 text-sm font-semibold sm:text-base">PRODUCT</h3>
-            <p class="mt-1 text-xs text-ink-muted">Hi-E Serum, Gutty, Olizen</p>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ รวมคลิปวิดีโอรีวิว ============ -->
-    <section class="bg-ink" data-tabs>
-      <div class="mx-auto max-w-content px-4 py-14">
-        <div class="mb-8 text-center">
-          <h2 class="text-2xl font-bold text-white sm:text-3xl">รวมคลิปวิดีโอรีวิว</h2>
-          <p class="mt-2 text-white/75">คิดถึง...คลีนิคความงามคุณภาพ คิดถึง &ldquo;เรา&rdquo; Natchaya Clinic</p>
-        </div>
-        <!-- featured video -->
-        <div class="mx-auto max-w-3xl">
-          <div class="relative aspect-video overflow-hidden rounded-2xl shadow-soft-lg ring-1 ring-white/10">
-            <img src="https://placehold.co/1280x720/2a2f40/d6c152?text=Video+PR" alt="วิดีโอรีวิวลูกค้า ณัฐชญา คลินิก" class="h-full w-full object-cover" loading="lazy" />
-            <div class="absolute inset-0 flex items-center justify-center bg-black/30">
-              <button class="flex h-16 w-16 items-center justify-center rounded-full bg-brand-400 text-ink shadow-soft-lg transition hover:bg-brand-500" aria-label="เล่นวิดีโอ">
-                <svg class="h-7 w-7 translate-x-0.5" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-              </button>
-            </div>
-            <div class="absolute bottom-3 right-3 rounded-lg bg-black/60 px-3 py-1.5 text-sm font-semibold text-white">VIDEO PR</div>
-          </div>
-        </div>
-        <!-- thumbnail strip -->
-        <div class="mx-auto mt-5 grid max-w-3xl grid-cols-2 gap-3 sm:grid-cols-4">
-          <button data-tab="v1" class="group relative aspect-video overflow-hidden rounded-xl ring-2 ring-brand-400">
-            <img src="https://placehold.co/320x180/f2eed9/7f6f1d?text=Clip+1" alt="คลิป 1" loading="lazy" class="h-full w-full object-cover" />
-            <span class="absolute inset-0 flex items-center justify-center bg-black/20"><svg class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
-          </button>
-          <button data-tab="v2" class="group relative aspect-video overflow-hidden rounded-xl ring-1 ring-white/20 transition hover:ring-brand-400">
-            <img src="https://placehold.co/320x180/faf8f0/7f6f1d?text=Clip+2" alt="คลิป 2" loading="lazy" class="h-full w-full object-cover" />
-            <span class="absolute inset-0 flex items-center justify-center bg-black/20"><svg class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
-          </button>
-          <button data-tab="v3" class="group relative aspect-video overflow-hidden rounded-xl ring-1 ring-white/20 transition hover:ring-brand-400">
-            <img src="https://placehold.co/320x180/eadda0/5e5215?text=Clip+3" alt="คลิป 3" loading="lazy" class="h-full w-full object-cover" />
-            <span class="absolute inset-0 flex items-center justify-center bg-black/20"><svg class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
-          </button>
-          <button data-tab="v4" class="group relative aspect-video overflow-hidden rounded-xl ring-1 ring-white/20 transition hover:ring-brand-400">
-            <img src="https://placehold.co/320x180/f7f0d4/7f6f1d?text=Clip+4" alt="คลิป 4" loading="lazy" class="h-full w-full object-cover" />
-            <span class="absolute inset-0 flex items-center justify-center bg-black/20"><svg class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ ข่าวสาร & กิจกรรม (NEWS & ACTIVITY — real) ============ -->
-    <section class="mx-auto max-w-content px-4 py-14">
-      <div class="mb-8 flex items-end justify-between">
-        <div><h2 class="text-2xl font-bold sm:text-3xl">ข่าวสาร &amp; กิจกรรม</h2><p class="mt-2 text-ink-muted">ณัฐชญา คลินิก ในสื่อและกิจกรรมต่างๆ</p></div>
-        <a href="article-detail.html" class="hidden text-sm font-medium text-brand-700 hover:underline sm:inline">ดูทั้งหมด →</a>
-      </div>
-      <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-        <article class="group overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg">
-          <div class="aspect-[4/3] overflow-hidden"><img src="https://placehold.co/600x450/f2eed9/7f6f1d?text=Opening" alt="เปิดตัว ณัฐชญา คลินิก" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" /></div>
-          <div class="p-5"><span class="rounded-full bg-surface-alt px-2.5 py-1 text-xs font-medium text-ink-muted">กิจกรรม</span><h3 class="mt-3 text-lg font-semibold leading-snug line-clamp-2">เปิดตัว ณัฐชญา คลินิก — The Exclusive Private Preview</h3></div>
-        </article>
-        <article class="group overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg">
-          <div class="aspect-[4/3] overflow-hidden"><img src="https://placehold.co/600x450/faf8f0/7f6f1d?text=BAZAAR" alt="สัมภาษณ์คุณหมอบอส นิตยสาร BAZAAR" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" /></div>
-          <div class="p-5"><span class="rounded-full bg-surface-alt px-2.5 py-1 text-xs font-medium text-ink-muted">บทสัมภาษณ์</span><h3 class="mt-3 text-lg font-semibold leading-snug line-clamp-2">สัมภาษณ์คุณหมอบอส นิตยสาร BAZAAR</h3></div>
-        </article>
-        <article class="group overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg">
-          <div class="aspect-[4/3] overflow-hidden"><img src="https://placehold.co/600x450/eadda0/5e5215?text=COSMOPOLITAN" alt="ฟีเจอร์ในนิตยสาร COSMOPOLITAN" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" /></div>
-          <div class="p-5"><span class="rounded-full bg-surface-alt px-2.5 py-1 text-xs font-medium text-ink-muted">นิตยสาร</span><h3 class="mt-3 text-lg font-semibold leading-snug line-clamp-2">ณัฐชญา คลินิก ในนิตยสาร COSMOPOLITAN &amp; Hello!</h3></div>
-        </article>
-      </div>
-    </section>
-
-    <!-- ============ เกี่ยวกับเรา (ABOUT US — verbatim) ============ -->
-    <section class="bg-surface-alt">
-      <div class="mx-auto grid max-w-content items-center gap-10 px-4 py-16 md:grid-cols-2">
-        <div class="order-2 md:order-1">
-          <span class="text-sm font-semibold uppercase tracking-wide text-brand-700">About Us</span>
-          <h2 class="mt-2 text-2xl font-bold sm:text-3xl">&ldquo;Beauty&rsquo;s in Good Hands&rdquo;</h2>
-          <p class="mt-4 text-ink-muted">
-            คือปรัชญาในการทำงานของณัฐชญาคลีนิค ความเชี่ยวชาญที่จริงใจและใส่ใจในทุกรายละเอียดของความงาม
-            พร้อมมาตรฐานการทำงานที่ถูกต้องตามหลักวิชาการ เพื่อความพึงพอใจและปลอดภัยอย่างสูงสุดของลูกค้า
+        <!-- right: award-style headline -->
+        <div class="text-center md:text-left">
+          <p class="text-sm font-semibold uppercase tracking-[0.2em] text-brand-300">Natchaya Clinic</p>
+          <h1 class="mt-3 font-bold leading-none text-white">
+            <span class="block bg-gradient-to-r from-brand-200 via-brand-400 to-brand-600 bg-clip-text text-4xl text-transparent drop-shadow sm:text-5xl md:text-6xl">Beauty&rsquo;s in</span>
+            <span class="mt-1 block bg-gradient-to-r from-brand-200 via-brand-400 to-brand-600 bg-clip-text text-4xl text-transparent drop-shadow sm:text-5xl md:text-6xl">Good Hands</span>
+          </h1>
+          <p class="mx-auto mt-5 max-w-md text-sm text-white/85 sm:text-base md:mx-0">
+            ณัฐชญา คลินิก — คลินิกเสริมความงามครบวงจร ศูนย์ดูแลผิวหน้าและรูปร่าง
+            กระชับสัดส่วน คลินิกดูดไขมันระดับแนวหน้า ดูแลโดยทีมแพทย์เฉพาะทาง
           </p>
-          <p class="mt-3 text-ink-muted">
-            เรามีทีมแพทย์เฉพาะทางและบุคลากรผู้มีประสบการณ์ ที่พร้อมดูแลคุณตั้งแต่การตรวจวิเคราะห์ปัญหา
-            แบบเฉพาะตัวบุคคล ไม่ใช่แค่ Body Center ที่ดูแลรูปร่างและผิวพรรณภายนอก แต่ยังดูแลให้คุณสวยสุขภาพดี
-            จากภายใน ด้วยศาสตร์ Anti Aging ที่คัดสรรมาจากทุกมุมโลก
-          </p>
-          <ul class="mt-6 grid gap-2 border-t border-line pt-6 text-sm text-ink">
-            <li class="flex items-center gap-2"><svg class="h-4 w-4 text-brand-600" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg> พ.ญ. ณัฐชญา ไมตรีเวช (หมอกุ๊กไก่) — เกียรตินิยมอันดับ 1 ม.ขอนแก่น</li>
-            <li class="flex items-center gap-2"><svg class="h-4 w-4 text-brand-600" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg> นพ. ทรงพจน์ ชัยมณี (หมอบอส) — ศัลยแพทย์</li>
-            <li class="flex items-center gap-2"><svg class="h-4 w-4 text-brand-600" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg> นพ. ศุภศิษฐ์ จิรวัฒโนทัย (หมอแอ็ด) — Plastic Surgeon</li>
-          </ul>
-          <a href="about.html" class="mt-6 inline-flex min-h-[48px] items-center justify-center gap-2 rounded-xl bg-brand-400 px-6 py-3 font-medium text-ink shadow-soft transition hover:bg-brand-500">รู้จักเราเพิ่มเติม</a>
+          <div class="mt-7 flex flex-col flex-wrap justify-center gap-3 sm:flex-row md:justify-start">
+            <a href="contact.html" class="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full bg-brand-400 px-6 py-3 font-medium text-ink shadow-soft transition hover:bg-brand-500">จองคิว / ปรึกษาแพทย์</a>
+            <a href="https://line.me/ti/p/~natchayaclinic" class="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full bg-line_green px-6 py-3 font-medium text-white shadow-soft transition hover:brightness-95">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.99 3 3 6.26 3 10.27c0 3.59 3.16 6.59 7.43 7.16.29.06.68.19.78.43.09.22.06.56.03.78l-.13.76c-.04.22-.18.88.77.48s5.12-3.02 6.99-5.17C20.2 13.08 21 11.74 21 10.27 21 6.26 17.01 3 12 3Z"/></svg>
+              ปรึกษาฟรีทาง LINE
+            </a>
+          </div>
         </div>
-        <div class="order-1 md:order-2"><img src="https://placehold.co/640x520/f2eed9/7f6f1d?text=Natchaya+Clinic" alt="ณัฐชญา คลินิก Natchaya Clinic" loading="lazy" class="w-full rounded-2xl object-cover shadow-soft-lg" width="640" height="520" /></div>
+      </div>
+      <!-- slider dots -->
+      <div class="relative z-10 flex justify-center gap-2 pb-7">
+        <span class="h-2 w-6 rounded-full bg-brand-400"></span>
+        <span class="h-2 w-2 rounded-full bg-white/40"></span>
+        <span class="h-2 w-2 rounded-full bg-white/40"></span>
       </div>
     </section>
 
-    <!-- ============ CTA BAND ============ -->
-    <section class="mx-auto max-w-content px-4 py-16">
-      <div class="rounded-2xl bg-brand-50 p-8 text-center shadow-soft sm:p-12">
-        <h2 class="text-2xl font-bold sm:text-3xl">ปรึกษาแพทย์เฉพาะทาง</h2>
-        <p class="mx-auto mt-3 max-w-lg text-ink-muted">นัดหมายหรือสอบถามข้อมูลบริการ ทีมงานพร้อมดูแลและตอบทุกคำถาม</p>
-        <div class="mt-6 flex flex-wrap justify-center gap-3">
-          <a href="contact.html" class="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-xl bg-brand-400 px-6 py-3 font-medium text-ink shadow-soft transition hover:bg-brand-500">จองคิว / นัดหมาย</a>
-          <a href="https://line.me/ti/p/~natchayaclinic" class="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-xl bg-line_green px-6 py-3 font-medium text-white shadow-soft transition hover:brightness-95">
-            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.99 3 3 6.26 3 10.27c0 3.59 3.16 6.59 7.43 7.16.29.06.68.19.78.43.09.22.06.56.03.78l-.13.76c-.04.22-.18.88.77.48s5.12-3.02 6.99-5.17C20.2 13.08 21 11.74 21 10.27 21 6.26 17.01 3 12 3Z"/></svg>
-            LINE @natchayaclinic
-          </a>
-          <a href="tel:021025964" class="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-xl border border-line bg-white px-6 py-3 font-medium text-ink transition hover:border-brand-300 hover:text-brand-700">
-            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" /></svg>
-            02-102-5964
-          </a>
+    <!-- ============ QUICK TAB BAR (overlapping hero, ref-style) ============ -->
+    <div class="relative z-20 mx-auto -mt-7 max-w-content px-4">
+      <div class="grid grid-cols-2 gap-3 sm:grid-cols-4">
+        <a href="#reviews" class="flex items-center justify-center gap-2 rounded-xl bg-ink px-4 py-3 text-sm font-medium text-white shadow-soft-lg transition hover:bg-ink/90">
+          <svg class="h-5 w-5 text-brand-300" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/></svg>
+          รีวิวก่อน–หลัง
+        </a>
+        <a href="#video" class="flex items-center justify-center gap-2 rounded-xl bg-ink px-4 py-3 text-sm font-medium text-white shadow-soft-lg transition hover:bg-ink/90">
+          <svg class="h-5 w-5 text-brand-300" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          วิดีโอรีวิว
+        </a>
+        <a href="#articles" class="flex items-center justify-center gap-2 rounded-xl bg-ink px-4 py-3 text-sm font-medium text-white shadow-soft-lg transition hover:bg-ink/90">
+          <svg class="h-5 w-5 text-brand-300" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"/></svg>
+          บทความ
+        </a>
+        <a href="contact.html" class="flex items-center justify-center gap-2 rounded-xl bg-ink px-4 py-3 text-sm font-medium text-white shadow-soft-lg transition hover:bg-ink/90">
+          <svg class="h-5 w-5 text-brand-300" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
+          สาขาของเรา
+        </a>
+      </div>
+    </div>
+
+    <!-- ============ รีวิวหัตถการยอดนิยม (3-col portrait grid, ref-style) ============ -->
+    <section id="reviews" class="mx-auto max-w-content px-4 py-16">
+      <div class="mb-10 flex items-center justify-center gap-4">
+        <span class="h-px w-10 bg-brand-300"></span>
+        <h2 class="text-center text-2xl font-bold sm:text-3xl">รีวิวหัตถการยอดนิยมของ ณัฐชญา</h2>
+        <span class="h-px w-10 bg-brand-300"></span>
+      </div>
+      <div class="grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-3">
+        <a href="review-detail.html" class="group"><div class="overflow-hidden rounded-2xl shadow-soft ring-1 ring-line"><img src="https://placehold.co/420x520/f2eed9/7f6f1d?text=Liposuction" alt="ดูดไขมัน" loading="lazy" class="aspect-[4/5] w-full object-cover transition duration-300 group-hover:scale-105" /></div><p class="mt-3 text-center text-sm font-medium sm:text-base">ดูดไขมัน BodyTite</p></a>
+        <a href="review-detail.html" class="group"><div class="overflow-hidden rounded-2xl shadow-soft ring-1 ring-line"><img src="https://placehold.co/420x520/faf8f0/7f6f1d?text=Rhinoplasty" alt="ศัลยกรรมเสริมจมูก" loading="lazy" class="aspect-[4/5] w-full object-cover transition duration-300 group-hover:scale-105" /></div><p class="mt-3 text-center text-sm font-medium sm:text-base">ศัลยกรรมเสริมจมูก</p></a>
+        <a href="review-detail.html" class="group"><div class="overflow-hidden rounded-2xl shadow-soft ring-1 ring-line"><img src="https://placehold.co/420x520/f2eed9/7f6f1d?text=Eyelid" alt="ตาสองชั้น" loading="lazy" class="aspect-[4/5] w-full object-cover transition duration-300 group-hover:scale-105" /></div><p class="mt-3 text-center text-sm font-medium sm:text-base">ทำตาสองชั้น</p></a>
+        <a href="review-detail.html" class="group"><div class="overflow-hidden rounded-2xl shadow-soft ring-1 ring-line"><img src="https://placehold.co/420x520/faf8f0/7f6f1d?text=Thread+Lift" alt="ร้อยไหม" loading="lazy" class="aspect-[4/5] w-full object-cover transition duration-300 group-hover:scale-105" /></div><p class="mt-3 text-center text-sm font-medium sm:text-base">ร้อยไหม PDO</p></a>
+        <a href="review-detail.html" class="group"><div class="overflow-hidden rounded-2xl shadow-soft ring-1 ring-line"><img src="https://placehold.co/420x520/f2eed9/7f6f1d?text=HA+Filler" alt="ฟิลเลอร์" loading="lazy" class="aspect-[4/5] w-full object-cover transition duration-300 group-hover:scale-105" /></div><p class="mt-3 text-center text-sm font-medium sm:text-base">HA Filler</p></a>
+        <a href="review-detail.html" class="group"><div class="overflow-hidden rounded-2xl shadow-soft ring-1 ring-line"><img src="https://placehold.co/420x520/faf8f0/7f6f1d?text=Pico+Laser" alt="เลเซอร์" loading="lazy" class="aspect-[4/5] w-full object-cover transition duration-300 group-hover:scale-105" /></div><p class="mt-3 text-center text-sm font-medium sm:text-base">เลเซอร์ Pico Enlighten</p></a>
+        <a href="review-detail.html" class="group"><div class="overflow-hidden rounded-2xl shadow-soft ring-1 ring-line"><img src="https://placehold.co/420x520/f2eed9/7f6f1d?text=Face+Lift" alt="ดึงหน้า" loading="lazy" class="aspect-[4/5] w-full object-cover transition duration-300 group-hover:scale-105" /></div><p class="mt-3 text-center text-sm font-medium sm:text-base">ดึงหน้า Facetite</p></a>
+        <a href="review-detail.html" class="group"><div class="overflow-hidden rounded-2xl shadow-soft ring-1 ring-line"><img src="https://placehold.co/420x520/faf8f0/7f6f1d?text=Breast" alt="เสริมหน้าอก" loading="lazy" class="aspect-[4/5] w-full object-cover transition duration-300 group-hover:scale-105" /></div><p class="mt-3 text-center text-sm font-medium sm:text-base">ศัลยกรรมเสริมหน้าอก</p></a>
+        <a href="womenplus.html" class="group"><div class="overflow-hidden rounded-2xl shadow-soft ring-1 ring-line"><img src="https://placehold.co/420x520/f2eed9/7f6f1d?text=Women+Plus" alt="Women Plus" loading="lazy" class="aspect-[4/5] w-full object-cover transition duration-300 group-hover:scale-105" /></div><p class="mt-3 text-center text-sm font-medium sm:text-base">NC Repair (Women Plus)</p></a>
+      </div>
+      <p class="mt-8 text-center text-xs text-ink-soft">* ผลการรักษาขึ้นอยู่กับเฉพาะบุคคล</p>
+    </section>
+
+    <!-- ============ บริการของเรา (carousel, ref-style) ============ -->
+    <section class="bg-surface-alt">
+      <div class="mx-auto max-w-content px-4 py-16">
+        <div class="mb-10 flex items-center justify-center gap-4">
+          <span class="h-px w-10 bg-brand-300"></span>
+          <h2 class="text-center text-2xl font-bold sm:text-3xl">บริการของ ณัฐชญา</h2>
+          <span class="h-px w-10 bg-brand-300"></span>
+        </div>
+        <div data-carousel class="relative">
+          <button data-carousel-prev class="absolute -left-3 top-1/2 z-10 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white text-ink shadow-soft-lg ring-1 ring-line transition hover:bg-surface-alt md:flex" aria-label="ก่อนหน้า"><svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"/></svg></button>
+          <button data-carousel-next class="absolute -right-3 top-1/2 z-10 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white text-ink shadow-soft-lg ring-1 ring-line transition hover:bg-surface-alt md:flex" aria-label="ถัดไป"><svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/></svg></button>
+          <div data-carousel-track class="flex snap-x gap-5 overflow-x-auto scroll-smooth pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+            <article class="w-64 shrink-0 snap-start rounded-2xl bg-surface p-5 text-center shadow-soft ring-1 ring-line">
+              <div class="mx-auto aspect-square w-28 overflow-hidden rounded-full ring-1 ring-line"><img src="https://placehold.co/200x200/f2eed9/7f6f1d?text=BODY" alt="BODY" loading="lazy" class="h-full w-full object-cover" /></div>
+              <h3 class="mt-4 font-semibold">BODY</h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink-muted">กระชับสัดส่วน สลายไขมัน ด้วย BodyTite, Evolve, RF ลดไขมันเฉพาะจุดให้รูปร่างสมส่วน</p>
+              <a href="service-detail.html" class="mt-4 inline-block text-sm font-medium text-brand-700 hover:underline">ดูเพิ่มเติม →</a>
+            </article>
+            <article class="w-64 shrink-0 snap-start rounded-2xl bg-surface p-5 text-center shadow-soft ring-1 ring-line">
+              <div class="mx-auto aspect-square w-28 overflow-hidden rounded-full ring-1 ring-line"><img src="https://placehold.co/200x200/faf8f0/7f6f1d?text=SURGERY" alt="SURGERY" loading="lazy" class="h-full w-full object-cover" /></div>
+              <h3 class="mt-4 font-semibold">SURGERY</h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink-muted">ศัลยกรรมจมูก ตาสองชั้น เสริมคาง เสริมหน้าอก ดึงหน้า โดยศัลยแพทย์เฉพาะทาง</p>
+              <a href="service-detail.html" class="mt-4 inline-block text-sm font-medium text-brand-700 hover:underline">ดูเพิ่มเติม →</a>
+            </article>
+            <article class="w-64 shrink-0 snap-start rounded-2xl bg-surface p-5 text-center shadow-soft ring-1 ring-line">
+              <div class="mx-auto aspect-square w-28 overflow-hidden rounded-full ring-1 ring-line"><img src="https://placehold.co/200x200/f2eed9/7f6f1d?text=LASER" alt="TREATMENT และ LASER" loading="lazy" class="h-full w-full object-cover" /></div>
+              <h3 class="mt-4 font-semibold">TREATMENT &amp; LASER</h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink-muted">Pico Enlighten, Dual Yellow, Ulthera, Ultraformer ดูแลผิวหน้า ฝ้า กระ หลุมสิว ยกกระชับ</p>
+              <a href="service-detail.html" class="mt-4 inline-block text-sm font-medium text-brand-700 hover:underline">ดูเพิ่มเติม →</a>
+            </article>
+            <article class="w-64 shrink-0 snap-start rounded-2xl bg-surface p-5 text-center shadow-soft ring-1 ring-line">
+              <div class="mx-auto aspect-square w-28 overflow-hidden rounded-full ring-1 ring-line"><img src="https://placehold.co/200x200/faf8f0/7f6f1d?text=FACIAL" alt="FACIAL DESIGN" loading="lazy" class="h-full w-full object-cover" /></div>
+              <h3 class="mt-4 font-semibold">FACIAL DESIGN</h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink-muted">ออกแบบใบหน้าด้วย HA Filler ร้อยไหม PDO Fat transfer เติมเต็มและปรับรูปหน้า</p>
+              <a href="service-detail.html" class="mt-4 inline-block text-sm font-medium text-brand-700 hover:underline">ดูเพิ่มเติม →</a>
+            </article>
+            <article class="w-64 shrink-0 snap-start rounded-2xl bg-surface p-5 text-center shadow-soft ring-1 ring-line">
+              <div class="mx-auto aspect-square w-28 overflow-hidden rounded-full ring-1 ring-line"><img src="https://placehold.co/200x200/f2eed9/7f6f1d?text=HEALTH" alt="HEALTH PROGRAM" loading="lazy" class="h-full w-full object-cover" /></div>
+              <h3 class="mt-4 font-semibold">HEALTH PROGRAM</h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink-muted">เวชศาสตร์ชะลอวัย Detox, Chelation Therapy, Ondamed ดูแลสุขภาพจากภายใน</p>
+              <a href="service-detail.html" class="mt-4 inline-block text-sm font-medium text-brand-700 hover:underline">ดูเพิ่มเติม →</a>
+            </article>
+            <article class="w-64 shrink-0 snap-start rounded-2xl bg-surface p-5 text-center shadow-soft ring-2 ring-brand-400">
+              <div class="mx-auto aspect-square w-28 overflow-hidden rounded-full ring-1 ring-brand-300"><img src="https://placehold.co/200x200/7f6f1d/ffffff?text=Women+Plus" alt="WOMEN PLUS" loading="lazy" class="h-full w-full object-cover" /></div>
+              <h3 class="mt-4 font-semibold text-brand-700">WOMEN PLUS</h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink-muted">สุขภาพสตรี NC Repair รีแพร์กระชับช่องคลอด ดูแลจุดซ่อนเร้นอย่างเป็นส่วนตัว</p>
+              <a href="womenplus.html" class="mt-4 inline-block text-sm font-medium text-brand-700 hover:underline">ดูเพิ่มเติม →</a>
+            </article>
+            <article class="w-64 shrink-0 snap-start rounded-2xl bg-surface p-5 text-center shadow-soft ring-1 ring-line">
+              <div class="mx-auto aspect-square w-28 overflow-hidden rounded-full ring-1 ring-line"><img src="https://placehold.co/200x200/faf8f0/7f6f1d?text=PRODUCT" alt="PRODUCT" loading="lazy" class="h-full w-full object-cover" /></div>
+              <h3 class="mt-4 font-semibold">PRODUCT</h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink-muted">ผลิตภัณฑ์ดูแลผิว Hi-E Serum, Antioxidant Serum, Gutty, Olizen และอาหารเสริม</p>
+              <a href="service-detail.html" class="mt-4 inline-block text-sm font-medium text-brand-700 hover:underline">ดูเพิ่มเติม →</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ รวมคลิปวิดีโอรีวิว (filter + vertical video cards, ref-style) ============ -->
+    <section id="video" class="bg-ink" data-tabs>
+      <div class="mx-auto max-w-content px-4 py-16">
+        <div class="mb-8 flex items-center justify-center gap-4">
+          <span class="h-px w-10 bg-brand-400"></span>
+          <h2 class="text-center text-2xl font-bold text-white sm:text-3xl">รวมคลิปวิดีโอรีวิว</h2>
+          <span class="h-px w-10 bg-brand-400"></span>
+        </div>
+        <!-- filter pills -->
+        <div class="mb-9 flex flex-wrap justify-center gap-2">
+          <button data-tab="all" class="is-active rounded-full px-4 py-1.5 text-sm font-medium transition" aria-selected="true">ทั้งหมด</button>
+          <button data-tab="lipo" class="rounded-full px-4 py-1.5 text-sm font-medium transition" aria-selected="false">ดูดไขมัน</button>
+          <button data-tab="eye" class="rounded-full px-4 py-1.5 text-sm font-medium transition" aria-selected="false">ตาสองชั้น</button>
+          <button data-tab="thread" class="rounded-full px-4 py-1.5 text-sm font-medium transition" aria-selected="false">ร้อยไหม</button>
+          <button data-tab="laser" class="rounded-full px-4 py-1.5 text-sm font-medium transition" aria-selected="false">เลเซอร์</button>
+          <button data-tab="wp" class="rounded-full px-4 py-1.5 text-sm font-medium transition" aria-selected="false">Women Plus</button>
+        </div>
+        <!-- vertical video cards -->
+        <div class="grid grid-cols-2 gap-4 sm:gap-5 lg:grid-cols-4">
+          <button class="group relative overflow-hidden rounded-2xl shadow-soft-lg ring-1 ring-white/10" aria-label="เล่นวิดีโอ ดูดไขมัน">
+            <img src="https://placehold.co/360x640/2a2f40/d6c152?text=Liposuction" alt="วิดีโอรีวิว ดูดไขมัน" loading="lazy" class="aspect-[9/16] w-full object-cover" />
+            <span class="absolute inset-0 flex items-center justify-center bg-black/25"><span class="flex h-14 w-14 items-center justify-center rounded-full bg-brand-400 text-ink shadow-soft-lg transition group-hover:bg-brand-500"><svg class="h-6 w-6 translate-x-0.5" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></span>
+            <span class="absolute bottom-3 left-3 right-3 text-left text-sm font-semibold text-white drop-shadow">ดูดไขมัน • ก่อน–หลัง</span>
+          </button>
+          <button class="group relative overflow-hidden rounded-2xl shadow-soft-lg ring-1 ring-white/10" aria-label="เล่นวิดีโอ ตาสองชั้น">
+            <img src="https://placehold.co/360x640/2a2f40/d6c152?text=Eyelid" alt="วิดีโอรีวิว ตาสองชั้น" loading="lazy" class="aspect-[9/16] w-full object-cover" />
+            <span class="absolute inset-0 flex items-center justify-center bg-black/25"><span class="flex h-14 w-14 items-center justify-center rounded-full bg-brand-400 text-ink shadow-soft-lg transition group-hover:bg-brand-500"><svg class="h-6 w-6 translate-x-0.5" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></span>
+            <span class="absolute bottom-3 left-3 right-3 text-left text-sm font-semibold text-white drop-shadow">ทำตาสองชั้นด้วยเลเซอร์</span>
+          </button>
+          <button class="group relative overflow-hidden rounded-2xl shadow-soft-lg ring-1 ring-white/10" aria-label="เล่นวิดีโอ ร้อยไหม">
+            <img src="https://placehold.co/360x640/2a2f40/d6c152?text=Thread+Lift" alt="วิดีโอรีวิว ร้อยไหม" loading="lazy" class="aspect-[9/16] w-full object-cover" />
+            <span class="absolute inset-0 flex items-center justify-center bg-black/25"><span class="flex h-14 w-14 items-center justify-center rounded-full bg-brand-400 text-ink shadow-soft-lg transition group-hover:bg-brand-500"><svg class="h-6 w-6 translate-x-0.5" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></span>
+            <span class="absolute bottom-3 left-3 right-3 text-left text-sm font-semibold text-white drop-shadow">ร้อยไหมยกกระชับ</span>
+          </button>
+          <button class="group relative overflow-hidden rounded-2xl shadow-soft-lg ring-1 ring-white/10" aria-label="เล่นวิดีโอ Women Plus">
+            <img src="https://placehold.co/360x640/2a2f40/d6c152?text=Women+Plus" alt="วิดีโอรีวิว Women Plus" loading="lazy" class="aspect-[9/16] w-full object-cover" />
+            <span class="absolute inset-0 flex items-center justify-center bg-black/25"><span class="flex h-14 w-14 items-center justify-center rounded-full bg-brand-400 text-ink shadow-soft-lg transition group-hover:bg-brand-500"><svg class="h-6 w-6 translate-x-0.5" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></span>
+            <span class="absolute bottom-3 left-3 right-3 text-left text-sm font-semibold text-white drop-shadow">NC Repair รีแพร์</span>
+          </button>
+        </div>
+        <p class="mt-6 text-center text-sm text-white/70">คิดถึง...คลีนิคความงามคุณภาพ คิดถึง &ldquo;เรา&rdquo; Natchaya Clinic</p>
+      </div>
+    </section>
+
+    <!-- ============ บทความน่ารู้ (3-col grid, ref-style) ============ -->
+    <section id="articles" class="mx-auto max-w-content px-4 py-16">
+      <div class="mb-10 flex items-center justify-center gap-4">
+        <span class="h-px w-10 bg-brand-300"></span>
+        <h2 class="text-center text-2xl font-bold sm:text-3xl">บทความน่ารู้</h2>
+        <span class="h-px w-10 bg-brand-300"></span>
+      </div>
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <article class="group overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg">
+          <div class="aspect-[16/10] overflow-hidden"><img src="https://placehold.co/600x375/f2eed9/7f6f1d?text=Opening" alt="เปิดตัว ณัฐชญา คลินิก" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" /></div>
+          <div class="p-5"><span class="rounded-full bg-brand-50 px-2.5 py-1 text-xs font-medium text-brand-700">กิจกรรม</span><h3 class="mt-3 text-base font-semibold leading-snug line-clamp-2">เปิดตัว ณัฐชญา คลินิก — The Exclusive Private Preview</h3><p class="mt-2 text-sm text-ink-muted line-clamp-2">งานเปิดตัวคอสเมติกส์ เมดิคอล เซอร์วิส ครบวงจร โดย พญ.ณัฐชญา ไมตรีเวช</p></div>
+        </article>
+        <article class="group overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg">
+          <div class="aspect-[16/10] overflow-hidden"><img src="https://placehold.co/600x375/faf8f0/7f6f1d?text=BAZAAR" alt="สัมภาษณ์หมอบอส BAZAAR" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" /></div>
+          <div class="p-5"><span class="rounded-full bg-brand-50 px-2.5 py-1 text-xs font-medium text-brand-700">บทสัมภาษณ์</span><h3 class="mt-3 text-base font-semibold leading-snug line-clamp-2">สัมภาษณ์คุณหมอบอส นิตยสาร BAZAAR</h3><p class="mt-2 text-sm text-ink-muted line-clamp-2">บทสัมภาษณ์ นพ.ทรงพจน์ ชัยมณี ศัลยแพทย์ผู้เชี่ยวชาญ</p></div>
+        </article>
+        <article class="group overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg">
+          <div class="aspect-[16/10] overflow-hidden"><img src="https://placehold.co/600x375/f2eed9/7f6f1d?text=COSMOPOLITAN" alt="COSMOPOLITAN" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" /></div>
+          <div class="p-5"><span class="rounded-full bg-brand-50 px-2.5 py-1 text-xs font-medium text-brand-700">นิตยสาร</span><h3 class="mt-3 text-base font-semibold leading-snug line-clamp-2">ณัฐชญา คลินิก ในนิตยสาร COSMOPOLITAN</h3><p class="mt-2 text-sm text-ink-muted line-clamp-2">ฟีเจอร์คลินิกความงามในนิตยสารชั้นนำ</p></div>
+        </article>
+        <article class="group overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg">
+          <div class="aspect-[16/10] overflow-hidden"><img src="https://placehold.co/600x375/faf8f0/7f6f1d?text=Hello!" alt="Hello!" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" /></div>
+          <div class="p-5"><span class="rounded-full bg-brand-50 px-2.5 py-1 text-xs font-medium text-brand-700">นิตยสาร</span><h3 class="mt-3 text-base font-semibold leading-snug line-clamp-2">ณัฐชญา คลินิก ในนิตยสาร Hello!</h3><p class="mt-2 text-sm text-ink-muted line-clamp-2">ฟีเจอร์ในนิตยสาร Hello!</p></div>
+        </article>
+        <article class="group overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg">
+          <div class="aspect-[16/10] overflow-hidden"><img src="https://placehold.co/600x375/f2eed9/7f6f1d?text=A+Day+Bulletin" alt="A Day Bulletin" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" /></div>
+          <div class="p-5"><span class="rounded-full bg-brand-50 px-2.5 py-1 text-xs font-medium text-brand-700">บทสัมภาษณ์</span><h3 class="mt-3 text-base font-semibold leading-snug line-clamp-2">แพทย์หญิงณัฐชญา ไมตรีเวช ใน A Day Bulletin</h3><p class="mt-2 text-sm text-ink-muted line-clamp-2">แนวคิดธุรกิจที่ควบคู่กับจรรยาบรรณทางการแพทย์</p></div>
+        </article>
+        <article class="group overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg">
+          <div class="aspect-[16/10] overflow-hidden"><img src="https://placehold.co/600x375/faf8f0/7f6f1d?text=Anti+Aging" alt="Energy Medicine" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" /></div>
+          <div class="p-5"><span class="rounded-full bg-brand-50 px-2.5 py-1 text-xs font-medium text-brand-700">สุขภาพ</span><h3 class="mt-3 text-base font-semibold leading-snug line-clamp-2">Energy Medicine คลื่นพลังงานบำบัด วิทยาการชะลอวัย</h3><p class="mt-2 text-sm text-ink-muted line-clamp-2">ปรับสมดุลการทำงานของร่างกาย เพื่อสุขภาพดีอย่างยั่งยืน</p></div>
+        </article>
+      </div>
+      <div class="mt-10 text-center"><a href="article-detail.html" class="inline-flex items-center gap-1.5 rounded-full border border-brand-300 px-7 py-3 text-sm font-medium text-brand-700 transition hover:bg-brand-50">ดูบทความทั้งหมด →</a></div>
+    </section>
+
+    <!-- ============ เกี่ยวกับเรา (image + text, ref-style) ============ -->
+    <section class="bg-surface-alt">
+      <div class="mx-auto max-w-content px-4 py-16">
+        <div class="mb-10 flex items-center justify-center gap-4">
+          <span class="h-px w-10 bg-brand-300"></span>
+          <h2 class="text-center text-2xl font-bold sm:text-3xl">เกี่ยวกับ ณัฐชญา คลินิก</h2>
+          <span class="h-px w-10 bg-brand-300"></span>
+        </div>
+        <div class="grid items-center gap-10 md:grid-cols-2">
+          <div><img src="https://placehold.co/640x460/f2eed9/7f6f1d?text=Natchaya+Clinic" alt="บรรยากาศ ณัฐชญา คลินิก" loading="lazy" class="w-full rounded-2xl object-cover shadow-soft-lg" width="640" height="460" /></div>
+          <div>
+            <p class="text-lg font-semibold text-brand-700">&ldquo;Beauty&rsquo;s in Good Hands&rdquo;</p>
+            <p class="mt-3 text-ink-muted">
+              คือปรัชญาในการทำงานของณัฐชญาคลีนิค ความเชี่ยวชาญที่จริงใจและใส่ใจในทุกรายละเอียดของความงาม
+              พร้อมมาตรฐานการทำงานที่ถูกต้องตามหลักวิชาการ เพื่อความพึงพอใจและปลอดภัยอย่างสูงสุดของลูกค้า
+            </p>
+            <p class="mt-3 text-ink-muted">
+              เรามีทีมแพทย์เฉพาะทางและบุคลากรผู้มีประสบการณ์ ดูแลตั้งแต่การตรวจวิเคราะห์ปัญหาแบบเฉพาะตัวบุคคล
+              ไม่ใช่แค่ Body Center ที่ดูแลรูปร่างและผิวพรรณภายนอก แต่ยังดูแลให้คุณสวยสุขภาพดีจากภายใน
+              ด้วยศาสตร์ Anti Aging ที่คัดสรรมาจากทุกมุมโลก
+            </p>
+            <ul class="mt-6 grid gap-2 text-sm text-ink">
+              <li class="flex items-center gap-2"><svg class="h-4 w-4 text-brand-600" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg> พ.ญ. ณัฐชญา ไมตรีเวช (หมอกุ๊กไก่) — เกียรตินิยมอันดับ 1 ม.ขอนแก่น</li>
+              <li class="flex items-center gap-2"><svg class="h-4 w-4 text-brand-600" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg> นพ. ทรงพจน์ ชัยมณี (หมอบอส) — ศัลยแพทย์</li>
+              <li class="flex items-center gap-2"><svg class="h-4 w-4 text-brand-600" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg> นพ. ศุภศิษฐ์ จิรวัฒโนทัย (หมอแอ็ด) — Plastic Surgeon</li>
+            </ul>
+            <a href="about.html" class="mt-7 inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full bg-brand-400 px-6 py-3 font-medium text-ink shadow-soft transition hover:bg-brand-500">อ่านเพิ่มเติม</a>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- ============ FOOTER ============ -->
-  <footer class="bg-ink text-white">
-    <div class="mx-auto grid max-w-content gap-8 px-4 py-12 sm:grid-cols-2 lg:grid-cols-4">
+  <!-- ============ FOOTER (light, ref-style) ============ -->
+  <footer class="border-t border-line bg-surface-alt">
+    <div class="mx-auto grid max-w-content gap-10 px-4 py-14 sm:grid-cols-2 lg:grid-cols-3">
       <div>
-        <span class="inline-flex items-center rounded-xl bg-white px-3 py-1.5 shadow-soft"><img src="assets/logo.png" alt="ณัฐชญา คลินิก Natchaya Clinic" width="129" height="53" class="h-9 w-auto" /></span>
-        <p class="mt-3 text-sm text-white/70">คลินิกเสริมความงามครบวงจร ศูนย์ดูแลผิวหน้าและรูปร่าง กระชับสัดส่วน ดูแลโดยทีมแพทย์เฉพาะทาง</p>
-        <p class="mt-3 text-sm font-medium text-brand-300">&ldquo;Beauty&rsquo;s in Good Hands&rdquo;</p>
+        <img src="assets/logo.png" alt="ณัฐชญา คลินิก Natchaya Clinic" width="129" height="53" class="h-12 w-auto" />
+        <p class="mt-4 text-sm text-ink-muted">คลินิกเสริมความงามครบวงจร ศูนย์ดูแลผิวหน้าและรูปร่าง กระชับสัดส่วน ดูแลโดยทีมแพทย์เฉพาะทาง</p>
+        <p class="mt-3 text-sm font-semibold text-brand-700">&ldquo;Beauty&rsquo;s in Good Hands&rdquo;</p>
+        <div class="mt-5 flex gap-3">
+          <a href="https://www.facebook.com/NatchayaClinic/" aria-label="Facebook" class="flex h-10 w-10 items-center justify-center rounded-full bg-brand-400 text-ink transition hover:bg-brand-500"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12Z"/></svg></a>
+          <a href="https://line.me/ti/p/~natchayaclinic" aria-label="LINE" class="flex h-10 w-10 items-center justify-center rounded-full bg-brand-400 text-ink transition hover:bg-brand-500"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.99 3 3 6.26 3 10.27c0 3.59 3.16 6.59 7.43 7.16.29.06.68.19.78.43.09.22.06.56.03.78l-.13.76c-.04.22-.18.88.77.48s5.12-3.02 6.99-5.17C20.2 13.08 21 11.74 21 10.27 21 6.26 17.01 3 12 3Z"/></svg></a>
+          <a href="tel:021025964" aria-label="โทร" class="flex h-10 w-10 items-center justify-center rounded-full bg-brand-400 text-ink transition hover:bg-brand-500"><svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/></svg></a>
+        </div>
       </div>
       <div>
-        <p class="mb-3 text-sm font-semibold text-white">บริการ</p>
-        <ul class="space-y-2 text-sm text-white/70">
-          <li><a href="service-detail.html" class="hover:text-brand-300">BODY — กระชับสัดส่วน / ดูดไขมัน</a></li>
-          <li><a href="service-detail.html" class="hover:text-brand-300">SURGERY — ศัลยกรรม</a></li>
-          <li><a href="service-detail.html" class="hover:text-brand-300">TREATMENT &amp; LASER</a></li>
-          <li><a href="service-detail.html" class="hover:text-brand-300">FACIAL DESIGN</a></li>
-          <li><a href="womenplus.html" class="hover:text-brand-300">WOMEN PLUS — สุขภาพสตรี</a></li>
+        <p class="mb-4 text-sm font-semibold text-ink">เมนูเว็บไซต์</p>
+        <ul class="grid grid-cols-2 gap-2 text-sm text-ink-muted">
+          <li><a href="service-detail.html" class="hover:text-brand-700">บริการ</a></li>
+          <li><a href="review-detail.html" class="hover:text-brand-700">รีวิว</a></li>
+          <li><a href="article-detail.html" class="hover:text-brand-700">บทความ</a></li>
+          <li><a href="womenplus.html" class="hover:text-brand-700">Women Plus</a></li>
+          <li><a href="about.html" class="hover:text-brand-700">เกี่ยวกับเรา</a></li>
+          <li><a href="contact.html" class="hover:text-brand-700">ติดต่อ</a></li>
         </ul>
       </div>
       <div>
-        <p class="mb-3 text-sm font-semibold text-white">ลิงก์</p>
-        <ul class="space-y-2 text-sm text-white/70">
-          <li><a href="about.html" class="hover:text-brand-300">เกี่ยวกับเรา</a></li>
-          <li><a href="review-detail.html" class="hover:text-brand-300">รีวิว</a></li>
-          <li><a href="article-detail.html" class="hover:text-brand-300">ข่าวสาร &amp; กิจกรรม</a></li>
-          <li><a href="contact.html" class="hover:text-brand-300">ติดต่อ</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="mb-3 text-sm font-semibold text-white">ติดต่อเรา</p>
-        <ul class="space-y-2 text-sm text-white/70">
-          <li>9 9-11 ถนนเสรีไทย แขวงรามอินทรา<br />เขตคันนายาว กรุงเทพมหานคร 10230</li>
-          <li>โทร 02-102-5964, 02-102-5965</li>
-          <li>สายด่วน 084-422-2962, 086-400-0466</li>
-          <li>LINE @natchayaclinic</li>
-          <li><a href="https://www.facebook.com/NatchayaClinic/" class="hover:text-brand-300">facebook.com/NatchayaClinic</a></li>
+        <p class="mb-4 text-sm font-semibold text-ink">สาขาของเรา</p>
+        <ul class="space-y-3 text-sm text-ink-muted">
+          <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-brand-600" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg> 9 9-11 ถนนเสรีไทย แขวงรามอินทรา เขตคันนายาว กรุงเทพมหานคร 10230</li>
+          <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-brand-600" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/></svg> โทร 02-102-5964, 02-102-5965</li>
+          <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-brand-600" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193l-3.722.21"/><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 8.511c-.884.284-1.5 1.128-1.5 2.097v4.286c0 1.136.847 2.1 1.98 2.193"/></svg> สายด่วน 084-422-2962, 086-400-0466</li>
+          <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-brand-600" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.99 3 3 6.26 3 10.27c0 3.59 3.16 6.59 7.43 7.16.29.06.68.19.78.43.09.22.06.56.03.78l-.13.76c-.04.22-.18.88.77.48s5.12-3.02 6.99-5.17C20.2 13.08 21 11.74 21 10.27 21 6.26 17.01 3 12 3Z"/></svg> LINE @natchayaclinic</li>
         </ul>
       </div>
     </div>
-    <div class="bg-brand-400 px-4 py-3 text-center text-xs font-medium text-ink">© ณัฐชญา คลินิก (Natchaya Clinic). สงวนลิขสิทธิ์.</div>
+    <div class="border-t border-line py-4 text-center text-xs text-ink-soft">© ณัฐชญา คลินิก (Natchaya Clinic). สงวนลิขสิทธิ์.</div>
   </footer>
 
-  <!-- ============ STICKY MOBILE CTA (fixed, reveals on scroll) ============ -->
-  <div data-sticky-cta class="fixed inset-x-0 bottom-0 z-50 translate-y-full border-t border-line bg-surface shadow-soft-lg transition-transform duration-300 sm:hidden">
+  <!-- ============ STICKY MOBILE CTA ============ -->
+  <div data-sticky-cta class="fixed inset-x-0 bottom-0 z-50 translate-y-full border-t border-line bg-surface shadow-soft-lg transition-transform duration-300 lg:hidden">
     <div class="grid grid-cols-3 divide-x divide-line">
       <a href="tel:021025964" class="flex min-h-[60px] flex-col items-center justify-center gap-0.5 py-2">
         <svg class="h-5 w-5 text-brand-600" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" /></svg>
