@@ -82,21 +82,30 @@
 
   <main>
     <!-- ============ HERO SLIDER — image only (text baked into each image) ============
-         Current artwork ratio 3:1 (2172×724). Container is aspect-[3/1] so nothing is cropped.
-         For a taller mobile hero, supply portrait versions and wrap each <img> in <picture> with a <source media="(max-width:767px)">. -->
+         Desktop artwork 3:1 (2172×724, assets/hero-N.jpg) · Mobile 4:5 (1122×1402, assets/hero-N-mobile.jpg)
+         <picture> swaps the file at 767px; the <img> class swaps the box ratio at the md breakpoint (768px) so they stay aligned — no cropping. -->
     <section data-slider data-slider-autoplay="6500" class="relative overflow-hidden bg-surface-alt">
       <div data-slider-track class="flex transition-transform duration-500 ease-out">
         <!-- SLIDE 1 -->
         <div data-slide class="w-full shrink-0">
-          <img src="assets/hero-1.jpg" alt="โปรโมชั่น Natchaya Clinic 1" width="2172" height="724" class="aspect-[3/1] w-full object-cover" />
+          <picture>
+            <source media="(max-width: 767px)" srcset="assets/hero-1-mobile.jpg" />
+            <img src="assets/hero-1.jpg" alt="โปรโมชั่น Natchaya Clinic 1" class="aspect-[4/5] w-full object-cover md:aspect-[3/1]" />
+          </picture>
         </div>
         <!-- SLIDE 2 -->
         <div data-slide class="w-full shrink-0">
-          <img src="assets/hero-2.jpg" alt="โปรโมชั่น Natchaya Clinic 2" width="2172" height="724" class="aspect-[3/1] w-full object-cover" />
+          <picture>
+            <source media="(max-width: 767px)" srcset="assets/hero-2-mobile.jpg" />
+            <img src="assets/hero-2.jpg" alt="โปรโมชั่น Natchaya Clinic 2" class="aspect-[4/5] w-full object-cover md:aspect-[3/1]" />
+          </picture>
         </div>
         <!-- SLIDE 3 -->
         <div data-slide class="w-full shrink-0">
-          <img src="assets/hero-3.jpg" alt="โปรโมชั่น Natchaya Clinic 3" width="2172" height="724" class="aspect-[3/1] w-full object-cover" />
+          <picture>
+            <source media="(max-width: 767px)" srcset="assets/hero-3-mobile.jpg" />
+            <img src="assets/hero-3.jpg" alt="โปรโมชั่น Natchaya Clinic 3" class="aspect-[4/5] w-full object-cover md:aspect-[3/1]" />
+          </picture>
         </div>
       </div>
 
