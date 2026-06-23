@@ -27,3 +27,7 @@ pnpm-debug.log*
 .vscode/
 .idea/
 .vercel
+
+# Raw design source exports (processed copies live in design/assets/)
+/hero-banner/
+/ChatGPT Image*

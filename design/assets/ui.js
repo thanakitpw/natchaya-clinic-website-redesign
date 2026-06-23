@@ -36,6 +36,23 @@ document.addEventListener('click', (e) => {
   const navBtn = e.target.closest('[data-nav-toggle]');
   if (navBtn) document.querySelector('[data-nav-menu]')?.classList.toggle('hidden');
 
+  // Floating "back to top" button
+  if (e.target.closest('[data-scroll-top]')) window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  // Floating contact speed-dial (open/close)
+  const fab = document.querySelector('[data-fab]');
+  if (fab) {
+    const toggle = e.target.closest('[data-fab-toggle]');
+    if (toggle && fab.contains(toggle)) {
+      const open = fab.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', String(open));
+    } else if (!e.target.closest('[data-fab]')) {
+      // click anywhere else closes it
+      fab.classList.remove('is-open');
+      fab.querySelector('[data-fab-toggle]')?.setAttribute('aria-expanded', 'false');
+    }
+  }
+
   // Accordion (FAQ)
   const acc = e.target.closest('[data-accordion-trigger]');
   if (acc) {
@@ -89,9 +106,19 @@ document.querySelectorAll('[data-slider]').forEach((slider) => {
 
 // Sticky mobile CTA: reveal after scrolling past the hero
 window.addEventListener('scroll', () => {
-  const el = document.querySelector('[data-sticky-cta]');
-  if (!el) return;
   const past = window.scrollY > 300;
-  el.classList.toggle('translate-y-0', past);
-  el.classList.toggle('translate-y-full', !past);
+
+  const el = document.querySelector('[data-sticky-cta]');
+  if (el) {
+    el.classList.toggle('translate-y-0', past);
+    el.classList.toggle('translate-y-full', !past);
+  }
+
+  // Floating "back to top": fade in after scrolling down
+  const top = document.querySelector('[data-scroll-top]');
+  if (top) {
+    top.classList.toggle('opacity-0', !past);
+    top.classList.toggle('translate-y-2', !past);
+    top.classList.toggle('pointer-events-none', !past);
+  }
 });

@@ -29,3 +29,25 @@ img { height: auto; max-width: 100%; }
 /* Hero slider dots */
 [data-slide-dot] { height:8px; width:8px; border-radius:999px; background:rgba(255,255,255,.45); }
 [data-slide-dot].is-active { width:28px; background:#d6c152; }
+
+/* Floating contact speed-dial (FAB) */
+[data-fab] .fab-item {
+  opacity: 0;
+  transform: translateY(12px) scale(.85);
+  pointer-events: none;
+  transition: opacity .2s ease, transform .2s ease;
+}
+[data-fab].is-open .fab-item { opacity: 1; transform: none; pointer-events: auto; }
+/* stagger from the button upward */
+[data-fab].is-open .fab-item:nth-last-child(2) { transition-delay: .03s; }
+[data-fab].is-open .fab-item:nth-last-child(3) { transition-delay: .07s; }
+[data-fab].is-open .fab-item:nth-last-child(4) { transition-delay: .11s; }
+[data-fab] .fab-label { opacity: 0; transform: translateX(8px); transition: opacity .2s ease, transform .2s ease; }
+[data-fab].is-open .fab-label { opacity: 1; transform: none; }
+[data-fab] .fab-x { display: none; }
+[data-fab] .fab-txt-open { display: none; }
+[data-fab].is-open .fab-plus { display: none; }
+[data-fab].is-open .fab-x { display: block; }
+[data-fab].is-open .fab-txt-closed { display: none; }
+[data-fab].is-open .fab-txt-open { display: inline; }
+[data-fab] [data-fab-toggle] { transition: background-color .2s ease; }
