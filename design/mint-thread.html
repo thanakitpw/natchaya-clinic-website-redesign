@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ร้อยไหม MINT (MINT Thread Lift) ยกกระชับใบหน้าด้วยไหม PDO | ณัฐชญา คลินิก Natchaya Clinic</title>
+  <meta name="description" content="ร้อยไหม MINT ไหม PDO จาก HansBiomed (เกาหลีใต้) ยกกระชับใบหน้าเห็นผลตั้งแต่วันที่ทำ พร้อมกระตุ้นคอลลาเจนระยะยาว ทำโดยแพทย์ที่ ณัฐชญา คลินิก" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/tailwind-config.js"></script>
+  <link rel="stylesheet" href="assets/base.css" />
+</head>
+
+<body class="overflow-x-hidden bg-surface font-sans text-ink">
+  <!-- ============ HEADER (shared) ============ -->
+  <header class="sticky top-0 z-40 border-b border-line bg-surface/95 shadow-soft backdrop-blur">
+    <div class="mx-auto flex max-w-content items-center justify-between px-4 py-2.5">
+      <a href="home.html" class="inline-flex items-center" aria-label="ณัฐชญา คลินิก หน้าแรก">
+        <img src="assets/logo.png" alt="ณัฐชญา คลินิก Natchaya Clinic" width="129" height="53" class="h-11 w-auto" />
+      </a>
+      <nav class="hidden items-center gap-5 text-sm font-medium text-ink lg:flex" aria-label="เมนูหลัก">
+        <a href="home.html" class="transition hover:text-brand-700">หน้าแรก</a>
+        <a href="services.html" class="text-brand-700">บริการ</a>
+        <a href="review.html" class="transition hover:text-brand-700">รีวิว</a>
+        <a href="blog.html" class="transition hover:text-brand-700">บทความ</a>
+        <a href="about.html" class="transition hover:text-brand-700">ทีมแพทย์</a>
+        <a href="home.html#contact" class="transition hover:text-brand-700">ติดต่อเรา</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <a href="tel:021025964" class="hidden rounded-full border border-brand-300 px-4 py-2 text-sm font-medium text-brand-700 transition hover:bg-brand-50 sm:inline-flex">โทร 02-102-5964</a>
+        <a href="https://line.me/ti/p/~natchayaclinic" class="inline-flex min-h-10 items-center gap-1.5 rounded-full bg-line_green px-4 py-2 text-sm font-medium text-white shadow-soft transition hover:brightness-95">
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.99 3 3 6.26 3 10.27c0 3.59 3.16 6.59 7.43 7.16.29.06.68.19.78.43.09.22.06.56.03.78l-.13.76c-.04.22-.18.88.77.48s5.12-3.02 6.99-5.17C20.2 13.08 21 11.74 21 10.27 21 6.26 17.01 3 12 3Z"/></svg>
+          ปรึกษาฟรี
+        </a>
+        <button data-nav-toggle aria-label="เปิดเมนู" class="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-line text-ink lg:hidden">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" /></svg>
+        </button>
+      </div>
+    </div>
+    <div data-nav-menu class="hidden border-t border-line bg-surface px-4 py-3 lg:hidden">
+      <nav class="grid gap-1 text-sm font-medium text-ink">
+        <a href="home.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">หน้าแรก</a>
+        <a href="services.html" class="rounded-lg px-3 py-2 bg-surface-alt text-brand-700">บริการ</a>
+        <a href="review.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">รีวิว</a>
+        <a href="blog.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">บทความ</a>
+        <a href="about.html" class="rounded-lg px-3 py-2 hover:bg-surface-alt">ทีมแพทย์</a>
+        <a href="home.html#contact" class="rounded-lg px-3 py-2 hover:bg-surface-alt">ติดต่อเรา</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ PAGE HERO / BREADCRUMB ============ -->
+    <section class="border-b border-line bg-surface-alt">
+      <div class="mx-auto max-w-content px-4 py-10 md:py-14">
+        <nav class="text-xs text-ink-soft" aria-label="breadcrumb">
+          <a href="home.html" class="hover:text-brand-700">หน้าแรก</a> <span class="px-1">/</span> <a href="services.html" class="hover:text-brand-700">บริการ</a> <span class="px-1">/</span> <span class="text-ink">ร้อยไหม MINT</span>
+        </nav>
+        <p class="mt-4 text-sm font-semibold uppercase tracking-[0.22em] text-brand-700">Face Lift</p>
+        <h1 class="mt-2 text-3xl font-bold sm:text-4xl">ร้อยไหม MINT</h1>
+        <p class="mt-3 max-w-2xl text-ink-muted">ยกกระชับใบหน้าด้วยไหม PDO เห็นผลตั้งแต่วันที่ทำ</p>
+        <p class="mt-3 max-w-2xl text-sm text-ink-soft">ไหมยกกระชับจาก HansBiomed Corp. (เกาหลีใต้) · เป็นหัตถการที่ทำโดยแพทย์</p>
+        <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+          <a href="home.html#contact" class="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full bg-brand-400 px-7 py-3 font-semibold text-ink shadow-soft transition hover:bg-brand-500">จองคิว / ปรึกษาแพทย์</a>
+          <a href="https://line.me/ti/p/~natchayaclinic" class="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full bg-line_green px-7 py-3 font-semibold text-white shadow-soft transition hover:brightness-95">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.99 3 3 6.26 3 10.27c0 3.59 3.16 6.59 7.43 7.16.29.06.68.19.78.43.09.22.06.56.03.78l-.13.76c-.04.22-.18.88.77.48s5.12-3.02 6.99-5.17C20.2 13.08 21 11.74 21 10.27 21 6.26 17.01 3 12 3Z"/></svg>
+            ปรึกษาฟรีทาง LINE
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OVERVIEW ============ -->
+    <section class="mx-auto max-w-content px-4 py-16">
+      <div class="grid items-center gap-10 md:grid-cols-2">
+        <div>
+          <img src="https://placehold.co/720x540/f2eed9/7f6f1d?text=MINT+PDO+Thread" alt="ร้อยไหม MINT ไหม PDO ยกกระชับใบหน้า" loading="lazy" width="720" height="540" class="w-full rounded-2xl object-cover shadow-soft-lg" />
+        </div>
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-[0.22em] text-brand-700">Overview</p>
+          <h2 class="mt-2 text-2xl font-bold sm:text-3xl">ร้อยไหม MINT คืออะไร</h2>
+          <p class="mt-4 text-ink-muted">
+            MINT ย่อมาจาก <strong class="font-semibold text-ink">M</strong>inimally <strong class="font-semibold text-ink">I</strong>nvasive <strong class="font-semibold text-ink">N</strong>onsurgical <strong class="font-semibold text-ink">T</strong>hread
+            คือไหมยกกระชับชนิด <strong class="font-semibold text-ink">PDO (Polydioxanone)</strong> ผลิตโดย HansBiomed Corp. ประเทศเกาหลีใต้
+            เป็นวัสดุสังเคราะห์ที่ร่างกายสลายได้เองตามธรรมชาติ ตัวไหมมีเงี่ยง (barbs) สำหรับเกี่ยวยึดเนื้อเยื่อที่หย่อนคล้อยให้กลับขึ้นไปอยู่ในตำแหน่งที่ต้องการ
+          </p>
+          <p class="mt-4 text-ink-muted">
+            จุดเด่นทางเทคนิคคือเงี่ยงผลิตด้วยกรรมวิธี <strong class="font-semibold text-ink">press-molded (ขึ้นรูปด้วยแรงกด)</strong> และเรียงตัวแบบ
+            <strong class="font-semibold text-ink">เกลียวรอบเส้น 360 องศา</strong> ซึ่งเป็นเทคโนโลยีที่จดสิทธิบัตรไว้ — ต่างจากไหมบางชนิดที่ใช้วิธีตัดเนื้อไหมออกเพื่อทำเงี่ยง
+          </p>
+          <p class="mt-4 text-sm text-ink-soft">ร้อยไหม MINT เป็นหัตถการที่ทำโดยแพทย์ · ผลลัพธ์ขึ้นอยู่กับแต่ละบุคคล</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section class="bg-surface-alt">
+      <div class="mx-auto max-w-content px-4 py-16">
+        <div class="mb-9">
+          <p class="text-sm font-semibold uppercase tracking-[0.22em] text-brand-700">How It Works</p>
+          <h2 class="mt-2 text-2xl font-bold sm:text-3xl">ทำงานอย่างไร — ให้ผล 2 ทางพร้อมกัน</h2>
+          <p class="mt-3 max-w-2xl text-ink-muted">ไหม MINT ทำงานทั้งเชิงกลไกและเชิงชีวภาพในเวลาเดียวกัน</p>
+        </div>
+        <div class="grid gap-6 md:grid-cols-2">
+          <div class="rounded-2xl bg-surface p-7 shadow-soft ring-1 ring-line">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-brand-100 text-base font-bold text-brand-700">1</span>
+            <h3 class="mt-4 text-lg font-semibold">ผลยกทันที (Mechanical Lift)</h3>
+            <p class="mt-3 text-ink-muted">
+              แพทย์สอดไหมผ่านเข็มนำเข้าใต้ผิว เงี่ยงบนเส้นไหมเกี่ยวยึดเนื้อเยื่อที่หย่อน แล้วดึงกลับขึ้นในทิศทางที่ต้องการ
+              <strong class="font-semibold text-ink">เห็นการยกได้ตั้งแต่วันที่ทำ</strong>
+            </p>
+          </div>
+          <div class="rounded-2xl bg-surface p-7 shadow-soft ring-1 ring-line">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-brand-100 text-base font-bold text-brand-700">2</span>
+            <h3 class="mt-4 text-lg font-semibold">ผลกระตุ้นคอลลาเจนระยะยาว (Biostimulation)</h3>
+            <p class="mt-3 text-ink-muted">
+              เมื่อไหม PDO ค่อย ๆ สลาย ร่างกายตอบสนองด้วยการสร้างคอลลาเจนใหม่รอบแนวไหม ทำให้ผิวบริเวณนั้นแน่นและมีโครงสร้างรองรับดีขึ้น
+              แม้ไหมจะสลายไปแล้วก็ตาม
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHO IS IT FOR ============ -->
+    <section class="mx-auto max-w-content px-4 py-16">
+      <div class="grid gap-10 md:grid-cols-2 md:items-center">
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-[0.22em] text-brand-700">For You</p>
+          <h2 class="mt-2 text-2xl font-bold sm:text-3xl">เหมาะกับใคร</h2>
+          <ul class="mt-6 space-y-4 text-ink-muted">
+            <li class="flex gap-3">
+              <svg class="mt-0.5 h-5 w-5 flex-none text-brand-700" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+              ผู้ที่ผิวหน้าหย่อนคล้อยชัดเจน จนการทำเครื่องยกกระชับอย่างเดียวอาจไม่เพียงพอ
+            </li>
+            <li class="flex gap-3">
+              <svg class="mt-0.5 h-5 w-5 flex-none text-brand-700" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+              ผู้ที่มีแก้มตก ร่องแก้มลึก หรือกรอบหน้าไม่ชัด
+            </li>
+            <li class="flex gap-3">
+              <svg class="mt-0.5 h-5 w-5 flex-none text-brand-700" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+              ผู้ที่ต้องการเห็นผลการยกทันที ไม่ต้องการรอให้คอลลาเจนสร้างใหม่หลายเดือน
+            </li>
+            <li class="flex gap-3">
+              <svg class="mt-0.5 h-5 w-5 flex-none text-brand-700" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+              ผู้ที่ต้องการปรับรูปหน้าให้เรียวขึ้น ยกมุมปากและแก้ม
+            </li>
+            <li class="flex gap-3">
+              <svg class="mt-0.5 h-5 w-5 flex-none text-brand-700" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+              ผู้ที่ยังไม่พร้อมเข้ารับการผ่าตัดดึงหน้า
+            </li>
+          </ul>
+          <p class="mt-6 text-sm text-ink-soft">* ความเหมาะสมและแนวทางการดูแลขึ้นอยู่กับการประเมินของแพทย์เป็นรายบุคคล ควรเข้ารับการประเมินจากแพทย์ก่อนตัดสินใจเข้ารับบริการ</p>
+        </div>
+        <div>
+          <img src="https://placehold.co/640x520/faf8f0/7f6f1d?text=Consultation" alt="ปรึกษาแพทย์เพื่อประเมินความเหมาะสมก่อนร้อยไหม MINT" loading="lazy" width="640" height="520" class="w-full rounded-2xl object-cover shadow-soft-lg" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COMBINE WITH / TIMELINE ============ -->
+    <section class="bg-surface-alt">
+      <div class="mx-auto max-w-content px-4 py-16">
+        <div class="grid gap-10 md:grid-cols-2">
+          <div class="rounded-2xl bg-surface p-7 shadow-soft ring-1 ring-line">
+            <p class="text-sm font-semibold uppercase tracking-[0.22em] text-brand-700">Combination</p>
+            <h2 class="mt-2 text-2xl font-bold">ใช้ร่วมกับเครื่องยกกระชับ</h2>
+            <p class="mt-4 text-ink-muted">
+              ร้อยไหม MINT มักใช้ร่วมกับเครื่องยกกระชับ เช่น <a href="ulthera.html" class="font-medium text-brand-700 underline underline-offset-2 hover:text-brand-600">Ulthera</a>
+              หรือ <a href="emface.html" class="font-medium text-brand-700 underline underline-offset-2 hover:text-brand-600">EMFACE</a>
+              เพื่อให้ได้ทั้งการยกเชิงโครงสร้างจากเส้นไหม และการกระชับผิวจากการกระตุ้นคอลลาเจนด้วยพลังงาน
+              แผนการดูแลที่เหมาะสมกับแต่ละคนแตกต่างกัน แพทย์จะเป็นผู้ประเมินและวางแผนให้
+            </p>
+          </div>
+          <div class="rounded-2xl bg-surface p-7 shadow-soft ring-1 ring-line">
+            <p class="text-sm font-semibold uppercase tracking-[0.22em] text-brand-700">Timeline</p>
+            <h2 class="mt-2 text-2xl font-bold">ระยะเวลาและผลลัพธ์</h2>
+            <ul class="mt-5 space-y-4 text-ink-muted">
+              <li class="flex gap-3">
+                <svg class="mt-0.5 h-5 w-5 flex-none text-brand-700" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+                <span><strong class="font-semibold text-ink">ระยะเวลาทำ</strong> — หัตถการใช้เวลาประมาณ 1 ชั่วโมง</span>
+              </li>
+              <li class="flex gap-3">
+                <svg class="mt-0.5 h-5 w-5 flex-none text-brand-700" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
+                <span><strong class="font-semibold text-ink">ผลลัพธ์</strong> — เห็นการยกได้ตั้งแต่วันที่ทำ และผลลัพธ์มักเข้าที่ชัดเจนประมาณ 1 เดือนหลังทำ</span>
+              </li>
+              <li class="flex gap-3">
+                <svg class="mt-0.5 h-5 w-5 flex-none text-brand-700" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"/></svg>
+                <span><strong class="font-semibold text-ink">ความคงอยู่</strong> — ข้อมูลจากผู้ผลิตระบุว่าผลลัพธ์อยู่ได้ประมาณ 1 ปี</span>
+              </li>
+            </ul>
+            <p class="mt-6 text-sm text-ink-soft">ผลลัพธ์ขึ้นอยู่กับแต่ละบุคคล ขึ้นกับสภาพผิว อายุ ระดับความหย่อนคล้อย และการดูแลตนเองหลังทำ</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RECOVERY / AFTERCARE ============ -->
+    <!-- TODO: ขอคำแนะนำการดูแลตัวเองหลังทำ + ข้อห้าม/ผลข้างเคียง ฉบับจริงจากแพทย์ของคลินิกมาใส่ -->
+    <section class="mx-auto max-w-content px-4 py-16">
+      <div class="mb-9">
+        <p class="text-sm font-semibold uppercase tracking-[0.22em] text-brand-700">Recovery &amp; Aftercare</p>
+        <h2 class="mt-2 text-2xl font-bold sm:text-3xl">การพักฟื้นและการดูแลตัวเอง</h2>
+        <p class="mt-3 max-w-2xl text-ink-muted">ร้อยไหมเป็นหัตถการที่มีการลงเข็ม <strong class="font-semibold text-ink">จึงมีระยะพักฟื้น</strong> ข้อมูลส่วนนี้เราตั้งใจเขียนไว้อย่างตรงไปตรงมา เพื่อให้ผู้เข้ารับบริการเตรียมตัวได้ถูกต้อง</p>
+      </div>
+      <div class="grid gap-6 md:grid-cols-3">
+        <div class="rounded-2xl bg-surface p-7 shadow-soft ring-1 ring-line">
+          <svg class="h-7 w-7 text-brand-700" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z"/></svg>
+          <h3 class="mt-4 text-lg font-semibold">มีระยะพักฟื้น</h3>
+          <p class="mt-3 text-ink-muted">หลังทำอาจมีอาการบวม ช้ำ หรือรู้สึกตึงรั้งบริเวณที่ร้อยไหมในช่วงแรก ซึ่งเป็นเรื่องปกติของหัตถการนี้</p>
+        </div>
+        <div class="rounded-2xl bg-surface p-7 shadow-soft ring-1 ring-line">
+          <svg class="h-7 w-7 text-brand-700" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+          <h3 class="mt-4 text-lg font-semibold">มีข้อควรปฏิบัติหลังทำ</h3>
+          <p class="mt-3 text-ink-muted">ต้องทำตามคำแนะนำอย่างเคร่งครัด เช่น หลีกเลี่ยงการอ้าปากกว้าง การนวดหน้า และการนอนตะแคง ตามระยะเวลาที่แพทย์กำหนด</p>
+        </div>
+        <div class="rounded-2xl bg-surface p-7 shadow-soft ring-1 ring-line">
+          <svg class="h-7 w-7 text-brand-700" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z"/></svg>
+          <h3 class="mt-4 text-lg font-semibold">แพทย์อธิบายก่อนและหลังทำทุกครั้ง</h3>
+          <p class="mt-3 text-ink-muted">แพทย์จะอธิบายคำแนะนำการดูแลตัวเองอย่างละเอียดทั้งก่อนและหลังทำทุกครั้ง หากมีข้อสงสัยสามารถสอบถามได้ตลอด</p>
+        </div>
+      </div>
+      <p class="mt-8 rounded-2xl bg-surface-alt px-6 py-5 text-sm text-ink-muted ring-1 ring-line">
+        <strong class="font-semibold text-ink">หมายเหตุ:</strong> ผลลัพธ์ขึ้นอยู่กับแต่ละบุคคล ข้อมูลบนหน้านี้มีวัตถุประสงค์เพื่อให้ความรู้เบื้องต้นเท่านั้น ไม่ใช่คำวินิจฉัยหรือคำแนะนำทางการแพทย์เฉพาะบุคคล
+        ควรเข้ารับการประเมินจากแพทย์ก่อนตัดสินใจเข้ารับบริการทุกครั้ง
+      </p>
+    </section>
+
+    <!-- ============ CERTIFICATION ============ -->
+    <!-- TODO: ขอเลขที่ อย. ไทย + รุ่นไหมที่คลินิกใช้ (MINT / MINT Lift / MINT-I) + จำนวนเส้นต่อโปรแกรม -->
+    <section class="bg-surface-alt">
+      <div class="mx-auto max-w-content px-4 py-16">
+        <div class="mb-9">
+          <p class="text-sm font-semibold uppercase tracking-[0.22em] text-brand-700">Certification</p>
+          <h2 class="mt-2 text-2xl font-bold sm:text-3xl">การรับรอง</h2>
+          <p class="mt-3 max-w-2xl text-ink-muted">ไหม MINT ของ HansBiomed Corp. ได้รับการรับรองจาก US FDA (FDA cleared) ผ่านกระบวนการ 510(k) รวม 3 ฉบับ</p>
+        </div>
+        <div class="overflow-x-auto rounded-2xl bg-surface shadow-soft ring-1 ring-line">
+          <table class="w-full min-w-[36rem] border-collapse text-left text-sm">
+            <caption class="caption-bottom px-6 py-4 text-left text-sm text-ink-soft">MINT เป็นไหม PDO ที่ได้รับการรับรองจาก US FDA ถึง 3 ฉบับ</caption>
+            <thead class="bg-surface-alt text-xs font-semibold uppercase tracking-wider text-brand-700">
+              <tr>
+                <th scope="col" class="px-6 py-4">ปี</th>
+                <th scope="col" class="px-6 py-4">เลขที่</th>
+                <th scope="col" class="px-6 py-4">ข้อบ่งใช้</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-line text-ink-muted">
+              <tr>
+                <th scope="row" class="whitespace-nowrap px-6 py-4 font-semibold text-ink">2013</th>
+                <td class="whitespace-nowrap px-6 py-4 font-medium">K130191</td>
+                <td class="px-6 py-4">การประกบเนื้อเยื่ออ่อน (soft tissue approximation) ในกรณีที่เหมาะกับไหมละลาย</td>
+              </tr>
+              <tr>
+                <th scope="row" class="whitespace-nowrap px-6 py-4 font-semibold text-ink">2020</th>
+                <td class="whitespace-nowrap px-6 py-4 font-medium">K192423</td>
+                <td class="px-6 py-4">การยกกลางใบหน้า (midface suspension) สำหรับร่องแก้มระดับปานกลาง–รุนแรง</td>
+              </tr>
+              <tr>
+                <th scope="row" class="whitespace-nowrap px-6 py-4 font-semibold text-ink">2023</th>
+                <td class="whitespace-nowrap px-6 py-4 font-medium">K220549</td>
+                <td class="px-6 py-4">ขยายข้อบ่งใช้ครอบคลุมการยกใบหน้า (ขมับ กลางใบหน้า ใบหน้าส่วนล่าง)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="mx-auto max-w-content px-4 py-16">
+      <div class="mb-9 text-center">
+        <p class="text-sm font-semibold uppercase tracking-[0.22em] text-brand-700">FAQ</p>
+        <h2 class="mt-2 text-2xl font-bold sm:text-3xl">คำถามที่พบบ่อย</h2>
+      </div>
+      <div class="mx-auto max-w-2xl space-y-3">
+        <div class="overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line">
+          <button data-accordion-trigger class="flex w-full items-center justify-between gap-4 px-5 py-4 text-left font-semibold">
+            <span>ร้อยไหม MINT คืออะไร?</span>
+            <svg class="h-5 w-5 flex-none text-brand-700 transition-transform" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
+          </button>
+          <div class="hidden border-t border-line px-5 py-4 text-ink-muted">
+            MINT (Minimally Invasive Nonsurgical Thread) คือไหมยกกระชับชนิด PDO (Polydioxanone) จาก HansBiomed Corp. ประเทศเกาหลีใต้ ตัวไหมมีเงี่ยงสำหรับเกี่ยวยึดเนื้อเยื่อที่หย่อนคล้อยให้กลับขึ้นไปในตำแหน่งที่ต้องการ และร่างกายสามารถสลายเส้นไหมได้เองตามธรรมชาติ เป็นหัตถการที่ทำโดยแพทย์
+          </div>
+        </div>
+        <div class="overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line">
+          <button data-accordion-trigger class="flex w-full items-center justify-between gap-4 px-5 py-4 text-left font-semibold">
+            <span>ต่างจากไหมทั่วไปอย่างไร?</span>
+            <svg class="h-5 w-5 flex-none text-brand-700 transition-transform" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
+          </button>
+          <div class="hidden border-t border-line px-5 py-4 text-ink-muted">
+            จุดต่างอยู่ที่วิธีทำเงี่ยงบนเส้นไหม MINT ใช้กรรมวิธี press-molded คือขึ้นรูปเงี่ยงด้วยแรงกด และเรียงเงี่ยงแบบเกลียวรอบเส้น 360 องศา (เทคโนโลยีจดสิทธิบัตร) ต่างจากไหมบางชนิดที่ทำเงี่ยงด้วยการตัดเนื้อไหมออก นอกจากนี้ MINT ยังเป็นไหม PDO ที่ได้รับการรับรองจาก US FDA (FDA cleared) ถึง 3 ฉบับ
+          </div>
+        </div>
+        <div class="overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line">
+          <button data-accordion-trigger class="flex w-full items-center justify-between gap-4 px-5 py-4 text-left font-semibold">
+            <span>เจ็บไหม ต้องพักฟื้นกี่วัน?</span>
+            <svg class="h-5 w-5 flex-none text-brand-700 transition-transform" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
+          </button>
+          <div class="hidden border-t border-line px-5 py-4 text-ink-muted">
+            ร้อยไหมเป็นหัตถการที่มีการลงเข็ม จึงมีระยะพักฟื้น หลังทำอาจมีอาการบวม ช้ำ หรือรู้สึกตึงรั้งในช่วงแรกได้ ซึ่งเป็นเรื่องปกติ และมีข้อควรปฏิบัติที่ต้องทำตามอย่างเคร่งครัด เช่น หลีกเลี่ยงการอ้าปากกว้าง การนวดหน้า และการนอนตะแคง ตามระยะเวลาที่แพทย์กำหนด ระยะเวลาพักฟื้นของแต่ละคนไม่เท่ากัน แพทย์จะประเมินและอธิบายคำแนะนำการดูแลตัวเองให้อย่างละเอียดก่อนและหลังทำทุกครั้ง
+          </div>
+        </div>
+        <div class="overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line">
+          <button data-accordion-trigger class="flex w-full items-center justify-between gap-4 px-5 py-4 text-left font-semibold">
+            <span>ผลอยู่ได้นานแค่ไหน?</span>
+            <svg class="h-5 w-5 flex-none text-brand-700 transition-transform" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
+          </button>
+          <div class="hidden border-t border-line px-5 py-4 text-ink-muted">
+            เห็นการยกได้ตั้งแต่วันที่ทำ และผลลัพธ์มักเข้าที่ชัดเจนประมาณ 1 เดือนหลังทำ ข้อมูลจากผู้ผลิตระบุว่าผลลัพธ์อยู่ได้ประมาณ 1 ปี ทั้งนี้ผลลัพธ์ขึ้นอยู่กับแต่ละบุคคล ทั้งสภาพผิว อายุ ระดับความหย่อนคล้อย และการดูแลตนเองหลังทำ
+          </div>
+        </div>
+        <div class="overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line">
+          <button data-accordion-trigger class="flex w-full items-center justify-between gap-4 px-5 py-4 text-left font-semibold">
+            <span>ไหมสลายไปแล้ว ผิวจะกลับไปหย่อนเหมือนเดิมไหม?</span>
+            <svg class="h-5 w-5 flex-none text-brand-700 transition-transform" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
+          </button>
+          <div class="hidden border-t border-line px-5 py-4 text-ink-muted">
+            เมื่อไหม PDO สลายไป คอลลาเจนที่ร่างกายสร้างขึ้นรอบแนวไหมยังคงอยู่ ทำให้ผิวบริเวณนั้นยังมีโครงสร้างรองรับ แต่ผิวจะยังเปลี่ยนแปลงตามวัยต่อไปตามธรรมชาติ แพทย์จะประเมินและวางแผนการดูแลระยะยาวที่เหมาะกับแต่ละบุคคลให้
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RELATED SERVICES ============ -->
+    <section class="bg-surface-alt">
+      <div class="mx-auto max-w-content px-4 py-16">
+        <div class="mb-9">
+          <p class="text-sm font-semibold uppercase tracking-[0.22em] text-brand-700">More in Face Lift</p>
+          <h2 class="mt-2 text-2xl font-bold sm:text-3xl">บริการอื่นในหมวด FACE LIFT</h2>
+        </div>
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <a href="ulthera.html" class="group overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg">
+            <img src="https://placehold.co/400x260/f2eed9/7f6f1d?text=Ulthera" alt="Ulthera ยกกระชับผิวหน้าด้วยคลื่นอัลตราซาวด์" loading="lazy" class="aspect-[3/2] w-full object-cover" />
+            <div class="p-5"><h3 class="font-semibold group-hover:text-brand-700">Ulthera</h3><p class="mt-1 text-sm text-ink-muted">ยกกระชับด้วยอัลตราซาวด์ พร้อมระบบภาพเรียลไทม์</p></div>
+          </a>
+          <a href="emface.html" class="group overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg">
+            <img src="https://placehold.co/400x260/faf8f0/7f6f1d?text=EMFACE" alt="EMFACE ยกกระชับใบหน้าโดยไม่ใช้เข็ม" loading="lazy" class="aspect-[3/2] w-full object-cover" />
+            <div class="p-5"><h3 class="font-semibold group-hover:text-brand-700">EMFACE</h3><p class="mt-1 text-sm text-ink-muted">ดูแลทั้งผิวและกล้ามเนื้อใบหน้า ไม่ใช้เข็ม</p></div>
+          </a>
+          <a href="nc-neo.html" class="group overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg">
+            <img src="https://placehold.co/400x260/f2eed9/7f6f1d?text=NC+Neo" alt="NC Neo ดูแลผิวหน้า" loading="lazy" class="aspect-[3/2] w-full object-cover" />
+            <div class="p-5"><h3 class="font-semibold group-hover:text-brand-700">NC Neo</h3><p class="mt-1 text-sm text-ink-muted">โปรแกรมดูแลผิวหน้าของคลินิก</p></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA BAND ============ -->
+    <section class="bg-ink">
+      <div class="mx-auto flex max-w-content flex-col items-center gap-5 px-4 py-14 text-center">
+        <h2 class="text-2xl font-bold text-white sm:text-3xl">สนใจร้อยไหม MINT? ปรึกษาทีมแพทย์ของเรา</h2>
+        <p class="max-w-xl text-white/80">นัดหมายหรือสอบถามข้อมูลบริการ ทีมงานพร้อมดูแลและให้คำปรึกษาแบบเฉพาะบุคคล</p>
+        <div class="flex flex-col gap-3 sm:flex-row">
+          <a href="https://line.me/ti/p/~natchayaclinic" class="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full bg-line_green px-7 py-3 font-semibold text-white shadow-soft transition hover:brightness-95">ปรึกษาฟรีทาง LINE</a>
+          <a href="tel:021025964" class="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full bg-brand-400 px-7 py-3 font-semibold text-ink shadow-soft transition hover:bg-brand-500">โทร 02-102-5964</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER (shared) ============ -->
+  <!-- To add a custom background later: put it on the <footer> below, e.g. class="... bg-surface-alt bg-[url('assets/footer-bg.png')] bg-cover bg-center" -->
+  <footer id="contact" class="relative overflow-hidden bg-surface-alt bg-[url('assets/footer-bg.png')] bg-cover bg-center">
+    <div class="relative z-10 mx-auto grid max-w-content items-stretch gap-6 px-4 py-16 md:grid-cols-3">
+      <!-- CARD 1: brand + description + highlights + socials -->
+      <div class="flex flex-col rounded-2xl bg-surface p-7 shadow-soft ring-1 ring-line/70">
+        <img src="assets/logo.png" alt="ณัฐชญา คลินิก Natchaya Clinic" width="129" height="53" class="h-12 w-auto self-start" />
+        <p class="mt-5 text-sm leading-relaxed text-ink-muted">ณัฐชญา คลินิก คลินิกเสริมความงาม ดูแลรูปร่าง ผิวพรรณ และศัลยกรรม โดยทีมแพทย์เฉพาะทาง ด้วยเทคโนโลยีมาตรฐานและความปลอดภัยเป็นอันดับแรก เน้นผลลัพธ์ที่เป็นธรรมชาติ</p>
+        <ul class="mt-6 space-y-2.5 text-sm text-ink-muted">
+          <li class="flex items-start gap-2"><svg class="mt-1 h-3 w-3 shrink-0 text-brand-600" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5l8 7-8 7z"/></svg><span>ทีมแพทย์เฉพาะทางมากประสบการณ์</span></li>
+          <li class="flex items-start gap-2"><svg class="mt-1 h-3 w-3 shrink-0 text-brand-600" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5l8 7-8 7z"/></svg><span>เทคโนโลยีมาตรฐาน ความปลอดภัยสูง</span></li>
+          <li class="flex items-start gap-2"><svg class="mt-1 h-3 w-3 shrink-0 text-brand-600" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5l8 7-8 7z"/></svg><span>ดูแลต่อเนื่อง ตั้งแต่ปรึกษาจนถึงติดตามผล</span></li>
+        </ul>
+        <div class="mt-auto flex items-center gap-2.5 pt-7">
+          <a href="#" aria-label="Facebook" class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-brand-700 text-white transition hover:bg-brand-600"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.9 3.78-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.57v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94Z"/></svg></a>
+          <a href="https://line.me/ti/p/~natchayaclinic" aria-label="LINE" class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-brand-700 text-white transition hover:bg-brand-600"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.99 3 3 6.26 3 10.27c0 3.59 3.16 6.59 7.43 7.16.29.06.68.19.78.43.09.22.06.56.03.78l-.13.76c-.04.22-.18.88.77.48s5.12-3.02 6.99-5.17C20.2 13.08 21 11.74 21 10.27 21 6.26 17.01 3 12 3Z"/></svg></a>
+          <a href="#" aria-label="Instagram" class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-brand-700 text-white transition hover:bg-brand-600"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.21 8.8 2.2 12 2.2Zm0 1.8c-3.14 0-3.51.01-4.75.07-.9.04-1.39.19-1.71.32-.43.17-.74.37-1.06.69-.32.32-.52.63-.69 1.06-.13.32-.28.81-.32 1.71-.06 1.24-.07 1.61-.07 4.75s.01 3.51.07 4.75c.04.9.19 1.39.32 1.71.17.43.37.74.69 1.06.32.32.63.52 1.06.69.32.13.81.28 1.71.32 1.24.06 1.61.07 4.75.07s3.51-.01 4.75-.07c.9-.04 1.39-.19 1.71-.32.43-.17.74-.37 1.06-.69.32-.32.52-.63.69-1.06.13-.32.28-.81.32-1.71.06-1.24.07-1.61.07-4.75s-.01-3.51-.07-4.75c-.04-.9-.19-1.39-.32-1.71a2.85 2.85 0 0 0-.69-1.06 2.85 2.85 0 0 0-1.06-.69c-.32-.13-.81-.28-1.71-.32C15.51 4.01 15.14 4 12 4Zm0 3.06A4.94 4.94 0 1 1 7.06 12 4.94 4.94 0 0 1 12 7.06Zm0 1.8A3.14 3.14 0 1 0 15.14 12 3.14 3.14 0 0 0 12 8.86Zm5.08-3.24a1.15 1.15 0 1 1-1.15 1.15 1.15 1.15 0 0 1 1.15-1.15Z"/></svg></a>
+          <a href="#" aria-label="YouTube" class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-brand-700 text-white transition hover:bg-brand-600"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.5a3.02 3.02 0 0 0-2.12-2.14C19.5 3.85 12 3.85 12 3.85s-7.5 0-9.38.51A3.02 3.02 0 0 0 .5 6.5 31.4 31.4 0 0 0 0 12a31.4 31.4 0 0 0 .5 5.5 3.02 3.02 0 0 0 2.12 2.14c1.88.51 9.38.51 9.38.51s7.5 0 9.38-.51a3.02 3.02 0 0 0 2.12-2.14A31.4 31.4 0 0 0 24 12a31.4 31.4 0 0 0-.5-5.5ZM9.6 15.6V8.4l6.2 3.6Z"/></svg></a>
+          <a href="#" aria-label="TikTok" class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-brand-700 text-white transition hover:bg-brand-600"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 5.82a4.28 4.28 0 0 1-1.06-2.82h-3.2v12.86a2.36 2.36 0 0 1-2.36 2.3 2.36 2.36 0 0 1-.6-4.64v-3.28a5.56 5.56 0 0 0-4.84 5.5A5.56 5.56 0 0 0 10.1 21a5.56 5.56 0 0 0 5.56-5.56V9.04a7.45 7.45 0 0 0 4.34 1.39V7.2a4.28 4.28 0 0 1-3.4-1.38Z"/></svg></a>
+        </div>
+      </div>
+
+      <!-- CARD 2: sitemap / services -->
+      <div class="flex flex-col rounded-2xl bg-surface p-7 shadow-soft ring-1 ring-line/70">
+        <div class="mb-5 flex items-center gap-4">
+          <h3 class="whitespace-nowrap text-sm font-semibold uppercase tracking-[0.18em] text-brand-700">แผนผังเว็บไซต์</h3>
+          <span class="h-px flex-1 bg-gradient-to-r from-brand-300 to-transparent"></span>
+        </div>
+        <ul class="space-y-2.5 text-sm text-ink-muted">
+          <li><a href="beautycare.html#body" class="group flex items-center gap-2 transition hover:text-brand-700"><svg class="h-3 w-3 shrink-0 text-brand-500 transition group-hover:translate-x-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5l8 7-8 7z"/></svg>BODY · ดูดไขมัน-กระชับสัดส่วน</a></li>
+          <li><a href="beautycare.html#surgery" class="group flex items-center gap-2 transition hover:text-brand-700"><svg class="h-3 w-3 shrink-0 text-brand-500 transition group-hover:translate-x-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5l8 7-8 7z"/></svg>SURGERY · ศัลยกรรม</a></li>
+          <li><a href="beautycare.html#treatment-laser" class="group flex items-center gap-2 transition hover:text-brand-700"><svg class="h-3 w-3 shrink-0 text-brand-500 transition group-hover:translate-x-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5l8 7-8 7z"/></svg>TREATMENT &amp; LASER</a></li>
+          <li><a href="beautycare.html#facial-design" class="group flex items-center gap-2 transition hover:text-brand-700"><svg class="h-3 w-3 shrink-0 text-brand-500 transition group-hover:translate-x-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5l8 7-8 7z"/></svg>FACIAL DESIGN</a></li>
+          <li><a href="beautycare.html#health-program" class="group flex items-center gap-2 transition hover:text-brand-700"><svg class="h-3 w-3 shrink-0 text-brand-500 transition group-hover:translate-x-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5l8 7-8 7z"/></svg>HEALTH PROGRAM</a></li>
+        </ul>
+      </div>
+
+      <!-- CARD 3: contact -->
+      <div class="flex flex-col rounded-2xl bg-surface p-7 shadow-soft ring-1 ring-line/70">
+        <div class="mb-5 flex items-center gap-4">
+          <h3 class="whitespace-nowrap text-sm font-semibold uppercase tracking-[0.18em] text-brand-700">ติดต่อเรา</h3>
+          <span class="h-px flex-1 bg-gradient-to-r from-brand-300 to-transparent"></span>
+        </div>
+        <ul class="space-y-4 text-sm text-ink-muted">
+          <li class="flex gap-3">
+            <svg class="mt-0.5 h-5 w-5 shrink-0 text-brand-600" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
+            <span>9 9-11 ถนนเสรีไทย แขวงรามอินทรา เขตคันนายาว กรุงเทพมหานคร 10230</span>
+          </li>
+          <li class="flex gap-3">
+            <svg class="mt-0.5 h-5 w-5 shrink-0 text-brand-600" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/></svg>
+            <span><a href="tel:021025964" class="transition hover:text-brand-700">02-102-5964, 02-102-5965</a><br />Hotline 084-422-2962, 086-400-0466</span>
+          </li>
+          <li class="flex gap-3">
+            <svg class="mt-0.5 h-5 w-5 shrink-0 text-brand-600" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+            <span>เปิดทุกวัน 10:00–20:00 น.</span>
+          </li>
+          <li class="flex gap-3">
+            <svg class="mt-0.5 h-5 w-5 shrink-0 text-line_green" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.99 3 3 6.26 3 10.27c0 3.59 3.16 6.59 7.43 7.16.29.06.68.19.78.43.09.22.06.56.03.78l-.13.76c-.04.22-.18.88.77.48s5.12-3.02 6.99-5.17C20.2 13.08 21 11.74 21 10.27 21 6.26 17.01 3 12 3Z"/></svg>
+            <a href="https://line.me/ti/p/~natchayaclinic" class="font-semibold text-line_green">LINE @natchayaclinic</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="relative z-10 bg-brand-700 py-3.5 text-center text-xs text-white/85">© 2026 · ณัฐชญา คลินิก (Natchaya Clinic) · สงวนลิขสิทธิ์ทุกประการ</div>
+  </footer>
+
+  <!-- ============ STICKY MOBILE CTA (shared) ============ -->
+  <div data-sticky-cta class="fixed inset-x-0 bottom-0 z-50 translate-y-full border-t border-line bg-surface shadow-soft-lg transition-transform duration-300 lg:hidden">
+    <div class="grid grid-cols-3 divide-x divide-line">
+      <a href="tel:021025964" class="flex min-h-[60px] flex-col items-center justify-center gap-0.5 py-2"><span class="text-sm font-semibold">โทร</span><span class="text-xs text-ink-muted">02-102-5964</span></a>
+      <a href="https://line.me/ti/p/~natchayaclinic" class="flex min-h-[60px] flex-col items-center justify-center gap-0.5 py-2"><span class="text-sm font-semibold text-line_green">LINE</span><span class="text-xs text-ink-muted">ปรึกษาฟรี</span></a>
+      <a href="home.html#contact" class="flex min-h-[60px] flex-col items-center justify-center gap-0.5 bg-brand-400 py-2 text-ink"><span class="text-sm font-semibold">จองคิว</span><span class="text-xs">ติดต่อเรา</span></a>
+    </div>
+  </div>
+
+  <script src="assets/ui.js"></script>
+</body>
+</html>
