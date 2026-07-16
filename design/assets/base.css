@@ -6,6 +6,9 @@
 html { scroll-behavior: smooth; }
 body { -webkit-font-smoothing: antialiased; }
 
+/* Headings keep IBM Plex Sans Thai; body copy falls through to Sarabun (see tailwind-config.js) */
+h1, h2, h3, h4, h5, h6 { font-family: "IBM Plex Sans Thai", system-ui, sans-serif; }
+
 /* Thai needs more line-height than Latin defaults */
 p, li { line-height: 1.85; }
 h1, h2, h3, h4 { line-height: 1.35; }

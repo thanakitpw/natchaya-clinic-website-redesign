@@ -4,6 +4,10 @@ Static HTML has no include mechanism, so every `design/*.html` page copies this 
 verbatim. The shared **values** (colors/font/spacing) live in `assets/tailwind-config.js`,
 so only this boilerplate is duplicated — change tokens there, never in page markup.
 
+Two typefaces: **Sarabun** (มีหัว) is the body default, **IBM Plex Sans Thai** (ไม่มีหัว)
+is bound to `h1`–`h6` in `assets/base.css`. Put `font-display` on a non-heading element to
+give it the heading face.
+
 ```html
 <head>
   <meta charset="utf-8" />
@@ -13,7 +17,7 @@ so only this boilerplate is duplicated — change tokens there, never in page ma
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="assets/tailwind-config.js"></script>

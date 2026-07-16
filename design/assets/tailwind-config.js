@@ -31,9 +31,11 @@ window.tailwind.config = {
         line_green: '#06c755', // LINE brand green (fixed, do not change)
       },
       fontFamily: {
-        // Single typeface across the whole site — IBM Plex Sans Thai (Thai + Latin + numbers).
-        sans: ['"IBM Plex Sans Thai"', 'system-ui', 'sans-serif'],
-        // Kept as an alias of sans so any leftover `font-display` still renders IBM Plex Sans Thai.
+        // Body copy — Sarabun (ฟอนต์มีหัว). Looped Thai reads easier at paragraph length,
+        // so everything that is NOT a heading uses this.
+        sans: ['Sarabun', 'system-ui', 'sans-serif'],
+        // Headings — IBM Plex Sans Thai (ฟอนต์ไม่มีหัว) keeps the brand voice on h1–h6.
+        // Applied to headings via base.css; `font-display` opts any other element in.
         display: ['"IBM Plex Sans Thai"', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
