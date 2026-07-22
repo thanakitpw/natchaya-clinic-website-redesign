@@ -1,0 +1,13 @@
+# Local raw/source assets — NOT part of the deploy.
+# (Processed copies used by the app live in public/assets/.)
+# The Vercel CLI uploads the working directory and does not honour .gitignore,
+# so these large folders must be listed here or the upload blows past the size limit.
+website-img
+รูปหมอ
+รีวิวหน้าแรก
+รูปรีวิวอินฟลู
+*.zip
+ChatGPT Image*
+
+# Static HTML prototype kept only as a reference; the app builds from app/ + public/.
+design
