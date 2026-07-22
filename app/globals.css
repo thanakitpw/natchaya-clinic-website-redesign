@@ -1,4 +1,10 @@
-/* Custom CSS beyond Tailwind utilities. Plain CSS — no theme() (Play CDN can't resolve it here). */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---- Ported verbatim from the prototype's assets/base.css ----
+   Only the two font-family rules changed: literal "IBM Plex Sans Thai" became the
+   next/font CSS variable so the hashed family name resolves correctly. */
 :root {
   color-scheme: light;
   --focus-ring: #9c8830; /* mirrors colors.brand.600 (deep gold) */
@@ -6,12 +12,11 @@
 html { scroll-behavior: smooth; }
 body { -webkit-font-smoothing: antialiased; }
 
-/* Headings keep IBM Plex Sans Thai; body copy falls through to Sarabun (see tailwind-config.js) */
-h1, h2, h3, h4, h5, h6 { font-family: "IBM Plex Sans Thai", system-ui, sans-serif; }
+/* Headings keep IBM Plex Sans Thai; body copy falls through to Sarabun */
+h1, h2, h3, h4, h5, h6 { font-family: var(--font-ibm-plex-thai), system-ui, sans-serif; }
 
-/* Header nav (desktop + mobile menu) uses the heading face, not the body face.
-   Scoped to `header` so breadcrumb/pagination <nav> elsewhere stay on Sarabun. */
-header nav { font-family: "IBM Plex Sans Thai", system-ui, sans-serif; }
+/* Header nav uses the heading face, not the body face. */
+header nav { font-family: var(--font-ibm-plex-thai), system-ui, sans-serif; }
 
 /* Thai needs more line-height than Latin defaults */
 p, li { line-height: 1.85; }
@@ -22,6 +27,13 @@ h1, h2, h3, h4 { line-height: 1.35; }
 
 /* Prevent layout shift from images */
 img { height: auto; max-width: 100%; }
+
+/* Hide scrollbar on horizontal carousels (native scroll kept) */
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+
+/* Lightbox fade-in (used by the influencer gallery overlay) */
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
 /* Hero slider dots */
 [data-slide-dot] { height:8px; width:8px; border-radius:9999px; background:rgba(255,255,255,.45); transition:width .3s, background .3s; }

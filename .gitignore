@@ -28,6 +28,10 @@ pnpm-debug.log*
 .idea/
 .vercel
 
-# Raw design source exports (processed copies live in design/assets/)
+# Raw design source exports (processed copies live in design/assets/ and public/assets/)
 /hero-banner/
 /ChatGPT Image*
+/รูปหมอ/
+/รีวิวหน้าแรก/
+/รูปรีวิวอินฟลู/
+/website-img/
