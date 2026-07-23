@@ -36,7 +36,7 @@ export default function BlogPage() {
         <div data-panel="all" className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {/* เปิดตัว (activity) */}
           <Link href="/news-detail" className="group block overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg">
-            <Image src="/assets/generated/real/real-hero-clinic.jpg" alt="เปิดตัว ณัฐชญา คลินิก The Exclusive Private Preview" width={1600} height={900} className="aspect-[16/10] w-full object-cover transition duration-300 group-hover:scale-105" />
+            <Image src="/assets/clinic/lobby.jpg" alt="เปิดตัว ณัฐชญา คลินิก The Exclusive Private Preview" width={1600} height={1068} className="aspect-[16/10] w-full object-cover transition duration-300 group-hover:scale-105" />
             <div className="p-5">
               <span className="inline-flex items-center rounded-full bg-brand-50 px-2.5 py-0.5 text-xs font-semibold text-brand-700 ring-1 ring-brand-300">กิจกรรม</span>
               <h2 className="mt-3 font-semibold leading-snug transition group-hover:text-brand-700">เปิดตัว ณัฐชญา คลินิก — The Exclusive Private Preview</h2>
@@ -116,7 +116,7 @@ export default function BlogPage() {
         {/* PANEL: กิจกรรม */}
         <div data-panel="activity" className="hidden grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <Link href="/news-detail" className="group block overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg">
-            <Image src="/assets/generated/real/real-hero-clinic.jpg" alt="เปิดตัว ณัฐชญา คลินิก The Exclusive Private Preview" width={1600} height={900} className="aspect-[16/10] w-full object-cover transition duration-300 group-hover:scale-105" />
+            <Image src="/assets/clinic/lobby.jpg" alt="เปิดตัว ณัฐชญา คลินิก The Exclusive Private Preview" width={1600} height={1068} className="aspect-[16/10] w-full object-cover transition duration-300 group-hover:scale-105" />
             <div className="p-5">
               <span className="inline-flex items-center rounded-full bg-brand-50 px-2.5 py-0.5 text-xs font-semibold text-brand-700 ring-1 ring-brand-300">กิจกรรม</span>
               <h2 className="mt-3 font-semibold leading-snug transition group-hover:text-brand-700">เปิดตัว ณัฐชญา คลินิก — The Exclusive Private Preview</h2>

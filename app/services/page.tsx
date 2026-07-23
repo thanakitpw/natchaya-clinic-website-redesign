@@ -125,7 +125,7 @@ export default function ServicesPage() {
                 </div>
               </div>
               <div className="group flex flex-col overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg">
-                <Image src="/assets/generated/imagegen/clinic-ambience.jpg" alt="Ultralift ยกกระชับผิวหน้าแบบไม่ผ่าตัด" width={1333} height={1000} className="aspect-[3/2] w-full object-cover" />
+                <Image src="/assets/clinic/treatment-room-1.jpg" alt="Ultralift ยกกระชับผิวหน้าแบบไม่ผ่าตัด" width={1600} height={1066} className="aspect-[3/2] w-full object-cover" />
                 <div className="flex flex-1 flex-col p-5">
                   <h3 className="font-semibold">Ultralift</h3>
                   <p className="mt-1 text-sm text-ink-muted">ยกกระชับผิวหน้าแบบไม่ผ่าตัด</p>
@@ -169,7 +169,7 @@ export default function ServicesPage() {
                 </div>
               </div>
               <div className="group flex flex-col overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg">
-                <Image src="/assets/generated/imagegen/clinic-ambience.jpg" alt="ฟิลเลอร์ Belotero จาก Merz เยอรมนี" width={1333} height={1000} className="aspect-[3/2] w-full object-cover" />
+                <Image src="/assets/clinic/treatment-room-2.jpg" alt="ฟิลเลอร์ Belotero จาก Merz เยอรมนี" width={1600} height={1068} className="aspect-[3/2] w-full object-cover" />
                 <div className="flex flex-1 flex-col p-5">
                   <h3 className="font-semibold">ฟิลเลอร์ Belotero</h3>
                   <p className="mt-1 text-sm text-ink-muted">ฟิลเลอร์ไฮยาลูรอนิกแอซิดจาก Merz เยอรมนี เหมาะกับผิวบางและริ้วรอยตื้น</p>
@@ -223,7 +223,7 @@ export default function ServicesPage() {
                 </div>
               </div>
               <div className="group flex flex-col overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg">
-                <Image src="/assets/generated/imagegen/clinic-ambience.jpg" alt="NEURONOX ของ Medytox เกาหลีใต้" width={1333} height={1000} className="aspect-[3/2] w-full object-cover" />
+                <Image src="/assets/clinic/treatment-room-1.jpg" alt="NEURONOX ของ Medytox เกาหลีใต้" width={1600} height={1066} className="aspect-[3/2] w-full object-cover" />
                 <div className="flex flex-1 flex-col p-5">
                   <h3 className="font-semibold">NEURONOX®</h3>
                   <p className="mt-1 text-sm text-ink-muted">จาก Medytox เกาหลีใต้ ใช้แพร่หลายและเป็นที่รู้จักในไทย</p>
@@ -346,7 +346,7 @@ export default function ServicesPage() {
                 </div>
               </li>
               <li className="group flex flex-col overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg">
-                <Image src="/assets/generated/imagegen/clinic-ambience.jpg" alt="Fresh Peel ผลัดเซลล์ผิวด้วยกรด" width={1333} height={1000} className="aspect-[3/2] w-full object-cover" />
+                <Image src="/assets/clinic/treatment-room-2.jpg" alt="Fresh Peel ผลัดเซลล์ผิวด้วยกรด" width={1600} height={1068} className="aspect-[3/2] w-full object-cover" />
                 <div className="flex flex-1 flex-col p-5">
                   <h3 className="font-semibold">Fresh Peel</h3>
                   <p className="mt-1 text-sm text-ink-muted">ผลัดเซลล์ผิวด้วยกรด ดูแลสิวอุดตันและผิวหมองคล้ำ</p>
@@ -407,7 +407,7 @@ export default function ServicesPage() {
                 </div>
               </div>
               <div className="group flex flex-col overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg">
-                <Image src="/assets/generated/imagegen/clinic-ambience.jpg" alt="ED Max โปรแกรมดูแลภาวะหย่อนสมรรถภาพในผู้ชาย" width={1333} height={1000} className="aspect-[3/2] w-full object-cover" />
+                <Image src="/assets/clinic/patient-room.jpg" alt="ED Max โปรแกรมดูแลภาวะหย่อนสมรรถภาพในผู้ชาย" width={1600} height={1068} className="aspect-[3/2] w-full object-cover" />
                 <div className="flex flex-1 flex-col p-5">
                   <h3 className="font-semibold">ED Max / ED Max Plus</h3>
                   <p className="mt-1 text-sm text-ink-muted">โปรแกรมดูแลภาวะหย่อนสมรรถภาพทางเพศในผู้ชาย — ต้องได้รับการตรวจประเมินจากแพทย์ก่อน เนื่องจากภาวะนี้อาจเป็นสัญญาณของโรคอื่น</p>

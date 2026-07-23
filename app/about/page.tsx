@@ -24,7 +24,7 @@ export default function AboutPage() {
 
       <section className="mx-auto max-w-content px-4 py-16">
         <div className="grid items-center gap-10 md:grid-cols-2">
-          <div><Image src="/assets/generated/imagegen/clinic-ambience.jpg" alt="บรรยากาศ ณัฐชญา คลินิก" width={720} height={540} className="w-full rounded-2xl object-cover shadow-soft-lg" /></div>
+          <div><Image src="/assets/clinic/lobby.jpg" alt="เคาน์เตอร์ต้อนรับและโถงรับรองภายใน ณัฐชญา คลินิก" width={1600} height={1068} className="w-full rounded-2xl object-cover shadow-soft-lg" /></div>
           <div>
             <p className="text-lg font-semibold text-brand-700">“Beauty’s in Good Hands”</p>
             <p className="mt-3 text-ink-muted">
@@ -94,6 +94,50 @@ export default function AboutPage() {
             <Image src="/assets/doctors/doctor-warataporn.png" alt="พญ. วรัทพร จันทร์ลลิต (หมอตาล)" width={720} height={900} className="aspect-[4/5] w-full object-cover" />
             <div className="p-5"><h3 className="font-semibold">พญ. วรัทพร จันทร์ลลิต (หมอตาล)</h3><p className="mt-1.5 text-xs font-medium tracking-wide text-brand-700">ใบประกอบวิชาชีพเวชกรรม ว.25906</p></div>
           </article>
+        </div>
+      </section>
+
+      <section className="bg-surface-alt">
+        <div className="mx-auto max-w-content px-4 py-16">
+          <div className="mb-9 text-center">
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-brand-700">Our Clinic</p>
+            <h2 className="mt-2 text-2xl font-bold sm:text-3xl">บรรยากาศภายในคลินิก</h2>
+            <p className="mx-auto mt-3 max-w-2xl text-ink-muted">ออกแบบทุกพื้นที่ให้ผ่อนคลายและเป็นส่วนตัว พร้อมห้องหัตถการและห้องผ่าตัดที่ได้มาตรฐานสถานพยาบาล</p>
+          </div>
+          <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
+            <figure className="group relative overflow-hidden rounded-2xl shadow-soft ring-1 ring-line">
+              <Image src="/assets/clinic/reception.jpg" alt="มุมรับรองลูกค้า ณัฐชญา คลินิก" width={1600} height={1068} className="aspect-[4/3] w-full object-cover transition duration-300 group-hover:scale-105" />
+              <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/65 to-transparent px-4 pb-3 pt-8 text-sm font-medium text-white">มุมรับรองลูกค้า</figcaption>
+            </figure>
+            <figure className="group relative overflow-hidden rounded-2xl shadow-soft ring-1 ring-line">
+              <Image src="/assets/clinic/lounge.jpg" alt="โซนพักผ่อนภายใน ณัฐชญา คลินิก" width={1600} height={1068} className="aspect-[4/3] w-full object-cover transition duration-300 group-hover:scale-105" />
+              <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/65 to-transparent px-4 pb-3 pt-8 text-sm font-medium text-white">โซนพักผ่อน</figcaption>
+            </figure>
+            <figure className="group relative overflow-hidden rounded-2xl shadow-soft ring-1 ring-line">
+              <Image src="/assets/clinic/treatment-room-1.jpg" alt="ห้องหัตถการ ณัฐชญา คลินิก" width={1600} height={1066} className="aspect-[4/3] w-full object-cover transition duration-300 group-hover:scale-105" />
+              <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/65 to-transparent px-4 pb-3 pt-8 text-sm font-medium text-white">ห้องหัตถการ</figcaption>
+            </figure>
+            <figure className="group relative overflow-hidden rounded-2xl shadow-soft ring-1 ring-line">
+              <Image src="/assets/clinic/treatment-room-2.jpg" alt="ห้องหัตถการวิวสวน ณัฐชญา คลินิก" width={1600} height={1068} className="aspect-[4/3] w-full object-cover transition duration-300 group-hover:scale-105" />
+              <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/65 to-transparent px-4 pb-3 pt-8 text-sm font-medium text-white">ห้องหัตถการ (วิวสวน)</figcaption>
+            </figure>
+            <figure className="group relative overflow-hidden rounded-2xl shadow-soft ring-1 ring-line">
+              <Image src="/assets/clinic/patient-room.jpg" alt="ห้องพักฟื้นส่วนตัว ณัฐชญา คลินิก" width={1600} height={1068} className="aspect-[4/3] w-full object-cover transition duration-300 group-hover:scale-105" />
+              <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/65 to-transparent px-4 pb-3 pt-8 text-sm font-medium text-white">ห้องพักฟื้น</figcaption>
+            </figure>
+            <figure className="group relative overflow-hidden rounded-2xl shadow-soft ring-1 ring-line">
+              <Image src="/assets/clinic/operating-room.jpg" alt="ห้องผ่าตัดมาตรฐาน ณัฐชญา คลินิก" width={1600} height={1068} className="aspect-[4/3] w-full object-cover transition duration-300 group-hover:scale-105" />
+              <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/65 to-transparent px-4 pb-3 pt-8 text-sm font-medium text-white">ห้องผ่าตัดมาตรฐาน</figcaption>
+            </figure>
+            <figure className="group relative overflow-hidden rounded-2xl shadow-soft ring-1 ring-line">
+              <Image src="/assets/clinic/entrance.jpg" alt="โถงทางเข้าและลิฟต์ ณัฐชญา คลินิก" width={1068} height={1600} className="aspect-[4/3] w-full object-cover transition duration-300 group-hover:scale-105" />
+              <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/65 to-transparent px-4 pb-3 pt-8 text-sm font-medium text-white">โถงทางเข้า</figcaption>
+            </figure>
+            <div className="flex flex-col items-center justify-center gap-2 rounded-2xl bg-brand-600 p-6 text-center text-white shadow-soft">
+              <p className="font-display text-lg font-semibold leading-snug">Beauty &amp; Healthy<br />in Good Hands</p>
+              <p className="text-sm text-white/85">มาตรฐานสถานพยาบาล<br />ปลอดภัยทุกขั้นตอน</p>
+            </div>
+          </div>
         </div>
       </section>
 

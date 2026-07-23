@@ -181,7 +181,7 @@ export default function HomePage() {
           <h2 className="mt-2 text-2xl font-bold sm:text-3xl">บทความน่ารู้</h2>
         </div>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <article className="group overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg"><Image src="/assets/generated/real/real-hero-clinic.jpg" alt="เปิดตัว ณัฐชญา คลินิก" width={1600} height={900} className="aspect-[16/10] w-full object-cover transition duration-300 group-hover:scale-105" /><div className="p-5"><span className="rounded-full bg-brand-50 px-2.5 py-1 text-xs font-medium text-brand-700">กิจกรรม</span><h3 className="mt-3 text-base font-semibold leading-snug">เปิดตัว ณัฐชญา คลินิก The Exclusive Private Preview</h3></div></article>
+          <article className="group overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg"><Image src="/assets/clinic/lobby.jpg" alt="เปิดตัว ณัฐชญา คลินิก" width={1600} height={1068} className="aspect-[16/10] w-full object-cover transition duration-300 group-hover:scale-105" /><div className="p-5"><span className="rounded-full bg-brand-50 px-2.5 py-1 text-xs font-medium text-brand-700">กิจกรรม</span><h3 className="mt-3 text-base font-semibold leading-snug">เปิดตัว ณัฐชญา คลินิก The Exclusive Private Preview</h3></div></article>
           <article className="group overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg"><Image src="/assets/generated/real/real-review-face.jpg" alt="สัมภาษณ์หมอบอส BAZAAR" width={1448} height={1086} className="aspect-[16/10] w-full object-cover transition duration-300 group-hover:scale-105" /><div className="p-5"><span className="rounded-full bg-brand-50 px-2.5 py-1 text-xs font-medium text-brand-700">บทสัมภาษณ์</span><h3 className="mt-3 text-base font-semibold leading-snug">สัมภาษณ์คุณหมอบอส นิตยสาร BAZAAR</h3></div></article>
           <article className="group overflow-hidden rounded-2xl bg-surface shadow-soft ring-1 ring-line transition hover:shadow-soft-lg"><Image src="/assets/generated/real/real-article-antiaging.jpg" alt="Energy Medicine" width={1586} height={992} className="aspect-[16/10] w-full object-cover transition duration-300 group-hover:scale-105" /><div className="p-5"><span className="rounded-full bg-brand-50 px-2.5 py-1 text-xs font-medium text-brand-700">สุขภาพ</span><h3 className="mt-3 text-base font-semibold leading-snug">Energy Medicine วิทยาการชะลอวัย</h3></div></article>
         </div>
@@ -189,7 +189,7 @@ export default function HomePage() {
 
       <section id="about" className="bg-surface-alt">
         <div className="mx-auto grid max-w-content items-center gap-10 px-4 py-16 md:grid-cols-2">
-          <Image src="/assets/generated/real/real-hero-clinic.jpg" alt="บรรยากาศ ณัฐชญา คลินิก" width={720} height={520} className="w-full rounded-2xl object-cover shadow-soft-lg" />
+          <Image src="/assets/clinic/reception.jpg" alt="บรรยากาศ ณัฐชญา คลินิก" width={1600} height={1068} className="w-full rounded-2xl object-cover shadow-soft-lg" />
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-brand-700">About Us</p>
             <h2 className="mt-2 text-2xl font-bold sm:text-3xl">ความงามที่อยู่ในมือที่คุณมั่นใจ</h2>
